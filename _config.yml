@@ -1,0 +1,25 @@
+# Site settings
+title: Onur Solmaz
+# email:
+# description: "Yet another blog"
+# baseurl: "//hos.github.io"
+# url: "//hos.github.io"
+url: "https://osolmaz.com"
+# twitter_username:
+github_username:  osolmaz
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+paginate: 6
+paginate_path: "/:num/"
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-redirect-from
+
+
+# configure kramdown
+kramdown:
+  parse_block_html: true
