@@ -1,12 +1,12 @@
 # Site settings
-title: Onur Solmaz
+title: Demi Yilmaz
 # email:
 # description: "Yet another blog"
 # baseurl: "//hos.github.io"
 # url: "//hos.github.io"
-url: "https://osolmaz.com"
+url: "https://demiculus.com"
 # twitter_username:
-github_username:  osolmaz
+github_username:  demiculus
 
 # Build settings
 markdown: kramdown
