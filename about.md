@@ -94,8 +94,6 @@ I've written 3 blog posts with over 30k views total.
 - [Meme Cavern](https://www.facebook.com/groups/theexecutivememers): Facebook meme group I created in summer of 2017. I social engineered a hack resulting in 40k+ memeber group. I've recruited moderators to run & clean up the group. 
 - [Amoveo Twitter](https://twitter.com/Amoveox): The twitter account for Amoveo cryptocurrency. I post about anything related to Amoveo.
 
----
-
 ### Games I've Played Longer Than I should Have
 
 I have played many many other games but these are the ones which deserve mentioning.
@@ -151,6 +149,18 @@ I have played many many other games but these are the ones which deserve mention
     <span><a href="https://littlebigsnake.com/">Little Big Snake</a>: Snake MMO</span>
   </li>
 </ul>
+
+### Videos Edited
+
+- [Skycoin Hype Contest](https://www.youtube.com/watch?v=rpO0H5Vwwgw&t=2s)
+- [Fireball Jutsu Against Harembe](https://www.youtube.com/watch?v=JZYFxXsFf3s)
+- [Dreaming on The Train](https://www.youtube.com/watch?v=ELoNZFE6ms0)
+- [ODTU Troll Dance](https://www.youtube.com/watch?v=opnZb7gnsJg)
+- [Stop Motion Witch](https://www.instagram.com/p/BYQKxPgHn-QyVoa7qJtoVt91vi8zZw_LKc-QPQ0), full version [here](https://www.youtube.com/watch?v=plFxF3S3le0)
+- [Shape of You Dance Vid](https://www.instagram.com/p/BQnoU4XDWZ3VtmDm2xjL0HL53H3ffXT7Jv2qA80)
+- [That one person](https://www.instagram.com/p/BRBM6JAj0hkDPYPn75mcXoACpjcAn13Q7lvNkU0)
+- [Dance/Fun](https://www.instagram.com/p/BNuCG6tgVX0ZSzbVHgxg0dvQFVPF_qoTfatGuY0)
+- [When you see a chick doing the whip](https://www.instagram.com/p/BKfQXUBD_DL_rzXNnKH7bVJveRAT9PlaDM9vOA0)
 
 ### Movies That Have Touched My Heart
 
