@@ -65,6 +65,10 @@ We’re working on various projects in the cryptocurrency space. These include:
 <ul class="posts">
   <li>
     <span class="post-date">2018</span>
+    <span><a href="https://bitses.org/">Bitses</a>: Won <a href="http://www.blockcircus.com/">Blockcircus Cryptocurrency hackathon</a> by making a fundamental crypto assets analysis sharing tool.</span>
+  </li>
+  <li>
+    <span class="post-date">2018</span>
     <span>Cryptocurrency market analysis tools</span>
   </li>
   <li>
