@@ -88,10 +88,11 @@ I've written 3 blog posts with over 30k views total.
 
 [Mithril](https://bitses.org/analyses/mithril-demiculus/), [Aeternity](https://bitses.org/analyses/aeternity-demiculus/), [Holo](https://bitses.org/analyses/holo-demiculus/), [Mintcoin](https://bitses.org/analyses/mintcoin-demiculus/), [Golos](https://bitses.org/analyses/golos-demiculus/), [Chronobank](https://bitses.org/analyses/chronobank-demiculus/), [Nav Coin](https://bitses.org/analyses/nav-coin-demiculus/), [Amoveo](https://bitses.org/analyses/amoveo-demiculus/), [Aigang](https://bitses.org/analyses/aigang-demiculus/), [Atlant](https://bitses.org/analyses/atlant-demiculus/), [Crowdcoin](https://bitses.org/analyses/crowdcoin-demiculus/), [Harmony](https://bitses.org/analyses/harmony-demiculus/), [Pirl](https://bitses.org/analyses/pirl-demiculus/), [Ellaism](https://bitses.org/analyses/ellaism-demiculus/), [Xdag](https://bitses.org/analyses/xdag-demiculus/), [Purk](https://bitses.org/analyses/purk-demiculus/), [Ravencoin](https://bitses.org/analyses/ravencoin-demiculus/), [Helix](https://bitses.org/analyses/helix-demiculus/), [Nexo](https://bitses.org/analyses/nexo-demiculus/), [Huobi Token](https://bitses.org/analyses/huobi-token-demiculus/), [Trustedcars Flex](https://bitses.org/analyses/trustedcars-flex-demiculus/), [Crowd Machine](https://bitses.org/analyses/crowd-machine-demiculus/), [Wemark](https://bitses.org/analyses/wemark-demiculus/), [Online](https://bitses.org/analyses/online-demiculus/), [Sparkster](https://bitses.org/analyses/sparkster-demiculus/), [Sether](https://bitses.org/analyses/sether-demiculus/), [PoWH3D](https://bitses.org/analyses/powh3d-demiculus/)
 
-### Social Media Groups & Pages
+### Social Media
 
 - [Fabulous Sharings](https://www.facebook.com/Fabulous.Sharings): Facebook meme page I created in the spring of 2011. I shared the memes I liked for the first 6 months, when school started I recruited moderators to run it.
 - [Meme Cavern](https://www.facebook.com/groups/theexecutivememers): Facebook meme group I created in summer of 2017. I social engineered a hack resulting in 40k+ memeber group. I've recruited moderators to run & clean up the group. 
+- [Amoveo Twitter](https://twitter.com/Amoveox): The twitter account for Amoveo cryptocurrency. I post about anything related to Amoveo.
 
 ---
 
