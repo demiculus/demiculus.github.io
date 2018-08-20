@@ -10,9 +10,10 @@ title: About
 We’re working on various projects in the cryptocurrency space. These include:
 
 - [Breakpoint Capital](https://www.breakpointcapital.net/): A private crypto fund
-- [Bitses](http://bitses.org): A website with fundamental analyses of 100+ crypto assets, one of the biggest websites of its kind
-- [Amoveo Excange](http://amoveo.exchange/): A crypto to crypto exchange focused for the currency of Amoveo
-- [My Wallets](http://mywallets.co): A wallet holder
+- [Bitses](http://bitses.org): Fundamental analyses of 100+ crypto assets, one of the biggest websites of its kind
+- [Amoveo Excange](http://amoveo.exchange/): Crypto to crypto exchange focused for the currency of Amoveo
+- [My Wallets](http://mywallets.co): Crypto wallet holder
+- Advising blockchain companies.
 - More projects coming
 
 ### [Dawn of Crafting](http://www.dawnofcrafting.com/)
@@ -61,13 +62,13 @@ We’re working on various projects in the cryptocurrency space. These include:
 
 ### Projects
 
-- [Katan.io](http://katan.io/): Inspired by the Catan boardgame. Has 60+ hours played daily.
-- [Summoner.tech](https://www.youtube.com/watch?v=yzPpbQhXYU8): Using Unity3d with vuforia SDK we developed an agumented reality dragon egg hatching game where inputs are givin using physical cards at [Launch Hackathon](https://launch.co/)
+- [Katan.io](http://katan.io/): Inspired by the Catan boardgame we developed a web based boardgame which has 60+ hours played daily.
+- [Summoner.tech](https://www.youtube.com/watch?v=yzPpbQhXYU8): Using Unity3d with vuforia SDK we developed an agumented reality dragon egg hatching game where inputs are given using physical cards at [Launch Hackathon](https://launch.co/)
 - [Wayback Forward](https://www.youtube.com/watch?v=oipc7cbogy0): Using archive.org's public APIs, [Greg](https://twitter.com/@glindahl) & I constructed a visualization that shows when webpages saved in the Wayback changed in major and minor ways, and why the Wayback crawled them.
 - [Run](https://www.youtube.com/watch?v=fRMItUbDcws): In [GGJ](https://globalgamejam.org/) [@ Facebook HQ](https://www.facebook.com/Facebook-HQ-166793820034304/) we developed a minimalistic dodging game using [Oculus Rift](https://www.oculus.com/) & [unity3d](https://unity3d.com/). 
 - Won [espn hackathon](https://www.instagram.com/p/BAqak6nNwhw/) with an app called Nubee that helps erase the confusion new football fans have regarding the rules of the game.
-- Won [t-hackathon](http://odtuteknokent.com.tr/tr/haber/t-hackathonda-abd-yolculari-belli-oldu) with ReadTweet app where the app filters Twitter according to your own interests.
-- Insta archive: An app where you can use Instagram as Pinterest. App lets you categorize, tag and save images in the categories you've created.
+- Won [t-hackathon](http://odtuteknokent.com.tr/tr/haber/t-hackathonda-abd-yolculari-belli-oldu) with ReadTweet app where the app filters Twitter according to users own interests.
+- Insta archive: An app where user can use Instagram as Pinterest. It lets you categorize, organize, tag and save images in the folders you've created.
 - Cozy: A location based social network for METU.
 - Whatsmypass: An unhackable easy to use password manager.
 
@@ -87,7 +88,7 @@ I've written 3 blog posts with over 30k views total.
 
 [Mithril](https://bitses.org/analyses/mithril-demiculus/), [Aeternity](https://bitses.org/analyses/aeternity-demiculus/), [Holo](https://bitses.org/analyses/holo-demiculus/), [Mintcoin](https://bitses.org/analyses/mintcoin-demiculus/), [Golos](https://bitses.org/analyses/golos-demiculus/), [Chronobank](https://bitses.org/analyses/chronobank-demiculus/), [Nav Coin](https://bitses.org/analyses/nav-coin-demiculus/), [Amoveo](https://bitses.org/analyses/amoveo-demiculus/), [Aigang](https://bitses.org/analyses/aigang-demiculus/), [Atlant](https://bitses.org/analyses/atlant-demiculus/), [Crowdcoin](https://bitses.org/analyses/crowdcoin-demiculus/), [Harmony](https://bitses.org/analyses/harmony-demiculus/), [Pirl](https://bitses.org/analyses/pirl-demiculus/), [Ellaism](https://bitses.org/analyses/ellaism-demiculus/), [Xdag](https://bitses.org/analyses/xdag-demiculus/), [Purk](https://bitses.org/analyses/purk-demiculus/), [Ravencoin](https://bitses.org/analyses/ravencoin-demiculus/), [Helix](https://bitses.org/analyses/helix-demiculus/), [Nexo](https://bitses.org/analyses/nexo-demiculus/), [Huobi Token](https://bitses.org/analyses/huobi-token-demiculus/), [Trustedcars Flex](https://bitses.org/analyses/trustedcars-flex-demiculus/), [Crowd Machine](https://bitses.org/analyses/crowd-machine-demiculus/), [Wemark](https://bitses.org/analyses/wemark-demiculus/), [Online](https://bitses.org/analyses/online-demiculus/), [Sparkster](https://bitses.org/analyses/sparkster-demiculus/), [Sether](https://bitses.org/analyses/sether-demiculus/), [PoWH3D](https://bitses.org/analyses/powh3d-demiculus/)
 
-### Social Media
+### Social Media Groups & Pages
 
 - [Fabulous Sharings](https://www.facebook.com/Fabulous.Sharings): Facebook meme page I created in the spring of 2011. I shared the memes I liked for the first 6 months, when school started I recruited moderators to run it.
 - [Meme Cavern](https://www.facebook.com/groups/theexecutivememers): Facebook meme group I created in summer of 2017. I social engineered a hack resulting in 40k+ memeber group. I've recruited moderators to run & clean up the group. 
@@ -150,5 +151,8 @@ I have played many many other games but these are the ones which deserve mention
   </li>
 </ul>
 
+### Movies That Have Touched My Heart
+
+- [Kimi No Na Wa (Your Name)](https://www.imdb.com/title/tt5311514/)
 
 

@@ -25,7 +25,7 @@ Feel free to [reach out](mailto:demirbyilmaz@gmail.com).
 - Co-founder @ [Mobile Monday Ankara](https://www.meetup.com/MobileMondayAnkara) -> Biggest mobile event series in Ankara
 - Co-founder @ [Metu Hip-Hop Society](https://www.instagram.com/odtuhiphop/) -> Best dance group in Ankara
 
-You can check out my projects in details here.
+You can check out my projects in details [here](/about).
 
 <!-- <div class="posts"> -->
 <!--   {% for post in paginator.posts %} -->
