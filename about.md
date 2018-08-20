@@ -205,11 +205,11 @@ I have played many many other games but these are the ones which deserve mention
 - [Dance/Fun](https://www.instagram.com/p/BNuCG6tgVX0ZSzbVHgxg0dvQFVPF_qoTfatGuY0)
 - [When you see a chick doing the whip](https://www.instagram.com/p/BKfQXUBD_DL_rzXNnKH7bVJveRAT9PlaDM9vOA0)
 
-### Movies That Have Touched My Heart
+<!-- ### Movies That Have Touched My Heart
 
 - [Kimi No Na Wa (Your Name)](https://www.imdb.com/title/tt5311514/)
 - [Inside Out](https://www.imdb.com/title/tt2096673)
-- [Big Hero 6](https://www.imdb.com/title/tt2245084/)
+- [Big Hero 6](https://www.imdb.com/title/tt2245084/) -->
 
 ---
 
