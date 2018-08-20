@@ -49,7 +49,7 @@ We’re working on various projects in the cryptocurrency space. These include:
 ### [ODTU Hip-Hop Society](https://www.instagram.com/odtuhiphop/)
 
 - Best freestyle dance group in Ankara
-- Chroagraphed many shows
+- Choreographed many shows
 - Attended many competitions with various degrees including 
   - First place Solo Freestyle Dancer in [Turkey Dance Sport Federation](http://www.tdsf.gov.tr/)
   - Second Place dance crew in [Turkey Dance Sport Federation](http://www.tdsf.gov.tr/)
@@ -65,7 +65,7 @@ We’re working on various projects in the cryptocurrency space. These include:
 <ul class="posts">
   <li>
     <span class="post-date">2018</span>
-    <span>Cryptocurrency market analyses tools</span>
+    <span>Cryptocurrency market analysis tools</span>
   </li>
   <li>
     <span class="post-date">2017</span>
@@ -114,9 +114,7 @@ We’re working on various projects in the cryptocurrency space. These include:
 
 - My talk on [DHT - Bittorrent - IPFS](https://www.youtube.com/watch?v=YKyh3KZaWXc&t=4s) (Turkish) 
 
-### Blog
-
-I've written 3 blog posts with over 30k views total.
+### Blogs
 
 - [Turkiyedeki en iyi fiber internet hangisi?](https://medium.com/@demiculus/en-iyi-fiber-internet-hangisi-e95e9a3c4bb4)
 - [Cryptocurrency tutorial](https://medium.com/@demiculus/cryptocurrency-tutorial-875e9f83db24)
@@ -202,5 +200,6 @@ I have played many many other games but these are the ones which deserve mention
 ### Movies That Have Touched My Heart
 
 - [Kimi No Na Wa (Your Name)](https://www.imdb.com/title/tt5311514/)
+- [Inside Out](https://www.imdb.com/title/tt2096673)
 
 
