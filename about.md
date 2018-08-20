@@ -62,16 +62,53 @@ We’re working on various projects in the cryptocurrency space. These include:
 
 ### Projects
 
-- [Katan.io](http://katan.io/): Inspired by the Catan boardgame we developed a web based boardgame which has 60+ hours played daily.
-- [Summoner.tech](https://www.youtube.com/watch?v=yzPpbQhXYU8): Using Unity3d with vuforia SDK we developed an agumented reality dragon egg hatching game where inputs are given using physical cards at [Launch Hackathon](https://launch.co/)
-- [Wayback Forward](https://www.youtube.com/watch?v=oipc7cbogy0): Using archive.org's public APIs, [Greg](https://twitter.com/@glindahl) & I constructed a visualization that shows when webpages saved in the Wayback changed in major and minor ways, and why the Wayback crawled them.
-- [Run](https://www.youtube.com/watch?v=fRMItUbDcws): In [GGJ](https://globalgamejam.org/) [@ Facebook HQ](https://www.facebook.com/Facebook-HQ-166793820034304/) we developed a minimalistic dodging game using [Oculus Rift](https://www.oculus.com/) & [unity3d](https://unity3d.com/). 
-- Won [espn hackathon](https://www.instagram.com/p/BAqak6nNwhw/) with an app called Nubee that helps erase the confusion new football fans have regarding the rules of the game.
-- Won [t-hackathon](http://odtuteknokent.com.tr/tr/haber/t-hackathonda-abd-yolculari-belli-oldu) with ReadTweet app where the app filters Twitter according to users own interests.
-- Insta archive: An app where user can use Instagram as Pinterest. It lets you categorize, organize, tag and save images in the folders you've created.
-- Cozy: A location based social network for METU.
-- Whatsmypass: An unhackable easy to use password manager.
-- Fruitface: With using face detection & image processing we created an app to create face/object filters. Where SC & Instagram applied a similar technology to their apps later on.
+<ul class="posts">
+  <li>
+    <span class="post-date">2018</span>
+    <span>Cryptocurrency market analyses tools</span>
+  </li>
+  <li>
+    <span class="post-date">2017</span>
+    <span><a href="http://katan.io/">Katan.io</a>: Inspired by the Catan boardgame we developed a web based boardgame which has 60+ hours played daily.</span>
+  </li>
+  <li>
+    <span class="post-date">2016</span>
+    <span><a href="https://www.youtube.com/watch?v=yzPpbQhXYU8">Summoner.tech</a>: Using Unity3d with vuforia SDK we developed an agumented reality dragon egg hatching game where inputs are given using physical cards at Launch Hackathon.</span>
+  </li>
+  <li>
+    <span class="post-date">2016</span>
+    <span><a href="https://www.youtube.com/watch?v=oipc7cbogy0">Wayback Forward</a>: Using archive.org's public APIs, <a href="https://twitter.com/@glindahl">Greg</a> & I constructed a visualization that shows when webpages saved in the Wayback changed in major and minor ways, and why the Wayback crawled them.</span>
+  </li>
+  <li>
+    <span class="post-date">2016</span>
+    <span><a href="https://www.youtube.com/watch?v=fRMItUbDcws">Run</a>: In <a href="https://globalgamejam.org/">GGJ</a> we developed a minimalistic dodging game using Oculus Rift & unity3d. </span>
+  </li>
+  <li>
+    <span class="post-date">2016</span>
+    <span>Won <a href="https://www.instagram.com/p/BAqak6nNwhw/">Espn hackathon</a> with an app called Nubee that helps erase the confusion new football fans have regarding the rules of the game.</span>
+  </li>
+  <li>
+    <span class="post-date">2015</span>
+    <span>Won <a href="http://odtuteknokent.com.tr/tr/haber/t-hackathonda-abd-yolculari-belli-oldu">t-hackathon</a> with ReadTweet app where the app filters Twitter according to users own interests.</span>
+  </li>
+  
+  <li>
+    <span class="post-date">2015</span>
+    <span>Insta archive: An app where user can use Instagram as Pinterest. It lets you categorize, organize, tag and save images in the folders you've created.</span>
+  </li>
+  <li>
+    <span class="post-date">2015</span>
+    <span>Cozy: A location based social network for METU.</span>
+  </li>
+  <li>
+    <span class="post-date">2014</span>
+    <span>Fruitface: With using face detection & image processing we created an app to create face/object filters. Where SC & Instagram applied a similar technology to their apps later on.</span>
+  </li>
+  <li>
+    <span class="post-date">2014</span>
+    <span>Whatsmypass: An unhackable easy to use password manager.</span>
+  </li>
+</ul>
 
 ### Presentations
 
@@ -101,45 +138,8 @@ I have played many many other games but these are the ones which deserve mention
 
 <ul class="posts">
   <li>
-    <span class="post-date">1999 - 2005</span>
-    <span>Heroes Might and Magic 3/4: Turn based strategy game</span>
-  </li>
-  <li>
-    <span class="post-date">2000 - 2011</span>
-    <span><a href="http://starkingdoms.com/">Starkingdoms</a>: MMO strategy game</span>
-  </li>
-  <li>
-    <span class="post-date">2002 - 2010</span>
-    <span>Ultima Online: Best MMORPG I've ever played</span>
-  </li>
-  <li>
-    <span class="post-date">2004 - 2010</span>
-    <span>DotA: Initiator of the MOBA concept</span>
-  </li>
-  <li>
-    <span class="post-date">2009 - 2010</span>
-    <span>Sims 3: Open world</span>
-  </li>
-  <li>
-    <span class="post-date">2011 - 2013</span>
-    <span>Minecraft: Survival crafting</span>
-  </li>
-  <li>
-    <span class="post-date">2013 - 2014</span>
-    <span>Don't Starve: Survival crafting</span>
-  </li>
-  <li>
-    <span class="post-date">2014 - 2015</span>
-    <span>Don't Starve Together: Multiplayer survival crafting</span>
-  </li>
-  
-  <li>
-    <span class="post-date">2015</span>
-    <span><a href="http://agar.io/">Agar.io</a>: Initiator of the io games concept, easy to enter/play minimalistic MMO</span>
-  </li>
-  <li>
-    <span class="post-date">2017</span>
-    <span><a href="http://starve.io/">Starve.io</a>: Survival crafting MMO</span>
+    <span class="post-date">2018</span>
+    <span><a href="https://littlebigsnake.com/">Little Big Snake</a>: Snake MMO</span>
   </li>
   <li>
     <span class="post-date">2017 - 2018</span>
@@ -147,7 +147,43 @@ I have played many many other games but these are the ones which deserve mention
   </li>
   <li>
     <span class="post-date">2017</span>
-    <span><a href="https://littlebigsnake.com/">Little Big Snake</a>: Snake MMO</span>
+    <span><a href="http://starve.io/">Starve.io</a>: Survival crafting MMO</span>
+  </li>
+  <li>
+    <span class="post-date">2015</span>
+    <span><a href="http://agar.io/">Agar.io</a>: Initiator of the io games concept, easy to enter/play minimalistic MMO</span>
+  </li>
+  <li>
+    <span class="post-date">2014 - 2015</span>
+    <span>Don't Starve Together: Multiplayer survival crafting</span>
+  </li>
+  <li>
+    <span class="post-date">2013 - 2014</span>
+    <span>Don't Starve: Survival crafting</span>
+  </li>
+  <li>
+    <span class="post-date">2011 - 2013</span>
+    <span>Minecraft: Survival crafting</span>
+  </li>
+  <li>
+    <span class="post-date">2009 - 2010</span>
+    <span>Sims 3: Open world</span>
+  </li>
+  <li>
+    <span class="post-date">2004 - 2010</span>
+    <span>DotA: Initiator of the MOBA concept</span>
+  </li>
+  <li>
+    <span class="post-date">2002 - 2010</span>
+    <span>Ultima Online: Best MMORPG I've ever played</span>
+  </li>
+  <li>
+    <span class="post-date">2000 - 2011</span>
+    <span><a href="http://starkingdoms.com/">Starkingdoms</a>: MMO strategy game</span>
+  </li>
+  <li>
+    <span class="post-date">1999 - 2005</span>
+    <span>Heroes Might and Magic 3/4: Turn based strategy game</span>
   </li>
 </ul>
 
