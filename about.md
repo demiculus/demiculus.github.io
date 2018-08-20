@@ -71,6 +71,7 @@ We’re working on various projects in the cryptocurrency space. These include:
 - Insta archive: An app where user can use Instagram as Pinterest. It lets you categorize, organize, tag and save images in the folders you've created.
 - Cozy: A location based social network for METU.
 - Whatsmypass: An unhackable easy to use password manager.
+- Fruitface: With using face detection & image processing we created an app to create face/object filters. Where SC & Instagram applied a similar technology to their apps later on.
 
 ### Presentations
 
