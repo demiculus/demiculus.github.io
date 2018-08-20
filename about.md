@@ -20,12 +20,12 @@ We’re working on various projects in the cryptocurrency space. These include:
 
 - Crafting game for iOS devices
 - Hundreds of people play 200+ hours
-- Average 4.8 star reviews (One of the highest rated games in its category)
-- [Hit #1 RPG and Puzzle](https://www.appannie.com/en/apps/ios/top/) in the App Store in hundreds of countries including United Kingdom, Australia, Sweden, Norway, Finland, New Zealand
+- Average 4.8-star reviews (One of the highest rated games in its category)
+- [Hit #1 RPG and Puzzle](https://www.appannie.com/en/apps/ios/top/) in the App Store in hundreds of countries including the United Kingdom, Australia, Sweden, Norway, Finland, New Zealand
 - [#1 Most Liked Incremental Game](https://www.incrementalgame.com/)
 - [#1 Highest Rated Incremental Game](https://plaza.dsolver.ca/games)
 - Featured on 10+ game blogs
-- Self published in the West. IP licensed to [U77](https://www.taptap.com/app/74868) for publishing in China
+- Self-published in the West. IP licensed to [U77](https://www.taptap.com/app/74868) for publishing in China
 - Dan Harmon (Creator of Rick and Morty & Community) plays DoC more than I watched Rick and Morty (and I watched it all 3 times)
 
 ### Kreix
@@ -33,7 +33,7 @@ We’re working on various projects in the cryptocurrency space. These include:
 - Raised $50K government grant
 - Built 20+ mobile apps, mostly consumer focused
 - Couldn’t find strong Product-Market-Fit
-- Apprenticeship period, foundation of my life
+- Apprenticeship period, the foundation of my life
 
 ---
 
@@ -51,8 +51,8 @@ We’re working on various projects in the cryptocurrency space. These include:
 - Best freestyle dance group in Ankara
 - Choreographed many shows
 - Attended many competitions with various degrees including 
-  - First place Solo Freestyle Dancer in [Turkey Dance Sport Federation](http://www.tdsf.gov.tr/)
-  - Second Place dance crew in [Turkey Dance Sport Federation](http://www.tdsf.gov.tr/)
+  - First place Solo Freestyle Dancer in [Turkey Dance Sports Federation](http://www.tdsf.gov.tr/)
+  - Second Place dance crew in [Turkey Dance Sports Federation](http://www.tdsf.gov.tr/)
 - Actively running with 20+ dancers
 - [Watch](https://www.instagram.com/demiculus/) some of my vids
 
@@ -124,10 +124,14 @@ We’re working on various projects in the cryptocurrency space. These include:
 
 [Mithril](https://bitses.org/analyses/mithril-demiculus/), [Aeternity](https://bitses.org/analyses/aeternity-demiculus/), [Holo](https://bitses.org/analyses/holo-demiculus/), [Mintcoin](https://bitses.org/analyses/mintcoin-demiculus/), [Golos](https://bitses.org/analyses/golos-demiculus/), [Chronobank](https://bitses.org/analyses/chronobank-demiculus/), [Nav Coin](https://bitses.org/analyses/nav-coin-demiculus/), [Amoveo](https://bitses.org/analyses/amoveo-demiculus/), [Aigang](https://bitses.org/analyses/aigang-demiculus/), [Atlant](https://bitses.org/analyses/atlant-demiculus/), [Crowdcoin](https://bitses.org/analyses/crowdcoin-demiculus/), [Harmony](https://bitses.org/analyses/harmony-demiculus/), [Pirl](https://bitses.org/analyses/pirl-demiculus/), [Ellaism](https://bitses.org/analyses/ellaism-demiculus/), [Xdag](https://bitses.org/analyses/xdag-demiculus/), [Purk](https://bitses.org/analyses/purk-demiculus/), [Ravencoin](https://bitses.org/analyses/ravencoin-demiculus/), [Helix](https://bitses.org/analyses/helix-demiculus/), [Nexo](https://bitses.org/analyses/nexo-demiculus/), [Huobi Token](https://bitses.org/analyses/huobi-token-demiculus/), [Trustedcars Flex](https://bitses.org/analyses/trustedcars-flex-demiculus/), [Crowd Machine](https://bitses.org/analyses/crowd-machine-demiculus/), [Wemark](https://bitses.org/analyses/wemark-demiculus/), [Online](https://bitses.org/analyses/online-demiculus/), [Sparkster](https://bitses.org/analyses/sparkster-demiculus/), [Sether](https://bitses.org/analyses/sether-demiculus/), [PoWH3D](https://bitses.org/analyses/powh3d-demiculus/)
 
+### Investments
+
+Coming soon
+
 ### Social Media
 
-- [Fabulous Sharings](https://www.facebook.com/Fabulous.Sharings): Facebook meme page I created in the spring of 2011. I shared the memes I liked for the first 6 months, when school started I recruited moderators to run it.
-- [Meme Cavern](https://www.facebook.com/groups/theexecutivememers): Facebook meme group I created in summer of 2017. I social engineered a hack resulting in 40k+ memeber group. I've recruited moderators to run & clean up the group. 
+- [Fabulous Sharings](https://www.facebook.com/Fabulous.Sharings): Meme page I created in the Spring of 2011. I shared the memes I liked for the first 6 months. when school started I recruited moderators to run it.
+- [Meme Cavern](https://www.facebook.com/groups/theexecutivememers): Facebook meme group I created in the Summer of 2017. I social engineered a hack resulting in 40k+ memeber group. I've recruited moderators to run & clean up the group. 
 - [Amoveo Twitter](https://twitter.com/Amoveox): The twitter account for Amoveo cryptocurrency. I post about anything related to Amoveo.
 
 ### Games I've Played Longer Than I should Have
@@ -203,6 +207,8 @@ I have played many many other games but these are the ones which deserve mention
 - [Inside Out](https://www.imdb.com/title/tt2096673)
 - [Big Hero 6](https://www.imdb.com/title/tt2245084/)
 
+---
 
+If any thing here sparks your interest feel free to start a conversation about it
 
 

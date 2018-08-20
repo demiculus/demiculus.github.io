@@ -24,7 +24,7 @@ Feel free to [reach out](mailto:demirbyilmaz@gmail.com).
 - Co-founder @ [Dawn of Crafting](http://www.dawnofcrafting.com/) -> #1 RPG/Puzzle Game in 100+ countries
 - Co-founder @ Kreix -> Built many mobile apps
 - Co-founder @ [Mobile Monday Ankara](https://www.meetup.com/MobileMondayAnkara) -> Biggest mobile event meetup in Ankara
-- Co-founder @ [Metu Hip-Hop Society](https://www.instagram.com/odtuhiphop/) -> Best hip-hop dance group in Ankara
+- Co-founder @ [Metu Hip-Hop Society](https://www.instagram.com/odtuhiphop/) -> Freestyle dance group with most trophies in Ankara.
 
 You can check out my projects in details [here](/about).
 
