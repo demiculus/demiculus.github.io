@@ -16,7 +16,7 @@ Feel free to [reach out](mailto:demirbyilmaz@gmail.com).
 
 - Co-founder @ Breakpoint Labs -> Various projects in the cryptocurrency field
 - Advisor @ [amoveo.exchange](http://amoveo.exchange/) -> Up-and-coming cryptocurrency exchange
-- Partner @ [Amoveo](http://veoscan.io/) Foundation -> $15M cap, high potential cryptocurrency
+- Partner @ [Amoveo](http://veoscan.io/) Foundation -> $5M cap, high potential cryptocurrency
 
 #### Past:
 
