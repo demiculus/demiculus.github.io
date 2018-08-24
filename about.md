@@ -130,7 +130,7 @@ We’re working on various projects in the cryptocurrency space. These include:
 
 ### Investments
 
-Coming soon
+Check out [investments](/investments).
 
 ### Social Media
 
