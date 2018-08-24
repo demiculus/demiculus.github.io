@@ -13,7 +13,7 @@ We’re working on various projects in the cryptocurrency space. These include:
 - [Bitses](http://bitses.org): Fundamental analyses of 100+ crypto assets, one of the biggest websites of its kind
 - [Amoveo Excange](http://amoveo.exchange/): Crypto to crypto exchange focused for the currency of Amoveo
 - [My Wallets](http://mywallets.co): Crypto wallet holder
-- Advising blockchain companies.
+- Advising blockchain companies about tech, market, analysis etc. 
 - More projects coming
 
 ### [Dawn of Crafting](http://www.dawnofcrafting.com/)
@@ -31,7 +31,7 @@ We’re working on various projects in the cryptocurrency space. These include:
 ### Kreix
 
 - Raised $50K government grant
-- Built 20+ mobile apps, mostly consumer focused
+- Built 8 mobile apps, mostly consumer focused
 - Couldn’t find strong Product-Market-Fit
 - Apprenticeship period, the foundation of my life
 
