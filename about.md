@@ -117,7 +117,7 @@ We’re working on various projects in the cryptocurrency space. These include:
 ### Presentations
 
 - My talk on [DHT - Bittorrent - IPFS](https://www.youtube.com/watch?v=YKyh3KZaWXc&t=4s) (Turkish) 
-- [TOC Thinking Processes](/TOC/TOC Thinking Process.pdf)
+- [TOC Thinking Processes](/TOC/TOC_Thinking_Process.pdf)
 - [Step by Step Using The TOC Thinking Processes](/TOC/Step_by_Step_Using_The_TOC_Thinking_Processes - Demi B. Yilmaz.pdf)
 
 ### Blogs
