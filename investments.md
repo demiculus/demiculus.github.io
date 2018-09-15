@@ -5,6 +5,8 @@ title: Investments
 
 ## Investments
 
+- Hashgraph
+- Chia
 - Amoveo.exchange
 - Trust Token
 - Binance Coin
