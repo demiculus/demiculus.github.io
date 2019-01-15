@@ -8,11 +8,11 @@ title: Izmir Alsancak
 ### General
 
 - I like guests. Feel free to stay or even live in my place.
-- No need for gifts. I consider deep deep hugs as the best gifts :)
+- No need for gifts. I consider presence as a gift (thats why you're invited 😊)
 - Use everything in the house like it is yours, this goes for stuff in the fridge as well. Some things are my housemates so try to replace the things that you use.
 - My house mate is a [lovely person](https://www.instagram.com/elhamheydaryan/), she leaves the house between 9-10AM and comes back around 10PM. So the house is usually just me.
 - Ask me for a key
-- I'll be in this house until 15th of Feb 2019. Then I will go to bedelli. After that I might come back to Izmir or go to some other city/country. Let me know where you'd like to visit me 😁
+- I'll be in this house until 15th of Feb 2019. Then I will go to bedelli. After that I might come back to Izmir or go to some other city/country. Let me know where you'd like to visit me 😊
 
 
 ### Things Which Are No No
