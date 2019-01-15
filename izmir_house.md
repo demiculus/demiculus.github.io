@@ -10,7 +10,7 @@
 - I'll be in this house until 15th of Feb 2019. Then I will go to bedelli. After that I might come back to Izmir or go to some other city/country. Let me know where you'd like to visit me 😁
 
 
-### Things Which Are NO NO
+### Things Which Are No No
 
 - Don't talk in the apartment. I'm not sure how the acoustic system works but what ever you whisper is heard from all houses naturally. 
 - Don't smoke, not even in the balcony. Feel free to take a walk. 
@@ -18,14 +18,14 @@
 
 ### Things To Consider
 
-- Lately I've been getting a lot of guests and I wish not to carry the economic burden so hold your weight as much as possible. This goes for water, electricity, groceries, cleaning etc. 
+- Lately I've been getting a lot of guests and I wish not to carry the economic burden so hold your weight as much as possible. This goes for water, electricity, groceries, cleaning  etc.
 
 
 ### Address: 
 
 [Mimar Sinan Mahallesi, 1432. Sk. No:10, 35220](https://goo.gl/maps/V7JoKQr4pB72)
 
-15 minute walk from Alsancak, so anything going there comes to my place. I usually use Hilal Metro/Izban station which is 10 minutes walking distance from my place.
+15 minute walk from Alsancak, so anything going there comes to my place. I usually use [Hilal Metro](https://goo.gl/maps/UhEQoUFGG6q)/Izban station which is 10 minutes walking distance from my place.
 
 ### Wifi:
 
