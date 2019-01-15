@@ -1,5 +1,3 @@
-## Izmir House Alsancak
-
 ### General
 
 - I like guests. Feel free to stay or even live in my place.
