@@ -28,7 +28,7 @@ title: Izmir Alsancak
 
 ### Address: 
 
-[Mimar Sinan Mahallesi, 1432. Sk. No:10, 35220](https://goo.gl/maps/V7JoKQr4pB72)
+[Mimar Sinan Mahallesi, 1432. Sk. No:10, Daire:5 35220](https://goo.gl/maps/V7JoKQr4pB72)
 
 15 minute walk from Alsancak, so anything going there comes to my place. I usually use [Hilal Metro](https://goo.gl/maps/UhEQoUFGG6q)/Izban station which is 10 minutes walking distance from my place.
 
