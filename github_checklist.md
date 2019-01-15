@@ -1,3 +1,8 @@
+---
+layout: default
+title: Github Stars Checklist
+---
+
 # Github Stars Checklist
 
 ### Step-1:

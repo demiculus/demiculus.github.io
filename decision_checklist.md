@@ -1,3 +1,8 @@
+---
+layout: default
+title: Decision Checklist
+---
+
 “Decision-making is everything. In fact, someone who makes decisions right 80% of the time instead of 70% of the time will be valued and compensated in the market hundreds of times more. “
 
 ## Navals Heuristic

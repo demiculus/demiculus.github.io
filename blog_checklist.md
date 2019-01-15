@@ -1,3 +1,8 @@
+---
+layout: default
+title: Blog Post Checklist
+---
+
 # Blog Post Checklist
 
 ### General

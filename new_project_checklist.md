@@ -1,3 +1,8 @@
+---
+layout: default
+title: New Project Checklist
+---
+
 # New Project Checklist
 
 ### Questions to ask oneself:
