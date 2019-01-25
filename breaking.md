@@ -7,19 +7,15 @@ title: Breaking
 
 ### Windmill
 
-Things to keep in mind while doing windmill
-
-- Keep legs open & in the air
-- Don't remove elbow from hip
-- While starting the second round thrust right leg
-
 19 Jan 2019 - Figured out how to do keep my legs up (by being more at the top of my back) but couldn’t do seamlessly yet
 
 ### Flare
 
 19 Jan 2019 - First time did 50 flares in 1 day
 
-20 Jan 2019 - Even if my legs hit the ground, don’t stop the move and continue to move.
+20 Jan 2019 - Even if my legs hit the ground, don’t stop the move and continue to move
+
+23 Jan 2019 - Easily do 1 flare outside of practice
 
 ### Swipe
 
@@ -33,13 +29,27 @@ Things to keep in mind while doing windmill
 
 19 Jan 2019 - First time able to lift my bottom/legs up vertical to my shoulders
 
+23 Jan 2019 - First time able to spin 180 degrees. 
+
 ### Baby Freeze 
 
-7 Jan 2019 - TIL the reason I wasn't able to do baby freze was lack of flexibility and after some buttocks stretching I was easily able to do baby freze. 
+7 Jan 2019 - TIL the reason I wasn't able to do baby freze was lack of flexibility and after some buttocks stretching I was easily able to do baby freze.
+
+23 Jan 2019 - Able to easily get to baby position from the ground. But flexibility still doesn't let me do it from a normal point.
+
+25 Jan 2019 - Able to get to freeze position without starting from ground. I lift my back leg and thrust my forward one. So it wasn't the flexibilty afterall.
+
+### Chair Freeze
+
+23 Jan 2019 - First time able to touch foot to ground on right side.
 
 ### Scorpion
 
 12 Jan 2019 - First time my butt touches the wall on scorpion
+
+### Handstand
+
+25 Jan 2019 - First time walking backwards (max 6 steps at a time)
 
 ### General
 
