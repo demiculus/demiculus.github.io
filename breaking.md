@@ -35,6 +35,8 @@ title: Breaking
 
 7 Jan 2019 - TIL the reason I wasn't able to do baby freze was lack of flexibility and after some buttocks stretching I was easily able to do baby freze.
 
+23 Jan 2019 - No longer need to stretch my buttocks before attempting, my daily stretches have made me more flexible.
+
 23 Jan 2019 - Able to easily get to baby position from the ground. But flexibility still doesn't let me do it from a normal point.
 
 25 Jan 2019 - Able to get to freeze position without starting from ground. I lift my back leg and thrust my forward one. So it wasn't the flexibilty afterall.
