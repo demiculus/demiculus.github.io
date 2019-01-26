@@ -9,6 +9,10 @@ title: Breaking
 
 19 Jan 2019 - Figured out how to do keep my legs up (by being more at the top of my back) but couldn’t do seamlessly yet
 
+26 Jan 2019 - I think I figured it out this time, when I'm on my back and trying to get to turtle position I need to push my hand while not lifting my legs above toward my head.
+
+26 Jan 2019 - I am not failing/trying enough because my shoulder hurts. I need to find a way to prevent it.
+
 ### Flare
 
 19 Jan 2019 - First time did 50 flares in 1 day
@@ -16,6 +20,8 @@ title: Breaking
 20 Jan 2019 - Even if my legs hit the ground, don’t stop the move and continue to move
 
 23 Jan 2019 - Easily do 1 flare outside of practice
+
+26 Jan 2019 - I need to put my second hand nearer to my body
 
 ### Swipe
 
@@ -30,6 +36,8 @@ title: Breaking
 19 Jan 2019 - First time able to lift my bottom/legs up vertical to my shoulders
 
 23 Jan 2019 - First time able to spin 180 degrees. 
+
+26 Jan 2019 - Don't forget to move head closer to second arm
 
 ### Baby Freeze 
 
@@ -52,6 +60,12 @@ title: Breaking
 ### Handstand
 
 25 Jan 2019 - First time walking backwards (max 6 steps at a time)
+
+### Toprock - Style
+
+26 Jan 2019 - Dancing with a chrunch position (knees 30%) looks better
+
+26 Jan 2019 - Only using legs doesn't look so good, always add arms.
 
 ### General
 
