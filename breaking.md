@@ -27,6 +27,8 @@ title: Breaking
 
 12 Jan 2019 - TIL how arms should be on swipes, one should leave the ground before the other touches
 
+3 Feb 2019 - Start by facing the side not by facing up
+
 ### 1990 
 
 11 Jan 2019 - TIL while entering the move press your hand from your shoulder and lift up you ass to handstand position
@@ -38,6 +40,10 @@ title: Breaking
 23 Jan 2019 - First time able to spin 180 degrees. 
 
 26 Jan 2019 - Don't forget to move head closer to second arm
+
+26 Jan 2019 - TIL that while entering the move I swirl my second hand behind me where I shouldnt be swirling it back like that
+
+3 Feb 2019 - Today I felt that the rotation is controlled by the right leg
 
 ### Baby Freeze 
 
@@ -53,19 +59,23 @@ title: Breaking
 
 23 Jan 2019 - First time able to touch foot to ground on right side.
 
+6 Feb 2019 - Right hand chair both toes touch the ground for the first time (wow I thought this was my first)
+
 ### Scorpion
 
 12 Jan 2019 - First time my butt touches the wall on scorpion
 
 ### Handstand
 
-25 Jan 2019 - First time walking backwards (max 6 steps at a time)
+25 Jan 2019 - First time walking backwards max 6 steps at a time, usually 2
+
+6 Feb 2019 - Walked backwards 8 steps for the first time
 
 ### Toprock - Style
 
 26 Jan 2019 - Dancing with a chrunch position (knees 30%) looks better
 
-26 Jan 2019 - Only using legs doesn't look so good, always add arms.
+26 Jan 2019 - Only using legs doesn't look so good, always add arms
 
 ### General
 
@@ -74,6 +84,10 @@ title: Breaking
 
 20 Jan 2019 - First time able to sit in russian squat.
 ![](https://qph.fs.quoracdn.net/main-qimg-55bfacab7d144d4b0d87819e42012318)
+
+30 Jan 2019 - Wrists hurt so bad that can't focus on practice. TIL that I need to strengten & increase flexibility of my wrists
+
+1 Feb 2019 - Wrists hurt but not as bad. Wrist training exercises seem to be working.
 
 ### TODO
 
@@ -84,6 +98,12 @@ title: Breaking
 - I like squats with knee drops (for hip mobility)
 
 [![Squats with knee drops](https://i.postimg.cc/W170SPNC/Screenshot-at-Jan-17-20-44-32.png)]( https://youtu.be/1DCHTHo7SxE?t=245)
+
+- I like the novel wrist movements
+
+[![Squats with knee drops](https://i.postimg.cc/Dyp6j96R/Screenshot-at-Feb-02-20-34-28.png)](https://youtu.be/5lStKMq5Chc?t=546)
+
+
 
 
 
