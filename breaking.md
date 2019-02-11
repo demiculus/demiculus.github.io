@@ -13,6 +13,10 @@ title: Breaking
 
 26 Jan 2019 - I am not failing/trying enough because my shoulder hurts. I need to find a way to prevent it.
 
+11 Feb 2019 - While On your back I'm taking too much time, I need to improve my speed, and also bring my legs closer towards my head. (Thanks Halil)
+
+11 Feb 2019 - I think ive finally figure out consistantly how not to hit my shoulder, but my knowledge is not technical more of a feeling. I try to tense my left arm/shoulder, keep my left arm close to my shoulder while going down. Also i try to land on the accumilated fat/muscle which is between my arm and shoulder. Which means im landing lower in my back rather than at the top where i hit my shoulder
+
 ### Flare
 
 19 Jan 2019 - First time did 50 flares in 1 day
@@ -22,6 +26,12 @@ title: Breaking
 23 Jan 2019 - Easily do 1 flare outside of practice
 
 26 Jan 2019 - I need to put my second hand nearer to my body
+
+Feb 8 2019 - First time 2 rounds (form and everything messed up, feet touching the ground)
+
+Feb 9 2019 - First time 5+ rounds (form and everything messed up, feet touch the ground)
+
+Feb 11 2019 - I thought I was holding my left leg in the air but actually I wasnt. After trying to hold it in the air, I felt it for the first time how it should have been. (Thanks Halil)
 
 ### Swipe
 
@@ -44,6 +54,10 @@ title: Breaking
 26 Jan 2019 - TIL that while entering the move I swirl my second hand behind me where I shouldnt be swirling it back like that
 
 3 Feb 2019 - Today I felt that the rotation is controlled by the right leg
+
+9 Feb 2019 - Prerequisite is getting  butt in the air, prerequisite of that is getting butt in air on handstand, prerequisite of that is shoulder flexibility. I need to flex my shoulders and at least make them touch the ground when I'm on my back
+
+11 Feb 2019 - Landing the entry is important, the thing that matters most is being able to balance on your turning hand as much as possible. (Thanks Halil)
 
 ### Baby Freeze 
 
@@ -70,6 +84,8 @@ title: Breaking
 25 Jan 2019 - First time walking backwards max 6 steps at a time, usually 2
 
 6 Feb 2019 - Walked backwards 8 steps for the first time
+
+11 Feb 2019 - Started doing sideway walks & first time I was able to walk 4 steps to the side
 
 ### Toprock - Style
 
@@ -101,7 +117,12 @@ title: Breaking
 
 - I like the novel wrist movements
 
-[![Squats with knee drops](https://i.postimg.cc/Dyp6j96R/Screenshot-at-Feb-02-20-34-28.png)](https://youtu.be/5lStKMq5Chc?t=546)
+[![Novel wrist movements](https://i.postimg.cc/Dyp6j96R/Screenshot-at-Feb-02-20-34-28.png)](https://youtu.be/5lStKMq5Chc?t=546)
+
+- I like straddle ups (Thanks [Emir](https://www.instagram.com/emirbuharii/))
+
+[![straddle ups](https://i.postimg.cc/Gh446WkQ/Screenshot-at-Feb-11-12-41-53.png)](https://www.youtube.com/watch?v=qp6ioYw6I6c)
+
 
 
 
