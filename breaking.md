@@ -33,6 +33,17 @@ Feb 9 2019 - First time 5+ rounds (form and everything messed up, feet touch the
 
 Feb 11 2019 - I thought I was holding my left leg in the air but actually I wasnt. After trying to hold it in the air, I felt it for the first time how it should have been. (Thanks Halil)
 
+Feb 13 2019 - TIL according to Orhan that shoulder flexibility is more important for flare than leg flexibility. 
+
+Feb 13 2019 - TIL that I can hardly do V-sit how on earth am I expecting to do flares. (Thanks Orhan)
+
+Feb 13 2019 - Don't practice flare on asphalt (shoe gets ripped)
+
+Feb 13 2019 - If you're goal is to do it 5 times, your mental goal should be to do it 10 times. Thats how you can reach 5. (Thanks Orhan)
+
+Feb 13 2019 - Pracitce 1+1, which means start flare from standing position, then come back to the same position. 
+
+
 ### Swipe
 
 12 Jan 2019 - TIL how arms should be on swipes, one should leave the ground before the other touches
@@ -87,6 +98,8 @@ Feb 11 2019 - I thought I was holding my left leg in the air but actually I wasn
 
 11 Feb 2019 - Started doing sideway walks & first time I was able to walk 4 steps to the side
 
+14 Feb 2019 - Started practicing handstand on wall while switching between touching butt & touching feet.
+
 ### Toprock - Style
 
 26 Jan 2019 - Dancing with a chrunch position (knees 30%) looks better
@@ -104,6 +117,8 @@ Feb 11 2019 - I thought I was holding my left leg in the air but actually I wasn
 30 Jan 2019 - Wrists hurt so bad that can't focus on practice. TIL that I need to strengten & increase flexibility of my wrists
 
 1 Feb 2019 - Wrists hurt but not as bad. Wrist training exercises seem to be working.
+
+13 Feb 2019 - Human eye sees the world in 2D then our brain creates a 3D image of it. When we watch videos our brain is not able to effectively compile it to 3D thus our understanding of what is going on highly diminishes. (Thanks Orhan)
 
 ### TODO
 
