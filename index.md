@@ -7,7 +7,7 @@ title: Home
 
 Hey, I am Demi Yilmaz! 
 
-I'm a creative growth-minded person. I like building projects & teams, organizing events, attending competitions, learning, teaching & developing my skills. 
+I'm a creative growth-minded person. I like building projects & teams, attending competitions, learning, sharing & developing my skills. 
 
 Feel free to [reach out](mailto:demirbyilmaz@gmail.com).
 
