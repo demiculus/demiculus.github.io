@@ -43,6 +43,13 @@ Feb 13 2019 - If you're goal is to do it 5 times, your mental goal should be to 
 
 Feb 13 2019 - Pracitce 1+1, which means start flare from standing position, then come back to the same position. 
 
+Feb 16 2019 - Prwcticing flare from different entry points will increase your control (Thanks [Burhan](https://www.instagram.com/iamreckless1/))
+
+Mar 14 2019 - First time 10 rounds (form messed up, feet get strength from ground)
+
+Mar 23 2019 - Strengthen trapezius to better lift yourself (Thanks [Sincap](https://www.instagram.com/bboysincap/))
+
+Mar 23 2019 - Practice flare from the side stance position or turtle position (Thanks [Reckless](https://www.instagram.com/iamreckless1/))
 
 ### Swipe
 
@@ -86,6 +93,12 @@ Feb 13 2019 - Pracitce 1+1, which means start flare from standing position, then
 
 6 Feb 2019 - Right hand chair both toes touch the ground for the first time (wow I thought this was my first)
 
+23 Mar 2019 - While training airchair balance put your second hand above/behind your head to completely open up your chest (Thanks [Sincap](https://www.instagram.com/bboysincap/))
+
+25 Mar 2019 - Can stay less than 1 sec on airchair but the style is messed up.
+
+25 Mar 2019 - First airchair [photo](https://www.instagram.com/p/Bvdt9CCgArM/)
+
 ### Scorpion
 
 12 Jan 2019 - First time my butt touches the wall on scorpion
@@ -100,11 +113,25 @@ Feb 13 2019 - Pracitce 1+1, which means start flare from standing position, then
 
 14 Feb 2019 - Started practicing handstand on wall while switching between touching butt & touching feet.
 
+12 Mar 2019 - Flexed my shoulders before handstand and my position was much better
+
+12 Mar 2019 - Pushing my shoulders up causes my balance to be more controlled
+
+12 Mar 2019 - Handstand could be tiring because of my high blood pressure, need to check it out
+
 ### Toprock - Style
 
 26 Jan 2019 - Dancing with a chrunch position (knees 30%) looks better
 
 26 Jan 2019 - Only using legs doesn't look so good, always add arms
+
+### Webster
+
+9 Mar 2019 - Tried it for the first time on mattress. 
+
+24 Mar 2019 - Chest should close with legs as tight as possible. Chest should go down. (Thanks [Rambo](https://www.instagram.com/ramboparkour/))
+
+24 Mar 2019 - Tense your left part as well as your right part (Thanks [Rambo](https://www.instagram.com/ramboparkour/))
 
 ### General
 
@@ -119,6 +146,16 @@ Feb 13 2019 - Pracitce 1+1, which means start flare from standing position, then
 1 Feb 2019 - Wrists hurt but not as bad. Wrist training exercises seem to be working.
 
 13 Feb 2019 - Human eye sees the world in 2D then our brain creates a 3D image of it. When we watch videos our brain is not able to effectively compile it to 3D thus our understanding of what is going on highly diminishes. (Thanks Orhan)
+
+16 Feb 2019 - I was flexing my shoulders for the past few days. I lay on my back, butt lifted up, arms above my head. I sstick my arms under something heavy that'll keep them down and then slowly lower my butt. Today was the first time I was able to put my fingers & butt on the ground by myself. 
+
+18 Feb 2019 - 8 March 2019 - Military Service, didn't practice at all
+
+23 Mar 2019 - As I've seen a good bboy can get up to one hand position from anywhere. 
+
+23 Mar 2019 - Press handstand: my body is too weak to perform such an act. I tried it with help. First off my wrists & arms couldn't carry me secondly I wasnt able to lift up my legs on my own, i felt like a total lump of meat
+
+24 Mar 2019 - Learned my wrists are fucked up and I need to work on stretching them to the other sides as well. (Thanks [Rambo](https://www.instagram.com/ramboparkour/))
 
 ### TODO
 
