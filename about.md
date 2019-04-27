@@ -202,6 +202,8 @@ I have played many many other games but these are the ones which deserve mention
 
 ### Videos Edited
 
+- [Otaku Dance #2](https://www.instagram.com/p/BwFYVBvg2as/)
+- [Demiculus Season 27 Izmir Intro](https://www.youtube.com/watch?v=oyosucVXIRo)
 - [Skycoin Hype Contest](https://www.youtube.com/watch?v=rpO0H5Vwwgw&t=2s)
 - [Fireball Jutsu Against Harembe](https://www.youtube.com/watch?v=JZYFxXsFf3s)
 - [Dreaming on The Train](https://www.youtube.com/watch?v=ELoNZFE6ms0)
