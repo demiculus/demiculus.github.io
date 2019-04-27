@@ -59,6 +59,8 @@ Apr 19 2019 - First time right leg doesn't touch the floor while swiping.
 
 Apr 20 - I should focus on keeping my left leg in the air. 
 
+Apr 25 - My hips were always in the center. First time hips moved to the side.
+
 ### Swipe
 
 12 Jan 2019 - TIL how arms should be on swipes, one should leave the ground before the other touches

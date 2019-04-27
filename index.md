@@ -16,7 +16,7 @@ Feel free to [reach out](mailto:demirbyilmaz@gmail.com).
 #### Currently:
 
 - Co-founder @ Breakpoint Labs -> Various projects in the cryptocurrency field
-- Advisor @ [amoveo.exchange](http://amoveo.exchange/) -> Up-and-coming cryptocurrency exchange
+<!-- - Advisor @ [amoveo.exchange](http://amoveo.exchange/) -> Up-and-coming cryptocurrency exchange -->
 - Partner @ [Amoveo Foundation](http://veoscan.io/) -> A blockchain for trust-free markets in financial derivatives
 
 #### Past:
