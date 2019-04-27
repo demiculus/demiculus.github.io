@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<img src="https://instagram.fbtz1-1.fna.fbcdn.net/vp/e0001762ba031f903c29781bc354f2ae/5C81956D/t51.2885-19/s320x320/44240608_2172762102961989_7733991989804269568_n.jpg" style="width:12rem;height:12rem;" align="right">
+<img src="/img/profile.png" style="width:12rem;height:12rem;" align="right">
 
 Hey, I am Demi Yilmaz! 
 

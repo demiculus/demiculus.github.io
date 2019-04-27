@@ -51,6 +51,14 @@ Mar 23 2019 - Strengthen trapezius to better lift yourself (Thanks [Sincap](http
 
 Mar 23 2019 - Practice flare from the side stance position or turtle position (Thanks [Reckless](https://www.instagram.com/iamreckless1/))
 
+Apr 6 2019 - Both hands should be touching the ground before lowering my right leg. So I should have a stance like both legs up and both hands touching the ground before continuing. (Thanks Giraffu)
+
+Apr 6 2019 - I was pulling my left leg towards my face where I should have been pulling it towards my ear. (Thanks Giraffu)
+
+Apr 19 2019 - First time right leg doesn't touch the floor while swiping.
+
+Apr 20 - I should focus on keeping my left leg in the air. 
+
 ### Swipe
 
 12 Jan 2019 - TIL how arms should be on swipes, one should leave the ground before the other touches
@@ -133,6 +141,8 @@ Mar 23 2019 - Practice flare from the side stance position or turtle position (T
 
 24 Mar 2019 - Tense your left part as well as your right part (Thanks [Rambo](https://www.instagram.com/ramboparkour/))
 
+20 Apr 2019 - I jump right away, I need to wait a bit & turn a bit before jumping with my left leg. (Thanks Hazal)
+
 ### General
 
 12 Jan 2019 - First time my hands touch each other on my back while flexing like this but with the help of someone else
@@ -156,6 +166,8 @@ Mar 23 2019 - Practice flare from the side stance position or turtle position (T
 23 Mar 2019 - Press handstand: my body is too weak to perform such an act. I tried it with help. First off my wrists & arms couldn't carry me secondly I wasnt able to lift up my legs on my own, i felt like a total lump of meat
 
 24 Mar 2019 - Learned my wrists are fucked up and I need to work on stretching them to the other sides as well. (Thanks [Rambo](https://www.instagram.com/ramboparkour/))
+
+1 Apr 2019 - My wrists make cracking sounds when doing workout. I've seeked help from Hazal, Emir researched a lot got together a wrist program, hopefully will strengthen my wrists.
 
 ### TODO
 
