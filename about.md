@@ -65,6 +65,10 @@ We’re working on various projects in the cryptocurrency space. These include:
 <ul class="posts">
   <li>
     <span class="post-date">2018</span>
+    <span>Smart Lights: Won <a href="https://webrazzi.com/2018/12/06/mercedes-benz-turkun-duzenledigi-hack-istanbulda-ilk-3e-giren-projeler/">Mercedes Benz Hackathon</a> by making a sovereign road junction where users pay for priority.</span>
+  </li>
+  <li>
+    <span class="post-date">2018</span>
     <span><a href="https://bitses.org/">Bitses</a>: Won <a href="http://www.blockcircus.com/">Blockcircus Cryptocurrency hackathon</a> by making a fundamental crypto assets analysis sharing tool.</span>
   </li>
   <li>
@@ -137,9 +141,9 @@ Check out [investments](/investments).
 
 ### Social Media
 
-- [Fabulous Sharings](https://www.facebook.com/Fabulous.Sharings): Meme page I created in the Spring of 2011. I shared the memes I liked for the first 6 months. when school started I recruited moderators to run it.
-- [Meme Cavern](https://www.facebook.com/groups/theexecutivememers): Facebook meme group I created in the Summer of 2017. I social engineered a hack resulting in 40k+ memeber group. I've recruited moderators to run & clean up the group. 
-- [Amoveo Twitter](https://twitter.com/Amoveox): The twitter account for Amoveo cryptocurrency. I post about anything related to Amoveo.
+- [Fabulous Sharings 180k likes](https://www.facebook.com/Fabulous.Sharings): Meme page I created in the Spring of 2011. I shared the memes I liked for the first 6 months. when school started I recruited moderators to run it.
+- [Meme Cavern 40k members](https://www.facebook.com/groups/theexecutivememers): Facebook meme group I created in the Summer of 2017. I social engineered a hack resulting in 40k+ memeber group. I've recruited moderators to run & clean up the group. 
+- [Amoveo Twitter 500 followers](https://twitter.com/Amoveox): The twitter account for Amoveo cryptocurrency. I post about anything related to Amoveo.
 
 ### Games I've Played Longer Than I should Have
 
