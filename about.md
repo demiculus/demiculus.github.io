@@ -42,7 +42,7 @@ We’re working on various projects in the cryptocurrency space. These include:
 ### [Mobile Monday Ankara](https://www.meetup.com/MobileMondayAnkara/)
 
 - First meetup in Ankara about mobile technologies
-- Organized 15+ events with 100s of attendees.
+- Organized 15+ events with 100+ of attendees.
 - Has over 1K+ members
 - Actively running
 

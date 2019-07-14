@@ -109,6 +109,9 @@ Apr 25 - My hips were always in the center. First time hips moved to the side.
 
 25 Mar 2019 - First airchair [photo](https://www.instagram.com/p/Bvdt9CCgArM/)
 
+1 May 2019 - Today I realized I couldn't do chair and airchair bcs my chest is looking at the wrong direction
+It should be looking up. I need to stretch more. (Thanks bgirlcara)
+
 ### Scorpion
 
 12 Jan 2019 - First time my butt touches the wall on scorpion
