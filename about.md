@@ -14,7 +14,7 @@ We’re working on various projects in the cryptocurrency space. These include:
 - [Amoveo Excange](http://amoveo.exchange/): Crypto to crypto exchange focused for the currency of Amoveo
 - [My Wallets](http://mywallets.co): Crypto wallet holder
 - Advising blockchain companies about tech, market, analysis etc. 
-- More projects coming
+- Partner @ [Amoveo Foundation](http://veoscan.io/) -> A blockchain for trust-free markets in financial derivatives
 
 ### [Dawn of Crafting](http://www.dawnofcrafting.com/)
 
@@ -155,7 +155,7 @@ I have played many many other games but these are the ones which deserve mention
     <span><a href="https://littlebigsnake.com/">Little Big Snake</a>: Snake MMO</span>
   </li>
   <li>
-    <span class="post-date">2017 - 2018</span>
+    <span class="post-date">2017 - 2019</span>
     <span><a href="http://surviv.io/">Surviv.io</a>: Survival shooting MMO</span>
   </li>
   <li>

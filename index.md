@@ -19,12 +19,11 @@ Feel free to [reach out](mailto:demirbyilmaz@gmail.com).
 
 #### Currently:
 
-- Co-founder @ Breakpoint Labs -> Various projects in the cryptocurrency field
-<!-- - Advisor @ [amoveo.exchange](http://amoveo.exchange/) -> Up-and-coming cryptocurrency exchange -->
-- Partner @ [Amoveo Foundation](http://veoscan.io/) -> A blockchain for trust-free markets in financial derivatives
+- Co-founder @ [Colonist](https://colonist.io/) -> Web based multiplayer strategy game.
 
 #### Past:
 
+- Co-founder @ Breakpoint Labs -> Various projects in the cryptocurrency field
 - Co-founder @ [Dawn of Crafting](http://www.dawnofcrafting.com/) -> #1 RPG/Puzzle Game in 100+ countries
 - Co-founder @ Kreix -> Built many mobile apps
 - Co-founder @ [Mobile Monday Ankara](https://www.meetup.com/MobileMondayAnkara) -> Biggest mobile event meetup in Ankara
