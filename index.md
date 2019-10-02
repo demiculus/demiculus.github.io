@@ -7,13 +7,13 @@ title: Home
 
 Hey, I am Demi Yilmaz! 
 
-I'm a creative growth-minded person. I like building & creating projects.
+I'm a creative growth-minded person. I like creating projects. I like learning how systems work.
 
-I'm also heavily interested in personal growth focused mainly on my mind.
+I'm also heavily interested in personal growth focused mainly on my mind. [This image](https://prnt.sc/pdn74e) illustrates what I've been doing. 
 
-I've opensourced my mental model practice list. [Take a look](https://docs.google.com/spreadsheets/d/18DVnq37n15ct2ybjxZLp8y4EydfbjAhqKrR0czQrqts/edit#gid=1197016206).
+I've opensourced my mental model practice list. [Take a look](https://mmpractices.com/).
 
-Feel free to [reach out](mailto:demirbyilmaz@gmail.com).
+<!--Feel free to [reach out](mailto:demirbyilmaz@gmail.com).-->
 
 ---
 
