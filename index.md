@@ -13,7 +13,7 @@ I'm also heavily interested in personal growth focused mainly on my mind. [This 
 
 I've opensourced my mental model practice list. [Take a look](https://mmpractices.com/).
 
-[Here](/tweet) is a list of my favorite personal development tweets.
+[Here](https://twitter.com/demiculus/timelines/1207887974425219072) is a list of my favorite personal development tweets.
 
 <!--Feel free to [reach out](mailto:demirbyilmaz@gmail.com).-->
 
