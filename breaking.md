@@ -5,6 +5,12 @@ title: Breaking
 
 # Breaking
 
+6 Dec new praxtice first time
+
+22 Nov - Chair look fully up for the first time on right hand
+
+13 Nov - Did 7 flares first time
+
 29 Sept - Finished storm footwork #4 my back-shoulders are all red & hurts. 
 
 28 Sept - First time left chair elbow felt the fat on my lower back (simit)
