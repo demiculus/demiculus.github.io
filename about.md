@@ -7,7 +7,8 @@ title: About
 
 ### [Colonist.io](https://colonist.io)
 
-Amazing wow, many play, such game, スパああ, wow.
+
+<img src="/img/doge.png" style="width:12rem;height:12rem;" align="right">
 
 ### Breakpoint Labs
 
