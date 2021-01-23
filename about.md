@@ -8,7 +8,7 @@ title: About
 ### [Colonist.io](https://colonist.io)
 
 
-<img src="/img/doge.png" style="width:12rem;height:12rem;" align="right">
+<img src="/img/doge.png" style="width:12rem;height:12rem;">
 
 ### Breakpoint Labs
 
