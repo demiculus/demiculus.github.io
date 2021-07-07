@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<img src="/img/profile.png" style="width:12rem;height:12rem;" align="right">
+<img src="/img/profile.jpg" style="width:12rem;height:12rem;" align="right">
 
 Hey, I am Demi Yilmaz! 
 
@@ -19,15 +19,12 @@ I've opensourced my mental model practice list. [Take a look](https://mmpractice
 
 #### Currently:
 
-- Co-founder @ [Colonist](https://colonist.io/) -> Web based multiplayer strategy game.
+- [Colonist](https://colonist.io/) -> Web based multiplayer strategy game.
 
 #### Past:
 
-- Co-founder @ Breakpoint Labs -> Various projects in the cryptocurrency field
-- Co-founder @ [Dawn of Crafting](http://www.dawnofcrafting.com/) -> #1 RPG/Puzzle Game in 20 countries
-- Co-founder @ Kreix -> Built many mobile apps
-- Co-founder @ [Mobile Monday Ankara](https://www.meetup.com/MobileMondayAnkara) -> Biggest mobile event meetup in Ankara
-- Co-founder @ [Metu Hip-Hop Society](https://www.instagram.com/odtuhiphop/) -> Freestyle dance group
+- Breakpoint Labs -> Various projects in the cryptocurrency field
+- [Dawn of Crafting](http://www.dawnofcrafting.com/) -> #1 RPG/Puzzle Game in 20 countries
 
 You can check out my projects in details [here](/about).
 
