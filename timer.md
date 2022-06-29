@@ -8,8 +8,7 @@ title: Time Challange
 <p id="timer"></p>
 
 <script type="text/javascript" charset="utf-8">
-	// var timeRemaning = 60 * 60 * 24 * 365
-	var timeRemaning = 30
+	var timeRemaning = 60 * 60 * 24 * 365
 	const timerElement = document.getElementById('timer')
 	timerElement.innerHTML = timeRemaning
 
