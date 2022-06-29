@@ -15,10 +15,11 @@ title: Time Challange
 	setTimeout(function () {
 		if(timeRemaning <= 0) {
 			timerElement.innerHTML = 'Congratz! Email this code with your name to demiculus@gmail.com to obtain your next clue. Code: `5^34Gk(3`'
+			return
 		}
 		timeRemaning -= 1
 		timerElement.innerHTML = timeRemaning
-	}, 1000);
+	}, 1);
 </script>	
 
 Welcome to my challenge. When this timer ends you will access the next clue of this challenge. The timer will take a long time.
