@@ -12,14 +12,16 @@ title: Time Challange
 	var timeRemaning = 30
 	const timerElement = document.getElementById('timer')
 	timerElement.innerHTML = timeRemaning
-	setTimeout(function () {
+
+	setInterval(function() { 
 		if(timeRemaning <= 0) {
 			timerElement.innerHTML = 'Congratz! Email this code with your name to demiculus@gmail.com to obtain your next clue. Code: `5^34Gk(3`'
+			clearInterval(interval);
 			return
 		}
 		timeRemaning -= 1
 		timerElement.innerHTML = timeRemaning
-	}, 1);
+	}, 1000);
 </script>	
 
 Welcome to my challenge. When this timer ends you will access the next clue of this challenge. The timer will take a long time.
