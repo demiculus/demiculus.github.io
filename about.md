@@ -19,17 +19,15 @@ Worked on various projects in the cryptocurrency space. These include:
 - [Amoveo Excange](http://amoveo.exchange/): Crypto to crypto exchange focused for the currency of Amoveo
 - [My Wallets](http://mywallets.co): Crypto wallet holder
 - Advising blockchain companies about tech, market, analysis etc. 
-- Partner @ [Amoveo Foundation](https://amoveo.io/) -> A blockchain for trust-free markets in financial derivatives
 
 ### [Dawn of Crafting](https://www.dawnofcrafting.com/)
 
 - Crafting game for iOS
 - Average 4.8-star reviews (One of the highest rated games in its category)
-- [Hit #1 RPG and Puzzle](https://www.appannie.com/en/apps/ios/top/) in the App Store in 20 countries including the United Kingdom, Australia, Sweden, Norway, Finland, New Zealand
+- [Hit #1 RPG and Puzzle](https://www.appannie.com/en/apps/ios/top/) in the App Store in 20 countries
 - [#1 Most Liked Incremental Game](https://www.incrementalgame.com/)
 - [#1 Highest Rated Incremental Game](https://plaza.dsolver.ca/games)
 - Self-published in west. IP licensed to [U77](https://www.taptap.com/app/74868) for publishing in China
-- Dan Harmon (Creator of Rick and Morty & Community) plays DoC more than I watched Rick and Morty (and I watched it all 3 times)
 
 ### Kreix
 
@@ -54,7 +52,6 @@ Worked on various projects in the cryptocurrency space. These include:
 - Attended competitions with various degrees including 
   - First place Solo Freestyle Dancer in [Turkey Dance Sports Federation](http://www.tdsf.gov.tr/)
   - Second Place dance crew in [Turkey Dance Sports Federation](http://www.tdsf.gov.tr/)
-- [Watch](https://www.instagram.com/demiculus/) some of my vids
 
 ---
 
@@ -137,9 +134,8 @@ Worked on various projects in the cryptocurrency space. These include:
 
 ### Social Media
 
-- [Fabulous Sharings 180k likes](https://www.facebook.com/Fabulous.Sharings): Meme page I created in the Spring of 2011. I shared the memes I liked for the first 6 months. when school started I recruited moderators to run it.
+- [Fabulous Sharings 170k likes](https://www.facebook.com/Fabulous.Sharings): Meme page I created in the Summer of 2011. When school started I recruited moderators to run it. Mostly idle now.
 - [Meme Cavern 40k members](https://www.facebook.com/groups/theexecutivememers): Facebook meme group I created in the Summer of 2017. I social engineered a hack resulting in 40k+ memeber group. I've recruited moderators to run & clean up the group. (got zucced in 2020 RIP)
-- [Amoveo Twitter 500 followers](https://twitter.com/Amoveox): The twitter account for Amoveo cryptocurrency. I post about anything related to Amoveo.
 - [Favorite tweets](https://twitter.com/demiculus/timelines/1207887974425219072)
 
 ### Games I've Played Longer Than I should Have
@@ -147,6 +143,10 @@ Worked on various projects in the cryptocurrency space. These include:
 I have played many many other games but these are the ones which deserve mentioning.
 
 <ul class="posts">
+  <li>
+    <span class="post-date">2022</span>
+    <span><a href="https://littlebigsnake.com/">Colonist.io</a>: My game lol</span>
+  </li>
   <li>
     <span class="post-date">2018</span>
     <span><a href="https://littlebigsnake.com/">Little Big Snake</a>: Snake MMO</span>
@@ -216,6 +216,7 @@ I have played many many other games but these are the ones which deserve mention
 - [Kimi No Na Wa (Your Name)](https://www.imdb.com/title/tt5311514/)
 - [Inside Out](https://www.imdb.com/title/tt2096673)
 - [Big Hero 6](https://www.imdb.com/title/tt2245084/)
+- [Idiocracy](https://www.youtube.com/watch?v=sP2tUW0HDHA)
 
 ---
 
