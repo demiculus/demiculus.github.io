@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Hiring VA
+title: Hiring VA (Virtual Assistant)
 ---
 
 # Hiring VA
