@@ -8,9 +8,6 @@ title: Hiring VA
 ## Why
 
 Naval has a good take on hourly rate: https://nav.al/hourly-rate
-
-Ex: If you're earning $25/hr, spending 10hrs which takes the VA 20hrs but their pay is $5/hr you've esentially saved $150
-
 ## Who
 
 Philiphines is a good country. Good English, better work culture than India. Affordable.
