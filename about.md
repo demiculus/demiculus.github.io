@@ -61,6 +61,10 @@ Worked on various projects in the cryptocurrency space. These include:
 
 <ul class="posts">
   <li>
+    <span class="post-date">2022</span>
+    <span><a href="https://docs.google.com/spreadsheets/d/1GN5pIOwE0pv6nAoKmS6MymbVmc8sZCcM3WkiaQVz2CM/edit#gid=1239741220">Anime Tiers</a>: List of animes me & my brothers like.</span>
+  </li>
+  <li>
     <span class="post-date">2019</span>
     <span><a href="http://mmpractices.com/">Mental Model Practices</a>: List of practices for mental training.</span>
   </li>
