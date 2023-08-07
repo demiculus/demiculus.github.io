@@ -62,7 +62,7 @@ Worked on various projects in the cryptocurrency space. These include:
 <ul class="posts">
   <li>
     <span class="post-date">2022</span>
-    <span><a href="https://docs.google.com/spreadsheets/d/1GN5pIOwE0pv6nAoKmS6MymbVmc8sZCcM3WkiaQVz2CM/edit#gid=1239741220">Anime Tiers</a>: List of animes me & my brothers like.</span>
+    <span><a href="https://docs.google.com/spreadsheets/d/1GN5pIOwE0pv6nAoKmS6MymbVmc8sZCcM3WkiaQVz2CM/edit#gid=1239741220">Anime Tiers</a>: List of animes me & my brothers rated.</span>
   </li>
   <li>
     <span class="post-date">2019</span>
@@ -149,7 +149,7 @@ I have played many many other games but these are the ones which deserve mention
 <ul class="posts">
   <li>
     <span class="post-date">2022</span>
-    <span><a href="https://littlebigsnake.com/">Colonist.io</a>: My game lol</span>
+    <span><a href="https://colonist.io/">Colonist.io</a>: My game lol</span>
   </li>
   <li>
     <span class="post-date">2018</span>
@@ -215,7 +215,7 @@ I have played many many other games but these are the ones which deserve mention
 - [Dance/Fun](https://www.instagram.com/p/BNuCG6tgVX0ZSzbVHgxg0dvQFVPF_qoTfatGuY0)
 - [When you see a chick doing the whip](https://www.instagram.com/p/BKfQXUBD_DL_rzXNnKH7bVJveRAT9PlaDM9vOA0)
 
-### Fav Movies
+### Favorite Movies
 
 - [Kimi No Na Wa (Your Name)](https://www.imdb.com/title/tt5311514/)
 - [Inside Out](https://www.imdb.com/title/tt2096673)
