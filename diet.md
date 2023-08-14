@@ -38,10 +38,14 @@ https://www.youtube.com/shorts/dKTUVGDjKj0
 - Processed food
 - Fried food
 
+## Before Pregnancy
+
+Ideally we fix our health 6 months before conceiving for a baby. Watch this: [https://www.instagram.com/p/CvXc0HAuiCo](https://www.instagram.com/p/CvXc0HAuiCo/)
+
 ## Extra Resources
 
-- You Probably Need Way More Protein - https://www.youtube.com/watch?v=h4ORs9hJfiw
-- Jordan Peterson After 5 Years On Carnivore Diet - https://www.youtube.com/watch?v=yXDRr9wz57g
-- Grain Fed vs Grass Fed Meat - https://www.instagram.com/reel/Cpnjb05rhuK
-- How To Eat Animal Based Diet - https://cdn.discordapp.com/attachments/1046087359931879564/1080953831451537468/carnivore.png 
-- Why You Should Eat Organs Bones & Fat To Heal Yourself & The Planet - https://www.youtube.com/watch?v=lXxs06aL5cU
+- [You Probably Need Way More Protein](https://www.youtube.com/watch?v=h4ORs9hJfiw) - 11min video
+- [Jordan Peterson After 5 Years On Carnivore Diet](https://www.youtube.com/watch?v=yXDRr9wz57g) - 8min video
+- [Grain Fed vs Grass Fed Meat](https://www.instagram.com/reel/Cpnjb05rhuK) - 2min video
+- [How To Eat Animal Based Diet](https://cdn.discordapp.com/attachments/1046087359931879564/1080953831451537468/carnivore.png) - Chart
+- [Why You Should Eat Organs Bones & Fat To Heal Yourself & The Planet](https://www.youtube.com/watch?v=lXxs06aL5cU) - 1hr 40min video
