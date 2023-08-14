@@ -31,12 +31,10 @@ Hello, I'm Demi. Thank you for considering me for your journey. Feel free to rea
 
 ### Childhood Pictures
 
-<p style="display:flex">
 <img src="/img/babypic1.jpeg" style="width:12rem">
 <img src="/img/babypic2.jpeg" style="width:12rem">
 <img src="/img/babypic3.jpeg" style="width:12rem">
 <img src="/img/babypic4.jpeg" style="width:12rem">
-</p>
 
 ### Recent Pictures
 
