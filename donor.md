@@ -100,7 +100,7 @@ Sometimes, though I expect my transportation & accommodation to be covered.
 
 ### How Much Do You Charge For Donation?
 
-I know having a kid is a financial burden so I don't charge. But it's work on my end as well, I will be taking my time for this.
+I know having a kid is expensive so I don't charge. But it's work on my end as well, I will be taking my time for this.
 
 ### Why Do You Donate?
 
@@ -109,6 +109,8 @@ My last relationship didn't work out and I don't know when I'll have a suitable 
 ### What Should I Look For In A Donor?
 
 Genes: This is the most important one. You can't redo your kid. Your kid will have many of the donors traits. Make sure to select someone who you think is amazing. This can be kindness, achievements, physical appearance and many other things. You decide what type of kid you want.
+
+Health: The prior health of the parent before conceiving will effect the childs health: https://www.instagram.com/reel/CvXc0HAuiCo/?igshid=MzRlODBiNWFlZA==
 
 Location: It's better to seek someone in your vicinity. Process will be easier and cheaper. Only if you can not find, it makes sense to seek elsewhere.
 
