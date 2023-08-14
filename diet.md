@@ -16,7 +16,7 @@ Kids should eat lots of protein & minerals to form proper skeletal structure.
   - 1875: 165cm
   - 2023: 184cm
 
-The main reason of this jump is starting to eat proper diet.
+The main reason of this jump is starting to eat properly.
 
 ### Other Problems
 
@@ -30,8 +30,6 @@ The main reason of this jump is starting to eat proper diet.
 - Lots of meat, fish & salt
 - Dairy (butter/tallow, A2 milk, eggs)
 - Fruits, honey
-
-https://www.youtube.com/shorts/dKTUVGDjKj0
 
 ## What Not To Eat
 
