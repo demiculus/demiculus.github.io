@@ -35,6 +35,9 @@ The main reason of this jump is starting to eat properly.
 
 - Processed food
 - Fried food
+- Vegetable oils (olive and coconut oils are fine)
+- Grains (except white rice)
+- Alcohol
 
 ## Before Pregnancy
 
