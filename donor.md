@@ -116,14 +116,6 @@ Health: The prior health of the parent before conceiving will effect the childs 
 
 Location: It's better to seek someone in your vicinity. Process will be easier and cheaper. Only if you can not find, it makes sense to seek elsewhere.
 
- <!--  
-### Where To Find Donors?
-
-Appstore: Just A Baby (free)  
-Website: co-parentmatch.com ($17/mo)  
-Reddit: https://www.reddit.com/r/SpermDonorClassifieds (USA)
---> 
-
 ### Where To Ask More Questions?
 
 Reach out to me through [instagram](https://www.instagram.com/demiculus) or [facebook](https://www.facebook.com/demiculus)
