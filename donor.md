@@ -96,7 +96,9 @@ I have a few non-negotiables
 
 ### Are You Willing To Travel?
 
-Sometimes, though I expect my transportation & accommodation to be covered.
+Sometimes, I prefer my transportation & accommodation to be covered.   
+Sometimes I will already be going to that region. Feel free to ask me. 
+
 
 ### How Much Do You Charge For Donation?
 
@@ -108,7 +110,7 @@ My last relationship didn't work out and I don't know when I'll have a suitable 
 
 ### What Should I Look For In A Donor?
 
-Genes: This is the most important one. You can't redo your kid. Your kid will have many of the donors traits. Make sure to select someone who you think is amazing. This can be kindness, achievements, physical appearance and many other things. You decide what type of kid you want.
+Genes: This is the most important one. You can't redo your kid. Your kid will have many of the donors traits. Make sure to select someone who you think is amazing. This can be kindness, achievements, physical appearance or whatever you value. You decide what type of kid you want.
 
 Health: The prior health of the parent before conceiving will effect the childs health: https://www.instagram.com/reel/CvXc0HAuiCo/?igshid=MzRlODBiNWFlZA==
 
