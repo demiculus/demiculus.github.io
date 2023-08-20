@@ -16,7 +16,14 @@ Kids should eat lots of protein & minerals to form proper skeletal structure.
   - 1875: 165cm
   - 2023: 184cm
 
-The main reason of this jump is starting to eat properly.
+- [Korean average male height](https://www.creatrip.com/en/blog/10181)
+  - 1914: 159.8cm
+  - 2014: 174.9cm
+- Korean average female height
+  - 1914: 142.2cm
+  - 2014: 162.3cm
+
+The main reason of these jumps are eating properly.
 
 ### Other Problems
 

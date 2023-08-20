@@ -86,6 +86,8 @@ Note: Do NOT drink this on your own. Have yourself checked and take only what is
 15. Avoid softdrinks, fastfood, chips on your two week wait.
 16. Lastly, pray for positive at the end of your cycle. 
 
+Also this: [https://www.instagram.com/reel/CYpVm3QuUy0/](https://www.instagram.com/reel/CYpVm3QuUy0/)
+
 ### What Is Your Criteria For Donating?
 
 I have a few non-negotiables
@@ -106,7 +108,7 @@ I know having a kid is expensive so I don't charge. But it's work on my end as w
 
 ### Why Do You Donate?
 
-My last relationship didn't work out and I don't know when I'll have a suitable one to procreate with. In the meantime it is a nice feeling knowing I am helping others have kids.
+My last relationship didn't work out and I don't know when I'll have a suitable one to procreate with. In the meantime it is a nice feeling knowing I am helping others have kids. Also this: [https://www.instagram.com/reel/CuSDngZgq4j/](https://www.instagram.com/reel/CuSDngZgq4j/)
 
 ### What Should I Look For In A Donor?
 
