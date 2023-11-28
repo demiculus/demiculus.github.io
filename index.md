@@ -9,7 +9,7 @@ Hey, I am Demi!
 
 I like creating projects and learning how systems work.
 
-I'm also heavily interested in how the mind works. [Cool image](https://prnt.sc/pdn74e)
+I'm also heavily interested in how the mind works.
 
 I've opensourced my mental model practice list. [Take a look](https://mmpractices.com/).
 
