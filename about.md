@@ -129,6 +129,7 @@ Worked on various projects in the cryptocurrency space. These include:
 - [TOC Thinking Processes](/TOC/TOC_Thinking_Process.pdf)
 - [Step by Step Using The TOC Thinking Processes](/TOC/Step_by_Step_Using_The_TOC_Thinking_Processes - Demi B. Yilmaz.pdf)
 - [Blockchain & Cryptocurrency](/content/blockchain.pdf) (Turkish)
+- [How I bootstrapped my game to $1M ARR](https://2023.tgdf.tw/en/speakers/demi-yilmaz)
 
 ### Blogs
 
