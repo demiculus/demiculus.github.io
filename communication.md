@@ -6,7 +6,8 @@ title: Communication
 ## TLDR
 
 - People should not decipher what you mean.
-- People should not spend more than 5 seconds to understand.
+- People should not spend more than 5 seconds to understand your proposal.
+- People should not have to re-read in order understand.
 
 There are 2 strong tools to do this.
 
