@@ -27,14 +27,14 @@ Using dilbert principle we can remove stuff until only the essence is left
 Read the [Pyramid Principle](https://medium.com/lessons-from-mckinsey/the-pyramid-principle-f0885dd3c5c7)
 
 ### Example 1:
-> Wife: When will you be back?
+> Wife: When will you be back?  
 > Husband: I will go to the grocery, pick up stuff, then pick up the kids, then go to barber and after a round trip, I'll probably be home at 6pm.
 
 Instead start with the answer and if wife asks the details answer them.
 
 > Husband: I'll be home at 6pm.
 
-### Example 2: 
+### Example 2:
 > Here is my report, I went through all the social medias, all the platforms, all the things. I dove deeper into stuff. I gathered more information from google. I also did bla bla bla
 
 The listeners has zoned out already. Instead start with the result and the listeners will ask more questions if interested.
