@@ -1,5 +1,5 @@
 ---
-permalink: /cv
+permalink: /cresume
 redirect_to:
     /resume.pdf
 ---

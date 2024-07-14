@@ -43,7 +43,7 @@ The main reason of these jumps are eating properly.
 - Processed food
 - Fried food
 - Vegetable oils (olive and coconut oils are fine)
-- Grains (except white rice)
+- Grains (white rice is fine)
 - Alcohol
 
 ## Before Pregnancy

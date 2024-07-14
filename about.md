@@ -130,12 +130,16 @@ Worked on various projects in the cryptocurrency space. These include:
 - [Step by Step Using The TOC Thinking Processes](/TOC/Step_by_Step_Using_The_TOC_Thinking_Processes - Demi B. Yilmaz.pdf)
 - [Blockchain & Cryptocurrency](/content/blockchain.pdf) (Turkish)
 - [How I bootstrapped my game to $1M ARR](https://2023.tgdf.tw/en/speakers/demi-yilmaz)
+- [Inside the Indie Games Industry](https://www.scape.sg/venue/replay-cyoa/)
+
 
 ### Blogs
 
 - [Turkiyedeki en iyi fiber internet hangisi?](https://medium.com/@demiculus/en-iyi-fiber-internet-hangisi-e95e9a3c4bb4)
 - [Cryptocurrency tutorial](https://medium.com/@demiculus/cryptocurrency-tutorial-875e9f83db24)
 - [Ankara’da Sevgili Ile Yapılacak Şeyler](https://medium.com/@demiculus/ankara-da-sevgili-ile-yap%C4%B1lacak-%C5%9Feyler-5d78c61c0604)
+- [Communication](/communication)
+- [Diet](/diet)
 
 ### Social Media
 
