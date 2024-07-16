@@ -14,8 +14,6 @@ Balancing Chaos and Clarity is crucial for productivity in workplace. This post 
 
 A company's productivity depends on its balance of Chaos and Clarity. **More Chaos leads to negative productivity**
 
-## Identifying Chaos vs. Clarity
-
 ### Chaos Indicators
 
 - Fleeings: Anxiousness, confusion
@@ -43,7 +41,7 @@ A company's productivity depends on its balance of Chaos and Clarity. **More Cha
 
 ## Colonist
 
-At Colonist, we're aware every action contributes to either Chaos or Clarity and we aim for Clarity in all endeavors. Some tools that help us are
+At [Colonist](https://colonist.io/), we're aware every action contributes to either Chaos or Clarity and we aim for Clarity in all endeavors. Some tools that help us are
 - [Effective communication frameworks](https://demiculus.com/communication/)
 - Reviewing before submitting
 - Clarifying thoughts before communicating
