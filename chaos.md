@@ -5,18 +5,18 @@ title: Chaos vs Clarity
 
 ## Chaos vs Clarity
 
-Balancing Chaos and Clarity is crucial for productivity in workplace. This post explores how to maximize Clarity.
+Balancing Chaos and Clarity is crucial for productivity in the workplace. This post explores how to maximize Clarity.
 
 ## Understanding Chaos and Clarity
 
 - **Chaos**: Confusion, disorder, and lack of direction.
 - **Clarity**: Understanding, order, and clear direction.
 
-A company's productivity depends on its balance of Chaos and Clarity. **More Chaos leads to negative productivity**
+A company's productivity depends on its balance of Chaos and Clarity. **More Chaos leads to negative productivity**.
 
 ### Chaos Indicators
 
-- Fleeings: Anxiousness, confusion
+- Feelings: Anxiousness, confusion
 - Phrases:
   - I didn't get it
   - Too many things
@@ -41,7 +41,7 @@ A company's productivity depends on its balance of Chaos and Clarity. **More Cha
 
 ## Colonist
 
-At [Colonist](https://colonist.io/), we're aware every action contributes to either Chaos or Clarity and we aim for Clarity in all endeavors. Some tools that help us are
+At [Colonist](https://colonist.io/), we're aware every action contributes to either Chaos or Clarity, and we aim for Clarity in all endeavors. Some tools that help us are:
 - [Effective communication frameworks](https://demiculus.com/communication/)
 - Reviewing before submitting
 - Clarifying thoughts before communicating
