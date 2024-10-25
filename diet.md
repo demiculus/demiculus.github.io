@@ -42,9 +42,10 @@ The main reason of these jumps are eating properly.
 
 - Processed food
 - Fried food
-- Vegetable oils (olive and coconut oils are fine)
+- [Vegetable oils](https://www.youtube.com/watch?v=Kb-VNW_WaVU) (olive and coconut oils are fine)
 - Grains (white rice is fine)
-- Alcohol
+- [Alcohol](https://www.instagram.com/reel/DArFyRMyy-M/?igsh=MzRlODBiNWFlZA==)
+- [Coffee](https://www.instagram.com/reel/C9s2fXKxfKq/?igsh=MzRlODBiNWFlZA==)
 
 ## Before Pregnancy
 
@@ -52,8 +53,10 @@ Ideally we fix our health 6 months before conceiving for a baby. Watch this: [ht
 
 ## Extra Resources
 
+- [How What You Eat Affects Your Height](https://www.instagram.com/reel/C9uo-gDOkQN/?igsh=MzRlODBiNWFlZA==) - 1min video
 - [You Probably Need Way More Protein](https://www.youtube.com/watch?v=h4ORs9hJfiw) - 11min video
 - [Jordan Peterson After 5 Years On Carnivore Diet](https://www.youtube.com/watch?v=yXDRr9wz57g) - 8min video
 - [Grain Fed vs Grass Fed Meat](https://www.instagram.com/reel/Cpnjb05rhuK) - 2min video
 - [The Diet Tier List](https://www.youtube.com/watch?v=W9vgeVF7wL4) - 15min video
 - [Why You Should Eat Organs Bones & Fat To Heal Yourself & The Planet](https://www.youtube.com/watch?v=lXxs06aL5cU) - 1hr 40min video
+- [Weston A Price old footage](https://www.youtube.com/watch?v=_ti3xNltlsM) - 15min video
