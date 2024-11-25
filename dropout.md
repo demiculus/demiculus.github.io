@@ -5,7 +5,7 @@ title: Dropout
 
 ## Is School Really Beneficial For You?
 
-<img src="https://i.imgflip.com/6fvh4p.jpg" style="width:12rem">
+<img src="https://i.imgflip.com/6fvh4p.jpg" style="width:300px">
 
 Simpsons making fun of grad students: [https://www.instagram.com/reel/Ct8b4W9ADJc](https://www.instagram.com/reel/Ct8b4W9ADJc)
 
