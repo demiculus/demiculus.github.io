@@ -7,6 +7,11 @@ title: Child
 
 Random Collection of good stuff:
 
+### Pre Pregnancy
+
+[Make sure the man is healthy](https://www.instagram.com/reel/DABQmsMOh9E/), [part 2](https://www.instagram.com/reel/C7mazfGNUfj/)
+[Fix your health few months before conceiving for a baby](https://www.instagram.com/p/CvXc0HAuiCo/)
+
 ### Stage: Pregnancy
 
 [Stay away from chemicals; shampoos, make up, plastic cutting board, ](https://www.instagram.com/reel/DALFg4bIhE5/)  
@@ -16,6 +21,9 @@ Random Collection of good stuff:
 ### Stage: Baby (0 - 1 year)
 
 [Understanding baby talk](https://www.instagram.com/reel/C-agRVNO72h)  
+[Make them laugh](https://www.instagram.com/reel/C_baC32yGMD)
+[Don't let people kiss your kid. Video 1](https://www.instagram.com/reel/DBuQkYyI2QB/), [Video 2](https://www.instagram.com/reel/C_-ookdOQR5)
+
 
 #### Baby Sleep Hacks
 [Warm the bed before putting baby](https://www.instagram.com/reel/DBb2oqfvyMg/?igsh=MzRlODBiNWFlZA==)  
@@ -30,9 +38,13 @@ Random Collection of good stuff:
 
 ### Stage: Early Childhood (3 - 5 year)
 
-[Dont do stuff for your kids](https://www.instagram.com/reel/DBOqgdlPamH)
+[Dont do stuff for your kids](https://www.instagram.com/reel/DBOqgdlPamH), Give regular chores to kids
+[Send kids to gymnastics](https://www.instagram.com/reel/DBjrS4kRaah/)
+[Apps are bad for kids](https://www.instagram.com/reel/C_IkpAQOzSq)
 
 ### Stage: Childhood (5 - 12 year)
+
+[Ask kids these questions](https://www.instagram.com/reel/DBomOE7ii9j/?igsh=MzRlODBiNWFlZA%3D%3D)
 
 
 ### Stage: Adolescence (12 - 18 year)

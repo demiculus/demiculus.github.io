@@ -42,14 +42,10 @@ The main reason of these jumps are eating properly.
 
 - Processed food
 - Fried food
-- [Vegetable oils](https://www.youtube.com/watch?v=Kb-VNW_WaVU) (olive and coconut oils are fine)
 - Grains (white rice is fine)
 - [Alcohol](https://www.instagram.com/reel/DArFyRMyy-M/?igsh=MzRlODBiNWFlZA==)
 - [Coffee](https://www.instagram.com/reel/C9s2fXKxfKq/?igsh=MzRlODBiNWFlZA==)
-
-## Before Pregnancy
-
-Ideally we fix our health 6 months before conceiving for a baby. Watch this: [https://www.instagram.com/p/CvXc0HAuiCo](https://www.instagram.com/p/CvXc0HAuiCo/)
+<!--- [Vegetable oils](https://www.youtube.com/watch?v=vcbDmKfY5qE) https://x.com/bryan_johnson/status/1859624338632343643 (olive and coconut oils are fine) -->
 
 ## Extra Resources
 
