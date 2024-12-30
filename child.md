@@ -9,7 +9,7 @@ Random Collection of good stuff:
 
 ### Pre Pregnancy
 
-[Make sure the man is healthy](https://www.instagram.com/reel/DABQmsMOh9E/), [part 2](https://www.instagram.com/reel/C7mazfGNUfj/)
+[Make sure the man is healthy](https://www.instagram.com/reel/DABQmsMOh9E/), [part 2](https://www.instagram.com/reel/C7mazfGNUfj/), [part 3](https://www.instagram.com/reel/DEFgzNRpmHf)
 [Fix your health few months before conceiving for a baby](https://www.instagram.com/p/CvXc0HAuiCo/)
 
 ### Stage: Pregnancy
@@ -23,6 +23,8 @@ Random Collection of good stuff:
 [Understanding baby talk](https://www.instagram.com/reel/C-agRVNO72h)  
 [Make them laugh](https://www.instagram.com/reel/C_baC32yGMD)
 [Don't let people kiss your kid. Video 1](https://www.instagram.com/reel/DBuQkYyI2QB/), [Video 2](https://www.instagram.com/reel/C_-ookdOQR5)
+[Stop them crying, funny](https://www.instagram.com/reel/DCioamDNVhO/)
+[Don't buy them tight shoes](https://www.instagram.com/p/DDsLEB5qsj9)
 
 
 #### Baby Sleep Hacks
