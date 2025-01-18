@@ -32,3 +32,5 @@ Charlie Munger on grad school: [https://www.youtube.com/clip/UgkxvzFF9v3J1uMi3H4
 Lee Kuan Yew on university: [https://www.youtube.com/clip/UgkxlyWF0KP0ED33lgn9DThFqR4sOkAcVYgX](https://www.youtube.com/clip/UgkxlyWF0KP0ED33lgn9DThFqR4sOkAcVYgX)
 
 Elon Musk on univeristy: [https://www.instagram.com/reel/C4qeIh6xAcq/](https://www.instagram.com/reel/C4qeIh6xAcq/)
+
+Can't find jobs with 2 degrees: [https://www.instagram.com/reel/DEOFFiStq4i](https://www.instagram.com/reel/DEOFFiStq4i)

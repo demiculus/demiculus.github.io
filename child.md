@@ -9,7 +9,7 @@ Random Collection of good stuff:
 
 ### Pre Pregnancy
 
-[Make sure the man is healthy](https://www.instagram.com/reel/DABQmsMOh9E/), [part 2](https://www.instagram.com/reel/C7mazfGNUfj/), [part 3](https://www.instagram.com/reel/DEFgzNRpmHf)  
+[Make sure the man is healthy](https://www.instagram.com/reel/DABQmsMOh9E/), [part 2](https://www.instagram.com/reel/C7mazfGNUfj/), [part 3](https://www.instagram.com/reel/DEFgzNRpmHf), [part 4](https://www.instagram.com/reel/DEdjOoWSiEn)
 [Fix your health few months before conceiving for a baby](https://www.instagram.com/p/CvXc0HAuiCo/)
 
 ### Stage: Pregnancy
@@ -34,6 +34,7 @@ Random Collection of good stuff:
 ### Stage: Toddler (1 - 3 year)
 
 [Good shows to watch by uschooler](https://www.instagram.com/uschooler/)  
+Early educational content is a scam. [Part 1](https://www.instagram.com/reel/DETDA9LIBJ_), [Part 2](https://www.instagram.com/reel/DEVlUsCII5I/), [Part 3](https://www.instagram.com/reel/DEXvugJoWuF/), [Part 4](https://www.instagram.com/p/DEfh9RKoh6p/), [Part 5](https://www.instagram.com/reel/DEnhxcOoSSX)  
 [Tuning in to Child by Dr Sue Johnson 3.5 minute](https://youtu.be/ws-4Oy0ongU?si=mjDX1d0klO9Rz-OS&t=2010)  
 [Child gets sick all the time](https://www.instagram.com/reel/DBEjNPyPDFB/)  
 [Toddlers don't understand negative sentences](https://www.instagram.com/reel/DBbgm8Rv0hX/?igsh=MzRlODBiNWFlZA==)  
