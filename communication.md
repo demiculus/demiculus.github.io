@@ -5,9 +5,8 @@ title: Communication
 
 ## TLDR
 
-- People should not decipher what you mean.
-- People should not spend more than 5 seconds to understand your proposal.
-- People should not have to re-read in order understand.
+- Your proposal should be instantly graspable within 5 seconds.
+- Your writing should be so clear that it doesn't require re-reading.
 
 There are 2 strong tools to do this.
 
