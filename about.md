@@ -140,6 +140,7 @@ Worked on various projects in the cryptocurrency space. These include:
 - [Ankara’da Sevgili Ile Yapılacak Şeyler](https://medium.com/@demiculus/ankara-da-sevgili-ile-yap%C4%B1lacak-%C5%9Feyler-5d78c61c0604)
 - [Communication](/communication)
 - [Diet](/diet)
+- [Stand Out](/stand-out)
 
 ### Social Media
 
