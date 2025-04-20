@@ -17,6 +17,7 @@ Why most messages fail:
 ❌ Pitching skills in a vacuum → ✅ Asking smart questions  
 ❌ Requesting a call → ✅ Showing initiative and insight  
 ❌ Explaining why you're a good fit → ✅ Demonstrating how you'd help  
+❌ Sending a list of ideas → ✅ Figuring out what problem to solve  
 
 ### TL;DR
 Don’t sell yourself. Solve something. Be curious. Be specific. That’s how to stand out.  
