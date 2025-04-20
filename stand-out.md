@@ -8,9 +8,9 @@ title: Stand Out
 Hey, we get a lot of messages like  
 - “here’s my experience"  
 - "let me know if you have time for a call”   
-- "here is 2 pages of ideas"  
+- "here are 2 pages of ideas"  
 
-Hustling is a good signal but it doesn't guarantee you stand out. Most don't. This post exists to give you insights.
+Hustling is a good signal but it doesn't guarantee you stand out. This post exists to give you insights.
 
 ### What Goes Wrong
 
@@ -24,11 +24,11 @@ Hustling is a good signal but it doesn't guarantee you stand out. Most don't. Th
 
 ❌ Sending a list of ideas  
 ✅ Figure out what real problem to solve (not just guess from the outside)  
-🤔 Find signals of what matters most to the company and aim at that.  
+🤔 Find signals of what matters most to the company and aim at that  
 
 ❌ Explaining why you’re a good fit  
 ✅ Demonstrate how you’d help — with specifics  
-🤔 Anyone can say I can do X. Few say, I did X. Show, don’t tell.  
+🤔 Anyone can say I can do X. Few say, I did X. Show, don’t tell  
 
 ❌ Requesting a call  
 ✅ Respect time and add value upfront  
@@ -36,9 +36,9 @@ Hustling is a good signal but it doesn't guarantee you stand out. Most don't. Th
 
 ### What does stand out?
 
-1. People who do research, identify real pain points, and show initiative to address them
-2. People who think before they speak, and focus on us, not them
-3. People who are [problem oriented](https://medium.com/@vaishnavipandey2901/problem-first-mindset-what-why-its-important-48c940ef923d) instead of solution oriented
+1. People who do research, identify real pain points, and show initiative to address them  
+2. People who think before they speak, and focus on us, not them  
+3. People who are [problem oriented](https://medium.com/@vaishnavipandey2901/problem-first-mindset-what-why-its-important-48c940ef923d) instead of solution oriented  
 
 You don’t stand out by trying to get noticed. You stand out by understanding what matters.
 
