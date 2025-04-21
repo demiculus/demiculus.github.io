@@ -39,7 +39,12 @@ Hustling is a good signal but it doesn't guarantee you stand out. This post exis
 1. People who do research, identify real pain points, and show initiative to address them  
 2. People who think before they speak, and focus on us, not them  
 3. People who are [problem oriented](https://medium.com/@vaishnavipandey2901/problem-first-mindset-what-why-its-important-48c940ef923d) instead of solution oriented  
+4. People who can write pages worth of value in a single sentence
 
 You don’t stand out by trying to get noticed. You stand out by understanding what matters.
 
 I hope this helps.
+
+### Examples
+
+[Jack Dorsey](https://www.instagram.com/reel/DIrDXXJtvPD)
