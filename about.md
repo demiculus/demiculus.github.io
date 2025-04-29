@@ -141,6 +141,7 @@ Worked on various projects in the cryptocurrency space. These include:
 - [Communication](/communication)
 - [Diet](/diet)
 - [Stand Out](/stand-out)
+- [Drop Out Of School](/dropout)
 
 ### Social Media
 
