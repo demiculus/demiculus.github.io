@@ -10,9 +10,18 @@ Hey, we get a lot of messages like
 - "let me know if you have time for a call”   
 - "here are 2 pages of ideas"  
 
-Hustling is a good signal but it doesn't guarantee you stand out. This post exists to give you insights.
+These efforts show hustle — and that’s a great starting point. But hustle alone doesn’t guarantee you’ll stand out. This post is meant to help you understand and increase your effectiveness for next job applications.
 
-### What Goes Wrong
+### Common Pitfalls (and How to Improve)
+
+| Instead of this…                                              | Try this…                                                  | Why?                                      |
+| ------------------------------------------------------------- | ---------------------------------------------------------- | ----------------------------------------- |
+| ❌ Listing achievements with no context                        | ✅ Show how your experience solves a real company need      | ✨ Relevance matters more than volume      |
+| ❌ Pitching general skills like “organized” or “collaborative” | ✅ Dig into the product and align with specific pain points | 🔍 Tailoring = signal you understand us   |
+| ❌ Sharing ideas without clear grounding                       | ✅ Identify the real problems behind the ideas              | 🎯 Insight beats guesses                  |
+| ❌ Saying why you’re a good fit                                | ✅ Show how you’d help, with specifics                      | 🧠 “Show, don’t tell” is powerful         |
+| ❌ Requesting a call right away                                | ✅ Add clear value first                                    | ⏳ Respecting time is part of standing out |
+
 
 ❌ Listing achievements with no context  
 ✅ Show how your experience connects to a real need we have  
