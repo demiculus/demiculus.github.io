@@ -21,4 +21,5 @@ If you really care about someone. Tell them:
 - Why they suck  
 - How they can be better  
 
-Growth comes from friction, feedback, and people who aren't afraid to be honest.
+Growth comes from friction, feedback, and people who aren't afraid to be honest.  
+“Good job” is the most dangerous phrase for growth.

@@ -135,15 +135,16 @@ Worked on various projects in the cryptocurrency space. These include:
 
 ### Blogs
 
-- [Turkiyedeki en iyi fiber internet hangisi?](https://medium.com/@demiculus/en-iyi-fiber-internet-hangisi-e95e9a3c4bb4)
-- [Cryptocurrency tutorial](https://medium.com/@demiculus/cryptocurrency-tutorial-875e9f83db24)
-- [Ankara’da Sevgili Ile Yapılacak Şeyler](https://medium.com/@demiculus/ankara-da-sevgili-ile-yap%C4%B1lacak-%C5%9Feyler-5d78c61c0604)
-- [Communication](/communication)
-- [Diet](/diet)
-- [Stand Out](/stand-out)
-- [Drop Out Of School](/dropout)
-- [Chaos vs Clarity](/chaos)
-- [Flattery Is a Trap](/compliments)
+- [Turkiyedeki en iyi fiber internet hangisi?](https://medium.com/@demiculus/en-iyi-fiber-internet-hangisi-e95e9a3c4bb4)  
+- [Cryptocurrency tutorial](https://medium.com/@demiculus/cryptocurrency-tutorial-875e9f83db24)  
+- [Ankara’da Sevgili Ile Yapılacak Şeyler](https://medium.com/@demiculus/ankara-da-sevgili-ile-yap%C4%B1lacak-%C5%9Feyler-5d78c61c0604)  
+- [Communication](/communication)  
+- [Diet](/diet)  
+- [Stand Out](/stand-out)  
+- [Drop Out Of School](/dropout)  
+- [Chaos vs Clarity](/chaos)  
+- [Flattery Is a Trap](/compliments)  
+
 
 ### Social Media
 
