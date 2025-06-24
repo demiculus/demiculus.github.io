@@ -142,7 +142,8 @@ Worked on various projects in the cryptocurrency space. These include:
 - [Diet](/diet)
 - [Stand Out](/stand-out)
 - [Drop Out Of School](/dropout)
-- [Chaos vs Clarity](https://demiculus.com/chaos/)
+- [Chaos vs Clarity](/chaos)
+- [Flattery Is a Trap](/compliments)
 
 ### Social Media
 

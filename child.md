@@ -48,6 +48,7 @@ Early educational content is a scam. [Part 1](https://www.instagram.com/reel/DET
 [Send kids to gymnastics](https://www.instagram.com/reel/DBjrS4kRaah/)  
 [Apps are bad for kids](https://www.instagram.com/reel/C_IkpAQOzSq)  
 [Give kids praise for effort rather than being smart](https://www.instagram.com/reel/DF0ARH0IxG_)  
+[Spend more time outside rather thank home](https://www.instagram.com/reel/DJOxoimzRv1)
 
 ### Stage: Childhood (5 - 12 year)
 
