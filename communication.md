@@ -58,5 +58,5 @@ Makes simple things sound grander or more important than they are
 
 ## Specificty
 
-Read my [Specificty blog](/specifity)
+Read my [Specificity blog](/specificity)
 

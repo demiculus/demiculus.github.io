@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Specifity
+title: Specificity
 ---
 
-## Specifity
+## Specificity
 
 When I am having an interview or trying to understand something it does not help speaking in generals. The more specific and concrete a person can get the more they will be able to deliver the message across. 
 
@@ -35,5 +35,5 @@ Liars -> Same reason as scammers
 People who didn't do the job -> In interviews they will never go deep, they'll stay at high level to hide the fact that they don't understand their job  
 Bad communicators -> It's lack of skill that they need to work on  
 
-If a bad commnicator does not want to be lumped into the above 3 buckets they should work on increasing the specifity of their communication.   
+If a bad commnicator does not want to be lumped into the above 3 buckets they should work on increasing the specificity of their communication.   
 
