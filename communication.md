@@ -56,4 +56,7 @@ Makes simple things sound grander or more important than they are
 ❌ "sanitation engineer"  
 ✅ "janitor"  
 
+## Specificty
+
+Read my [Specificty blog](/specifity)
 

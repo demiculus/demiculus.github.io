@@ -144,6 +144,7 @@ Worked on various projects in the cryptocurrency space. These include:
 - [Drop Out Of School](/dropout)  
 - [Chaos vs Clarity](/chaos)  
 - [Flattery Is a Trap](/compliments)  
+- [Specifity](/specifity)  
 
 
 ### Social Media
