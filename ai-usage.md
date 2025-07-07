@@ -14,10 +14,10 @@ Unless specific content is referred your AI output is ALWAYS mediocre and possib
 
 
 ✅ What gifts can I get for my spouse according to  
-The 5 Love Languages – Gary Chapman  
-Giftology – John Ruhlin  
-The Art of the Gift – Jean-Edouard van Praet  
-Give and Take – Adam Grant  
+- The 5 Love Languages – Gary Chapman  
+- Giftology – John Ruhlin  
+- The Art of the Gift – Jean-Edouard van Praet  
+- Give and Take – Adam Grant  
 
 ### Example - Productivity
 ❌ How can I be more productive?  
