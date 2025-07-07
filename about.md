@@ -145,6 +145,7 @@ Worked on various projects in the cryptocurrency space. These include:
 - [Chaos vs Clarity](/chaos)  
 - [Flattery Is a Trap](/compliments)  
 - [Specificity](/specificity)  
+- [AI Usage](/ai-usage)  
 
 
 ### Social Media
