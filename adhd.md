@@ -33,7 +33,7 @@ I want to do so much stuff. But I sometimes can't. Adhd is not an excuse, I shou
 
 Don't give me boring mediocratiy conversations.
 
-[https://www.instagram.com/reel/DGwZCydO6hE/](https://www.instagram.com/reel/DGwZCydO6hE/)
+[https://www.instagram.com/reel/DGwZCydO6hE/](https://www.instagram.com/reel/DGwZCydO6hE/)  
 
 ### Can't Listen At Slow Speed
 
