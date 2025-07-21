@@ -44,7 +44,9 @@ My mind gets distractd when I am **only** listening. But if I'm doing something 
 [https://www.instagram.com/reel/DFaF7F_RI57/](https://www.instagram.com/reel/DFaF7F_RI57/)  
 
 
+### Context Switching
 
+I have 100 thoughts running at the same time, so when you say something it gets in the queue. Once I arrange the running thoughts I can reply to the context switch [https://www.instagram.com/reel/DGQwQnNv6D2/](https://www.instagram.com/reel/DGQwQnNv6D2/)
 
 
 
