@@ -5,6 +5,8 @@ date:   2016-09-06
 excerpt_separator: <!--more-->
 ---
 
+Written by Onur Solmaz
+
 Khaled was really nervous that the goats would not stop defecating all around
 the farm and the shelter ground; it was the third time that it happened since
 last month, and his father had given him the hint of a thorough beating in case
