@@ -10,9 +10,9 @@ title: Communication
 
 There are 3 strong tools to do this.
 
-## Dilbert Principle
+## Better Writer
 
-Read the [dilbert principle](https://dilbertblog.typepad.com/the_dilbert_blog/2007/06/the_day_you_bec.html).
+Read [Better Writer](/better-writer).
 
 ❌ "I am very happy to be doing this pleasurable task."  
 ✅ "I am happy for this."  
