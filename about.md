@@ -146,6 +146,7 @@ Worked on various projects in the cryptocurrency space. These include:
 - [Flattery Is a Trap](/compliments)  
 - [Specificity](/specificity)  
 - [AI Usage](/ai-usage)  
+- [Better Writer](/better-writer)  
 
 
 ### Social Media
