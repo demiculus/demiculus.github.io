@@ -21,8 +21,6 @@ Learn how brains organize ideas. Readers comprehend “the boy hit the ball” q
 
 That’s it. You just learned 80% of the rules of good writing. You’re welcome.
 
-While there are many different Adhd types and I don't resonate with many of the things, I've listed things I resonate with. This document is for you to understand me better. I hope you enjoy such interactions. And for those you don't, I'm sorry for putting you through it.
-
 [By Scott Adams](https://web.archive.org/web/20250407151823/https://dilbertblog.typepad.com/the_dilbert_blog/2007/06/the_day_you_bec.html)
 
 

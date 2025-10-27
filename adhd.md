@@ -16,6 +16,8 @@ I've systemized my life so that I always remember things I should be doing. Ofc 
 
 [https://www.instagram.com/reel/DEyH9H6So2Y](https://www.instagram.com/reel/DEyH9H6So2Y)  
 
+[I tend to drink water like this because I probably forgot to the whole day](https://www.instagram.com/reel/DP-cpsIgs6c/)  
+
 ### Being Annoying
 
 I'm trying really hard to not be annoying. But everything in my body is pushing me to be annoying. It's a battle I face in every single social setting.
