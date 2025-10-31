@@ -22,9 +22,9 @@ The reason is they followed the written rules and missed the hidden rules. Most 
 
 All the top successful people know this and they ask themselves the following question, 
 
-> What are the real rules of this game?
-> What written rules are actually wrong?
-> If there were 2 more rules, what would they by?
+> What are the real rules of this game?  
+> What written rules are actually wrong?  
+> If there were 2 more rules, what would they by?  
 
 Good luck on your journey. 
 
