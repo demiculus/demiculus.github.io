@@ -148,6 +148,7 @@ Worked on various projects in the cryptocurrency space. These include:
 - [AI Usage](/ai-usage)  
 - [Better Writer](/better-writer)  
 - [Hidden Rules](/hidden-rules)  
+- [MMO](/mmo)  
 
 
 ### Social Media
