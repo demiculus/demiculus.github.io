@@ -5,33 +5,42 @@ title: AI Usage
 
 ## AI Usage
 
-AI output is at the level of the referred content.
+I've seen many people use AI, get wrong answers and execute the wrong answers. AI is not god. AI is mediocre. Once you understand that then you can craft the AI that is not mediocre and get the right answers.
 
-Unless specific content is referred your AI output is ALWAYS mediocre and possible wrong.
+
+### Popular Method
+You are the worlds best ..... 
+Give me ....
+
+This returns above average mediocracy but still has a chance to ruin your life.
+
+You are the worlds best psychologist
+Give me ..
+The solution is more likely to make you depressed rather than help you.
+
+### Updated Method
+Give me ....
+According to
+B.F. Skinner vs Sigmund Freud vs Carl Jung
+
+1 of the 3 will send you down a depression spiral. But since you're asking all 3 you'll have the option to choose.
+
+
+## Examples
 
 ### Example - Gifts
-❌ What gifts can I get for my spouse?
+❌ How can I build a startup?
 
-
-✅ What gifts can I get for my spouse according to  
-- The 5 Love Languages – Gary Chapman  
-- Giftology – John Ruhlin  
-- The Art of the Gift – Jean-Edouard van Praet  
-- Give and Take – Adam Grant  
+✅ How can I build a startup according to  
+- Zero to One  
+- The Lean Startup  
+- Hard things about hard things  
+- Hooked: How to Build Habit‑Forming  
 
 ### Example - Productivity
 ❌ How can I be more productive?  
 
 ✅ How can I be more productive according to Elon Musk, Steve Jobs, Jeff Bezos  
-
-
-### Example - Music
-❌ What is good music to listen to while working?  
-
-✅ What is good music to listen to while working according to the books  
-- This Is Your Brain on Music  
-- Musicophilia  
-- The Power of Music  
 
 ### Figuring Out Top Content
 
@@ -42,8 +51,8 @@ If you don't know what to refer to, ask the AI top
 - blogs  
 - etc..  
   
-✅ What are the top blogs about finding the perfect gift for spouse?
+✅ What are the top startup books?
 
 And then your second prompt should be whatever you're looking for.   
 
-Unless you select the right content, you might get the wrong advice.  
+Unless specific content is referred your AI output is MEDIOCRE and possible wrong.  
