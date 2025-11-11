@@ -50,9 +50,5 @@ If you don't know what to refer to, ask the AI top
 - values  
 - blogs  
 - etc..  
-  
-✅ What are the top startup books?
-
-And then your second prompt should be whatever you're looking for.   
 
 Unless specific content is referred your AI output is MEDIOCRE and possible wrong.  
