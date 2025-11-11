@@ -9,26 +9,26 @@ I've seen many people use AI, get wrong answers and execute the wrong answers. A
 
 
 ### Popular Method
-You are the worlds best ..... 
-Give me ....
+You are the worlds best .....  
+Give me ....  
 
 This returns above average mediocracy but still has a chance to ruin your life.
 
-You are the worlds best psychologist
-Give me ..
-The solution is more likely to make you depressed rather than help you.
+You are the worlds best psychologist  
+Give me ..  
+The solution is more likely to make you depressed rather than help you.  
 
 ### Updated Method
-Give me ....
-According to
-B.F. Skinner vs Sigmund Freud vs Carl Jung
+Give me ....  
+According to  
+B.F. Skinner vs Sigmund Freud vs Carl Jung  
 
-1 of the 3 will send you down a depression spiral. But since you're asking all 3 you'll have the option to choose.
+1 of the 3 will send you down a depression spiral. But since you're asking all 3 you'll have the option to choose.  
 
 
 ## Examples
 
-### Example - Gifts
+### Example - Startups
 ❌ How can I build a startup?
 
 ✅ How can I build a startup according to  
