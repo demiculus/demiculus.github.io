@@ -34,6 +34,7 @@ Random Collection of good stuff:
 
 ### Stage: Toddler (1 - 3 year)
 
+[Make baby eat food with teeth & tear ](https://www.instagram.com/reel/DL7aI7eoxlp)
 [Let them explore how to eat](https://www.instagram.com/reel/DGbPMmMCRcw)  
 [Good shows to watch by uschooler](https://www.instagram.com/uschooler/)  
 Early educational content is a scam. [Part 1](https://www.instagram.com/reel/DETDA9LIBJ_), [Part 2](https://www.instagram.com/reel/DEVlUsCII5I/), [Part 3](https://www.instagram.com/reel/DEXvugJoWuF/), [Part 4](https://www.instagram.com/p/DEfh9RKoh6p/), [Part 5](https://www.instagram.com/reel/DEnhxcOoSSX)  
