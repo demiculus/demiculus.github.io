@@ -9,7 +9,7 @@ title: Dropout
 
 Simpsons making fun of grad students: [https://www.instagram.com/reel/Ct8b4W9ADJc](https://www.instagram.com/reel/Ct8b4W9ADJc)
 
-Southpark making fun of colleage: [https://www.instagram.com/reel/CzF1tEZrUod](https://www.instagram.com/reel/CzF1tEZrUod)
+Southpark making fun of colleage: [https://www.tiktok.com/@shadowmagnetic10573/video/7294684766459432238](https://www.tiktok.com/@shadowmagnetic10573/video/7294684766459432238)
 
 Point of colleage degree: [https://www.youtube.com/shorts/2Kj3AswgaNQ](https://www.youtube.com/shorts/2Kj3AswgaNQ)
 
