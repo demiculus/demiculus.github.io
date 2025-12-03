@@ -14,12 +14,13 @@ title: Template Daily Update
 
 ## 3. Insights (most important part):
 > ❌ Wrong (no value):
-> "Today I learned the history of Colonist."
+> "Today I learned the history of my manager and his company."
 
 > ✅ Correct (adds value):
-> "I realized new players often misunderstand rule X. I updated the onboarding tooltip so future players won’t face this problem."
+> "I realized new players often misunderstand rule X. I updated the onboarding tooltip so future players won’t face this problem."  
+> 
 > ✅ Correct (improves company/product):
 > "During PR review, I noticed we repeat logic across three files. Suggested a shared function to reduce future bugs."
 
 ## 4. Questions:
-> (What questions do you have for us?)
+> (What questions do you have for me/us?)
