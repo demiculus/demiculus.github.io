@@ -5,7 +5,7 @@ title: Diet
 
 ## TLDR
 
-Kids should eat lots of protein & minerals to form proper skeletal structure. 
+Kids should eat lots of animal based foods & minerals to form proper skeletal structure. 
 
 ## Nutrition Deficiency
 
@@ -49,6 +49,7 @@ The main reason of these jumps are eating properly.
 
 ## Extra Resources
 
+- [Its not genetics, its diet](https://www.instagram.com/reel/DSg5nbUjvuy/?igsh=MXZreHh0bmV5bDl4cQ==) - 1min video
 - [How What You Eat Affects Your Height](https://www.instagram.com/reel/C9uo-gDOkQN/?igsh=MzRlODBiNWFlZA==) - 1min video
 - [You Probably Need Way More Protein](https://www.youtube.com/watch?v=h4ORs9hJfiw) - 11min video
 - [Jordan Peterson After 5 Years On Carnivore Diet](https://www.youtube.com/watch?v=yXDRr9wz57g) - 8min video
