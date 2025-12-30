@@ -29,4 +29,6 @@ B: There were many factors involved.
 A: What’s blocking you?  
 B: The project is quite complex.  
 
-[Funny Video](https://www.instagram.com/reel/DOJDYTwAsZZ/)
+[Funny Video](https://www.instagram.com/reel/DOJDYTwAsZZ/)  
+
+Fyi this can be trained. And while someone is not-answering initially they can become someone who answers.  
