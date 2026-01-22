@@ -32,3 +32,5 @@ B: The project is quite complex.
 [Funny Video](https://www.instagram.com/reel/DOJDYTwAsZZ/)  
 
 Fyi this can be trained. And while someone is not-answering initially they can become someone who answers.  
+
+<img src="https://lh3.googleusercontent.com/proxy/hlhjYIsgtzeWdfaS2DntHBrbNtZAYD1E55Nkgxk9KWANlJDy9Umq7XokhI1M2M2sx5Dhp_QmzB8NsOghGGQYeqm0BFq5xaC5byl1W7SYUr0llVjNoLRdACwK9zEdDt3hl4qfurTg00S065-UXfMqyP8ebkLLRWMF5zA" style="width:12rem;height:12rem;">
