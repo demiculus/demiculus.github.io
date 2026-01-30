@@ -8,7 +8,7 @@ title: Communication
 - Your proposal should be instantly graspable within 5 seconds.
 - Your writing should be so clear that it doesn't require re-reading.
 
-There are 3 strong tools to do this.
+There are a few strong tools to do this.
 
 ## Better Writer
 
