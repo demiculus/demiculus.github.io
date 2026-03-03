@@ -37,7 +37,7 @@ You're not confined to 9–5.
 - Office workers have weekend trips; you can work and travel at the same time.  
 - Office workers need to take days off for hospital or dentist appointments. You can go during your free time, and you can even get work done while waiting.  
 - Office workers need to wake up at 7 a.m. You can wake up whenever your body is ready.  
-- Office workers can't travel far from office since they need to be back on monday, you can fly to another continent with 0 lost productivity.  
+- Office workers can't travel far from office since they need to be back Monday, you can fly to another continent with 0 lost productivity.  
 
 ### 4. Discipline
 
@@ -66,6 +66,6 @@ For me, one edge case was my mom. She didn't understand how I could be in my roo
 
 ### In Short
 
-Remote async work rewards those who are intentional with their time, boundaries, and communication. Mastering these habits is the key to thriving—and truly enjoying the freedom that remote work can offer. 
+Remote async work rewards those who are intentional with their time, boundaries, and communication. Mastering these habits is the key to thriving and truly enjoying the freedom that remote work can offer. 
 
 This switch usually takes a couple of months, but once it sets in, you’ll experience enhanced productivity and greater fulfillment.
