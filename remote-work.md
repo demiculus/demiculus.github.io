@@ -32,12 +32,12 @@ You have unlimited flexibility. You're not expected to work at any particular ho
 
 You're not confined to 9–5. 
 
-Office workers need to go to the cinema in the evenings. You can go to the 11 a.m. discounted sessions.  
-Office workers need to visit museums on the weekends. You can visit during the day avoiding crowds and finish work on weekends. 
-Office workers have weekend trips; you can work and travel at the same time. 
-Office workers need to take days off for hospital or dentist appointments. You can go during your free time, and you can even get work done while waiting.
-Office workers need to wake up at 7 a.m. You can wake up whenever your body is ready.
-Office workers can't travel far from office since they need to be back on monday, you can fly to another continent with 0 lost productivity.
+- Office workers need to go to the cinema in the evenings. You can go to the 11 a.m. discounted sessions.  
+- Office workers need to visit museums on the weekends. You can visit during the day avoiding crowds and finish work on weekends.  
+- Office workers have weekend trips; you can work and travel at the same time.  
+- Office workers need to take days off for hospital or dentist appointments. You can go during your free time, and you can even get work done while waiting.  
+- Office workers need to wake up at 7 a.m. You can wake up whenever your body is ready.  
+- Office workers can't travel far from office since they need to be back on monday, you can fly to another continent with 0 lost productivity.  
 
 ### 4. Discipline
 
