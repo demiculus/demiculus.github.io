@@ -150,6 +150,7 @@ Worked on various projects in the cryptocurrency space. These include:
 - [Hidden Rules](/hidden-rules)  
 - [MMO](/mmo)  
 - [Not Answering](/not-answering)
+- [Remote Work](/remote-work)
 
 
 ### Social Media
