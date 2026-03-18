@@ -50,7 +50,9 @@ My mind gets distractd when I am **only** listening. But if I'm doing something 
 
 I have 100 thoughts running at the same time, so when you say something it gets in the queue. Once I arrange the running thoughts I can reply to the context switch [https://www.instagram.com/reel/DGQwQnNv6D2/](https://www.instagram.com/reel/DGQwQnNv6D2/)
 
+### Talk Faster
 
+My mind will jump to conclusion. I try to hold myself back from acting and rushing forward. It takes a lot of energy to do that. Sometimes I don't have that energy or I haven't activated it. That is when [this](https://www.instagram.com/reel/DVxTJQIDrA7/) happens.
 
 
 

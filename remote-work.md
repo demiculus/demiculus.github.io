@@ -55,7 +55,24 @@ You're a human. You need a certain amount of social connection in your life. Peo
 
 The office environment supplies this out of the box, so you don't have to go looking for social connections. Remote work doesn't supply that. You have to figure it out for yourself. Join run-clubs, board games, meetups, meet with friends, co-work with friends, or spend time with family. Left to itself, your social life will take a hit. 
 
-### 8. Edge Cases
+### 8. How Much To Work
+
+In an office, you work as much as you can between 9 to 5. In remote async, you might over extend yourself and burn out. Different people have different solutions for this. 
+
+- Some select 2 days and don't open their computers  
+- Some use a timer to track their time spent   
+- Some use their internal clock & satisfaction feeling  
+- Some have good understanding of their burn out symptoms  
+
+The last one is the ideal solution. Being aware of your burn out symptoms and ensuring you never get there. Some common burn out symptoms are 
+
+- Procrastinating, taking longer to get things done  
+- Using food, drugs, or alcohol to cope  
+- Difficulty concentrating and forgetfulness  
+
+The trick is finding the pattern on when you reach this stage (means you're gonna reach a few times) and put a blocker before you reach it. 
+
+### 9. Edge Cases
 
 There are going to be so many of these. It's impossible to list them all. 
 
