@@ -54,6 +54,9 @@ I have 100 thoughts running at the same time, so when you say something it gets 
 
 My mind will jump to conclusion. I try to hold myself back from acting and rushing forward. It takes a lot of energy to do that. Sometimes I don't have that energy or I haven't activated it. That is when [this](https://www.instagram.com/reel/DVxTJQIDrA7/) happens.
 
+I jump to conclusions fast. Be faster! [https://www.instagram.com/reel/DP3Xt2CD3ag](https://www.instagram.com/reel/DP3Xt2CD3ag)
 
+### Verbal Instructions Don't Work
 
+Please write it down for me, I can’t remember cause of this music: [https://www.instagram.com/reel/DRCbij3j8fM/](https://www.instagram.com/reel/DRCbij3j8fM)
 
