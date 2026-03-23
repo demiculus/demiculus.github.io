@@ -60,3 +60,5 @@ I jump to conclusions fast. Be faster! [https://www.instagram.com/reel/DP3Xt2CD3
 
 Please write it down for me, I can’t remember cause of this music: [https://www.instagram.com/reel/DRCbij3j8fM/](https://www.instagram.com/reel/DRCbij3j8fM)
 
+Note that if I haven't taken not of something 90% chance I'm going to forget.
+
