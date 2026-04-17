@@ -151,6 +151,7 @@ Worked on various projects in the cryptocurrency space. These include:
 - [MMO](/mmo)  
 - [Not Answering](/not-answering)
 - [Remote Work](/remote-work)
+- [Low Mana](/low-mana)
 
 
 ### Social Media

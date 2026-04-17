@@ -17,6 +17,8 @@ Read [Better Writer](/better-writer).
 ❌ "I am very happy to be doing this pleasurable task."  
 ✅ "I am happy for this."  
 
+Also read [Low Mana](/low-mana) for being a thoughtful communicator.
+
 ## Pyramid Principle
 
 Read the [Pyramid Principle](https://medium.com/lessons-from-mckinsey/the-pyramid-principle-f0885dd3c5c7)
@@ -63,4 +65,3 @@ Read [Specificity](/specificity)
 ## Not Answering The Question
 
 Read [Not Answering](/not-answering)
-

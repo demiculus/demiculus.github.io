@@ -14,9 +14,11 @@ Random Collection of good stuff:
 
 ### Stage: Pregnancy
 
+[Eat lots of protein of kid have less muscle](https://www.instagram.com/reel/DVjbYcPABtl/)  
 [Stay away from chemicals; shampoos, make up, plastic cutting board, ](https://www.instagram.com/reel/DALFg4bIhE5/)  
   [Don't use nail polish](https://www.instagram.com/reel/C_AQEC5yQ0t/)  
 [Exercising helps baby](https://www.instagram.com/reel/DE_4BUloCQX)  
+
 
 
 ### Stage: Baby (0 - 1 year)
