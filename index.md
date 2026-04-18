@@ -3,9 +3,11 @@ layout: default
 title: Home
 ---
 
-<img src="/img/profile.jpg" style="width:12rem;height:12rem;" align="right">
+<div class="intro-card">
+  <img class="intro-photo" src="/img/profile.jpg" alt="Demi">
+  <div class="intro-text" markdown="1">
 
-Hey, I am Demi! 
+Hey, I am Demi!
 
 I like creating projects and learning how systems work.
 
@@ -14,6 +16,8 @@ I'm also heavily interested in how the mind works.
 I've opensourced my mental model practice list. [Take a look](https://mmpractices.com/).
 
 <!--Feel free to [reach out](mailto:demirbyilmaz@gmail.com).-->
+  </div>
+</div>
 
 ---
 
