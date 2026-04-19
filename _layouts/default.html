@@ -9,6 +9,10 @@
 
     <div class="content container">
       {{ content }}
+      {% assign nav_urls = '/,/about/,/blog/,/resume/,/cv/,/timer/,/30/,/breaking/,/404.html' | split: ',' %}
+      {% unless nav_urls contains page.url or page.hide_related %}
+        {% include related.html %}
+      {% endunless %}
     </div>
 
   </body>

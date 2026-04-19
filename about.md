@@ -8,7 +8,7 @@ title: About
 ### [Colonist.io](https://colonist.io)
 
 
-<img src="/img/doge.png" style="width:12rem;height:12rem;">
+<img src="/img/doge.png" alt="Doge meme" style="width:12rem;height:12rem;">
 
 ### Breakpoint Labs
 
@@ -17,7 +17,6 @@ Worked on various projects in the cryptocurrency space. These include:
 - [Breakpoint Capital](https://www.breakpointcapital.net/): A private crypto fund
 - [Bitses](http://bitses.org): Fundamental analyses of 100+ crypto assets, one of the biggest websites of its kind
 - [Amoveo Excange](http://amoveo.exchange/): Crypto to crypto exchange focused for the currency of Amoveo
-- [My Wallets](http://mywallets.co): Crypto wallet holder
 - Advising blockchain companies about tech, market, analysis etc. 
 
 ### [Dawn of Crafting](https://www.dawnofcrafting.com/)

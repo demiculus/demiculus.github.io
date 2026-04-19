@@ -151,7 +151,7 @@ Jan 23 2019 - Flare - Easily do 1 flare outside of practice
 Jan 20 2019 - Flare - Even if my legs hit the ground, don’t stop the move and continue to move
 
 20 Jan 2019 - General - First time able to sit in russian squat.
-![](https://qph.fs.quoracdn.net/main-qimg-55bfacab7d144d4b0d87819e42012318)
+![Russian squat position](https://qph.fs.quoracdn.net/main-qimg-55bfacab7d144d4b0d87819e42012318)
 
 Jan 19 2019 - Windmill - Figured out how to do keep my legs up (by being more at the top of my back) but couldn’t do seamlessly yet
 
@@ -164,7 +164,7 @@ Jan 19 2019 - Flare - First time did 50 flares in 1 day
 12 Jan 2019 - Scorpion - First time my butt touches the wall on scorpion
 
 12 Jan 2019 - General - First time my hands touch each other on my back while flexing like this but with the help of someone else
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wh5PaZxkdfmw5T8xBp3N-3OicobW7rnvJpJ1NwGs0pAJ3lcn)
+![Back flexibility stretch](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-wh5PaZxkdfmw5T8xBp3N-3OicobW7rnvJpJ1NwGs0pAJ3lcn)
 
 11 Jan 2019 - 1990 - TIL while entering the move press your hand from your shoulder and lift up you ass to handstand position
 
