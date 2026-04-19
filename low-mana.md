@@ -7,7 +7,7 @@ TLDR: Minimize the mental energy others need to spend when interacting with you.
 
 ## Being Exciting To Work With
 
-You get a WhatsApp notification. You see the name. Before you even read the message, you already feel something — excited or anxious. That feeling has nothing to do with the message. It's built from every past interaction with that person.  
+You get a WhatsApp notification. You see the name. Before you even read the message, you already feel something: excited or anxious. That feeling has nothing to do with the message. It's built from every past interaction with that person.  
 Try to be the person whose name makes others excited.  
 
 Exciting messages usually have a few things in common, but the main thing is: it is easy to process, easy to understand, and easy to act on.
