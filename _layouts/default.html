@@ -3,17 +3,21 @@
 
   {% include head.html %}
 
-  <body class="theme-base-0d">
+  <body>
 
-    {% include sidebar.html %}
+    {% include topbar.html %}
 
-    <div class="content container">
+    <main class="page">
+      {% if page.url == "/" %}
+        {% include identity.html %}
+      {% endif %}
       {{ content }}
-      {% assign nav_urls = '/,/about/,/blog/,/resume/,/cv/,/timer/,/30/,/breaking/,/404.html' | split: ',' %}
-      {% unless nav_urls contains page.url or page.hide_related %}
+      {% unless site.essay_deny_urls contains page.url or page.hide_related %}
         {% include related.html %}
       {% endunless %}
-    </div>
+    </main>
+
+    {% include footer.html %}
 
   </body>
 </html>

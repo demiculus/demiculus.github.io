@@ -1,0 +1,82 @@
+# Every essay shown on /writing and the homepage.
+# Slug must match the Markdown filename (without the .md).
+
+- slug: low-mana
+  title: Low Mana
+  description: Minimize the mental energy others spend interacting with you.
+
+- slug: communication
+  title: Communication
+  description: A good proposal is graspable in five seconds.
+
+- slug: remote-work
+  title: Remote Work
+  description: Async isn't freedom. It's a different discipline.
+
+- slug: better-writer
+  title: Better Writer
+  description: Clarity is persuasion. Five sentences beat a hundred.
+
+- slug: not-answering
+  title: Not Answering
+  description: Indirect answers are a collaboration tax.
+
+- slug: ai-usage
+  title: AI Usage
+  description: Using AI without getting played by it.
+
+- slug: specificity
+  title: Specificity
+  description: The more specific and concrete, the clearer the message.
+
+- slug: compliments
+  title: Compliments
+  description: Flattery is a trap. "Good job" is the most dangerous phrase for growth.
+
+- slug: chaos
+  title: Chaos vs Clarity
+  description: Workplace productivity depends on the balance. More chaos, more negative productivity.
+
+- slug: stand-out
+  title: Stand Out
+  description: How to actually stand out when applying for a job — what works and what doesn't.
+
+- slug: hidden-rules
+  title: Hidden Rules
+  description: The weird kid wins. The rules that matter are the ones nobody wrote down.
+
+- slug: adhd
+  title: ADHD
+  description: A candid field guide to how my ADHD shows up, for the people who interact with me.
+
+- slug: diet
+  title: Diet
+  description: What kids should eat. Nutrition deficiencies can shrink adult height by 15%.
+
+- slug: health
+  title: Health
+  description: Recognizing and fixing the deficiencies that make humans unproductive.
+
+- slug: child
+  title: Child
+  description: Raising a child from pre-pregnancy through the early years — a running collection.
+
+- slug: inherited-traits
+  title: Inherited Traits
+  description: Kids inherit behavioral and nutritional traits. Ask the grandparents.
+
+- slug: hiring-va
+  title: Hiring VA
+  description: When and how to hire a virtual assistant. What to delegate and where to hire.
+
+- slug: couch_surfing_tips
+  title: Couch Surfing Tips
+  description: How to build trust on Couchsurfing so you actually get hosted.
+
+- slug: odtu_vs_nus
+  title: ODTÜlüler vs NUS
+  description: "Neden ODTÜ'lüler $25k, NUS'lular $75k? Kültürel farklılıklar üzerine (Turkish)."
+
+- slug: onur-black
+  title: The Black
+  description: A short story by Onur Solmaz.

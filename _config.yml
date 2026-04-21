@@ -1,25 +1,45 @@
 # Site settings
 title: Demi Yilmaz
-# email:
 description: "Curious, Mental Models, Exercise"
-# baseurl: "//hos.github.io"
-# url: "//hos.github.io"
 url: "https://demiculus.com"
-# twitter_username:
-github_username:  demiculus
+github_username: demiculus
 
 # Build settings
 markdown: kramdown
 permalink: pretty
-paginate: 6
-paginate_path: "/:num/"
 
 plugins:
   - jekyll-sitemap
-  - jekyll-paginate
   - jekyll-redirect-from
 
-
-# configure kramdown
 kramdown:
   parse_block_html: true
+
+# URLs excluded from /writing, related-posts, and the essay auto-scan.
+# Format: leading and trailing slashes to match Jekyll's pretty permalinks.
+essay_deny_urls:
+  - /
+  - /about/
+  - /blog/
+  - /writing/
+  - /resume/
+  - /cv/
+  - /timer/
+  - /30/
+  - /breaking/
+  - /general/
+  - /goat/
+  - /distribution/
+  - /izmir_house/
+  - /dropout/
+  - /mmo/
+  - /blog_checklist/
+  - /decision_checklist/
+  - /github_checklist/
+  - /new_project_checklist/
+  - /template-daily-update/
+  - /404.html
+  - /feed.xml
+  - /atom.xml
+  - /sitemap.xml
+  - /robots.txt

@@ -1,0 +1,359 @@
+/* ============================================
+   site.css — single stylesheet for the redesign
+   Light + dark via prefers-color-scheme.
+   ============================================ */
+
+:root {
+  --bg: #fafaf9;
+  --text: #111;
+  --muted: #6b6b6b;
+  --border: #e8e6e1;
+  --accent: #0b6cff;
+  --hover-bg: #f1efea;
+  --code-bg: #f3f1ec;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f0f10;
+    --text: #f4f4f5;
+    --muted: #9b9b9b;
+    --border: #232325;
+    --accent: #7ab8ff;
+    --hover-bg: #17171a;
+    --code-bg: #17171a;
+  }
+}
+
+/* ---------- reset ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* ---------- typography ---------- */
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
+  font-weight: 600;
+  line-height: 1.25;
+  margin: 2em 0 0.6em;
+  letter-spacing: -0.01em;
+}
+h1 { font-size: 28px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
+h4, h5, h6 { font-size: 16px; }
+
+p, ul, ol, blockquote { margin: 0 0 1em; }
+
+/* ---------- links (visible underline by default) ---------- */
+a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--muted);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  transition: text-decoration-color 80ms ease, color 80ms ease;
+}
+a:hover {
+  text-decoration-color: var(--text);
+  text-decoration-thickness: 2px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 2em 0;
+}
+
+blockquote {
+  border-left: 3px solid var(--border);
+  padding: 0.2em 1em;
+  color: var(--muted);
+}
+
+code, pre {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 14px;
+}
+code {
+  background: var(--code-bg);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+pre {
+  background: var(--code-bg);
+  padding: 14px 16px;
+  border-radius: 6px;
+  overflow-x: auto;
+  margin: 1.2em 0;
+}
+pre code {
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.2em 0;
+}
+th, td {
+  text-align: left;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+}
+th { font-weight: 600; }
+
+figcaption, .caption {
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 0.4em;
+}
+
+/* ---------- page shell ---------- */
+.page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+@media (max-width: 520px) {
+  .page { padding: 32px 20px 64px; }
+}
+
+/* ---------- topbar (all pages) ---------- */
+.topbar {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.topbar .home {
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+}
+.topbar .home:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--text);
+  text-underline-offset: 3px;
+}
+.topbar nav {
+  margin-left: auto;
+  display: flex;
+  gap: 18px;
+  font-size: 14px;
+}
+.topbar nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+.topbar nav a:hover {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--text);
+  text-underline-offset: 3px;
+}
+
+/* ---------- identity (home) ---------- */
+.identity {
+  margin-bottom: 56px;
+}
+.identity .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 20px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+}
+.identity h1.name {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 600;
+  margin: 0 0 14px;
+  letter-spacing: -0.01em;
+}
+.identity .intro {
+  color: var(--text);
+  max-width: 60ch;
+  margin: 0 0 20px;
+  font-size: 16px;
+  line-height: 1.55;
+}
+.identity .socials {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: var(--muted);
+  margin: 0;
+}
+.identity .socials a {
+  color: var(--muted);
+  text-decoration: none;
+}
+.identity .socials a:hover {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--muted);
+  text-underline-offset: 3px;
+}
+
+/* ---------- section labels ---------- */
+.section-label {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin: 0 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.home-section { margin-bottom: 56px; }
+
+/* ---------- writing-list (row list) ---------- */
+.writing-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.writing-list li { margin: 0; }
+.writing-list a {
+  display: grid;
+  grid-template-columns: minmax(130px, 180px) 1fr;
+  gap: 16px;
+  padding: 10px 8px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 80ms ease;
+  color: var(--text);
+}
+.writing-list a:hover {
+  background: var(--hover-bg);
+  text-decoration: none;
+}
+.writing-list a strong {
+  font-weight: 600;
+  color: var(--text);
+}
+.writing-list a:hover strong {
+  text-decoration: underline;
+  text-decoration-color: var(--text);
+  text-underline-offset: 3px;
+}
+.writing-list a span {
+  color: var(--muted);
+}
+.writing-list a.title-only {
+  display: block;
+  padding: 10px 8px;
+}
+
+@media (max-width: 520px) {
+  .writing-list a {
+    grid-template-columns: 1fr;
+    gap: 2px;
+    padding: 10px 6px;
+  }
+}
+
+.more-link {
+  margin: 14px 8px 0;
+  font-size: 14px;
+}
+.more-link a {
+  color: var(--muted);
+}
+.more-link a:hover {
+  color: var(--text);
+}
+
+/* ---------- post (essay) ---------- */
+.post {
+  margin-top: 16px;
+}
+.post-header {
+  margin-bottom: 32px;
+}
+.post-title {
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  letter-spacing: -0.01em;
+}
+.post-header .meta {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+}
+.post-content {
+  font-size: 17px;
+  line-height: 1.65;
+}
+
+.page-title {
+  font-size: 28px;
+  margin: 0 0 24px;
+}
+
+/* ---------- related posts ---------- */
+.related-posts {
+  margin-top: 64px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+/* ---------- footer ---------- */
+.site-footer {
+  max-width: 640px;
+  margin: 96px auto 48px;
+  padding: 20px 24px 0;
+  border-top: 1px solid var(--border);
+  font-size: 13px;
+  color: var(--muted);
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.site-footer a {
+  color: var(--muted);
+  text-decoration: none;
+}
+.site-footer a:hover {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--muted);
+  text-underline-offset: 3px;
+}
+
+/* ---------- print ---------- */
+@media print {
+  :root {
+    --bg: #fff;
+    --text: #000;
+    --muted: #555;
+    --border: #ccc;
+  }
+  .topbar, .identity .socials, .site-footer, .related-posts { display: none; }
+  .page { padding: 0; max-width: 100%; }
+  a { text-decoration: underline; color: #000; }
+}
