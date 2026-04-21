@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Diet
+description: Nutrition deficiencies can shrink adult height by 15%.
+created: 2023-08-14
+updated: 2025-12-30
 ---
 
 ## TLDR

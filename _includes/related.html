@@ -1,7 +1,7 @@
-{% assign pool = site.pages | where_exp: "p", "p.title" %}
+{% assign pool = site.pages | where_exp: "p", "p.description" %}
 {% assign valid = '' | split: '' %}
 {% for p in pool %}
-  {% unless p.url == page.url or site.essay_deny_urls contains p.url %}
+  {% unless p.url == page.url %}
     {% assign valid = valid | push: p %}
   {% endunless %}
 {% endfor %}
@@ -11,7 +11,12 @@
   <h3 class="section-label">Read more</h3>
   <ul class="writing-list">
     {% for p in picks %}
-      <li><a class="title-only" href="{{ p.url }}"><strong>{{ p.title }}</strong></a></li>
+      <li>
+        <a href="{{ p.url }}">
+          <strong>{{ p.title }}</strong>
+          <span>{{ p.description }}</span>
+        </a>
+      </li>
     {% endfor %}
   </ul>
 </aside>

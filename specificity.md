@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Specificity
+description: The more specific, the clearer the message.
+created: 2025-06-29
+updated: 2025-06-29
 ---
 
 **TL;DR:** Specificity improves clarity, credibility, and communication.

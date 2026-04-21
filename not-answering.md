@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Not Answering
+description: Indirect answers are a collaboration tax.
+created: 2025-12-30
+updated: 2026-04-19
 ---
 
 ## Not Answering The Question

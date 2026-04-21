@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Better Writer
+description: Five sentences beat a hundred.
+created: 2025-10-08
+updated: 2025-10-27
 ---
 
 ## The Day You Became A Better Writer

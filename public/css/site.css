@@ -126,10 +126,10 @@ figcaption, .caption {
 .page {
   max-width: 640px;
   margin: 0 auto;
-  padding: 48px 24px 96px;
+  padding: 48px 24px 24px;
 }
 @media (max-width: 520px) {
-  .page { padding: 32px 20px 64px; }
+  .page { padding: 32px 20px 16px; }
 }
 
 /* ---------- topbar (all pages) ---------- */
@@ -305,6 +305,11 @@ figcaption, .caption {
   font-size: 14px;
   margin: 0;
 }
+.page-dates {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0 0 24px;
+}
 .post-content {
   font-size: 17px;
   line-height: 1.65;
@@ -318,14 +323,12 @@ figcaption, .caption {
 /* ---------- related posts ---------- */
 .related-posts {
   margin-top: 64px;
-  padding-top: 24px;
-  border-top: 1px solid var(--border);
 }
 
 /* ---------- footer ---------- */
 .site-footer {
   max-width: 640px;
-  margin: 96px auto 48px;
+  margin: 32px auto 24px;
   padding: 20px 24px 0;
   border-top: 1px solid var(--border);
   font-size: 13px;

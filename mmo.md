@@ -1,6 +1,9 @@
 ---
 layout: default
 title: MMO
+description: MMOs compress decades of human coordination into a weekend.
+created: 2025-10-31
+updated: 2025-11-11
 ---
 
 ## MMO

@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Stand Out
+description: How to stand out when applying for a job.
+created: 2025-04-19
+updated: 2026-04-19
 ---
 
 ## How to Actually Stand Out When Applying

@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Dropout
+description: School's not a place for smart people.
+created: 2024-11-25
+updated: 2026-04-19
 ---
 
 ## Is School Really Beneficial For You?

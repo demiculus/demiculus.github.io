@@ -1,6 +1,9 @@
 ---
 layout: default
 title: ADHD
+description: How my ADHD shows up.
+created: 2025-07-05
+updated: 2026-04-03
 ---
 
 ## ADHD

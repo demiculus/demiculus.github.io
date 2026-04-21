@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Hidden Rules
+description: Written rules are the decoy. The real ones stay hidden.
+created: 2025-10-31
+updated: 2026-01-22
 ---
 
 ## Hidden Rules

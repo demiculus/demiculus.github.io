@@ -1,8 +1,9 @@
 ---
-layout: post
-title:  "The Black"
-date:   2016-09-06
-excerpt_separator: <!--more-->
+layout: default
+title: The Black
+description: A short story by Onur Solmaz.
+created: 2025-07-21
+updated: 2025-07-21
 ---
 
 Written by Onur Solmaz

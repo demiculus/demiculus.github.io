@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Child
+description: Raising a child from pre-pregnancy through the early years.
+created: 2024-10-25
+updated: 2026-04-17
 ---
 
 ## Child

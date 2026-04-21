@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Chaos vs Clarity
+description: Workplace productivity depends on the balance. More chaos, more negative productivity.
+created: 2024-07-14
+updated: 2024-07-16
 ---
 
 ## Chaos vs Clarity

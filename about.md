@@ -1,6 +1,7 @@
 ---
 layout: default
 title: About
+hidden: true
 ---
 
 ## Founded Companies
@@ -34,8 +35,6 @@ Worked on various projects in the cryptocurrency space. These include:
 - Built 8 mobile apps
 - Couldn’t find strong Product-Market-Fit
 
----
-
 ## Founded Groups
 
 ### [Mobile Monday Ankara](https://www.meetup.com/MobileMondayAnkara/)
@@ -52,13 +51,15 @@ Worked on various projects in the cryptocurrency space. These include:
   - First place Solo Freestyle Dancer in [Turkey Dance Sports Federation](http://www.tdsf.gov.tr/)
   - Second Place dance crew in [Turkey Dance Sports Federation](http://www.tdsf.gov.tr/)
 
----
-
 ## Other
 
 ### Projects
 
 <ul class="posts">
+  <li>
+    <span class="post-date">2026</span>
+    <span><a href="https://luma.com/level-5">Level 5</a></span>
+  </li>
   <li>
     <span class="post-date">2022</span>
     <span><a href="https://docs.google.com/spreadsheets/d/1GN5pIOwE0pv6nAoKmS6MymbVmc8sZCcM3WkiaQVz2CM/edit#gid=1239741220">Anime Tiers</a>: List of animes me & my brothers rated.</span>
@@ -132,38 +133,25 @@ Worked on various projects in the cryptocurrency space. These include:
 - [Inside the Indie Games Industry](https://www.scape.sg/venue/replay-cyoa/)
 
 
-### Blogs
-
-- [Turkiyedeki en iyi fiber internet hangisi?](https://medium.com/@demiculus/en-iyi-fiber-internet-hangisi-e95e9a3c4bb4)  
-- [Cryptocurrency tutorial](https://medium.com/@demiculus/cryptocurrency-tutorial-875e9f83db24)  
-- [Ankara’da Sevgili Ile Yapılacak Şeyler](https://medium.com/@demiculus/ankara-da-sevgili-ile-yap%C4%B1lacak-%C5%9Feyler-5d78c61c0604)  
-- [Communication](/communication)  
-- [Diet](/diet)  
-- [Stand Out](/stand-out)  
-- [Drop Out Of School](/dropout)  
-- [Chaos vs Clarity](/chaos)  
-- [Flattery Is a Trap](/compliments)  
-- [Specificity](/specificity)  
-- [AI Usage](/ai-usage)  
-- [Better Writer](/better-writer)  
-- [Hidden Rules](/hidden-rules)  
-- [MMO](/mmo)  
-- [Not Answering](/not-answering)
-- [Remote Work](/remote-work)
-- [Low Mana](/low-mana)
-
-
 ### Social Media
 
 - [Fabulous Sharings 170k likes](https://www.facebook.com/Fabulous.Sharings): Meme page I created in the Summer of 2011. When school started I recruited moderators to run it. Mostly idle now.
 - [Meme Cavern 40k members](https://www.facebook.com/groups/theexecutivememers): Facebook meme group I created in the Summer of 2017. I social engineered a hack resulting in 40k+ memeber group. I've recruited moderators to run & clean up the group. (got zucced in 2020 RIP)
 - [Favorite tweets](https://twitter.com/demiculus/timelines/1207887974425219072)
 
-### Games I've Played Longer Than I should Have
+### Games
 
-I have played many many other games but these are the ones which deserve mentioning.
+I've played longer than I should have.
 
 <ul class="posts">
+  <li>
+    <span class="post-date">2025</span>
+    <span><a href="https://openfront.io/">OpenFront.io</a>: Real-time territory strategy</span>
+  </li>
+  <li>
+    <span class="post-date">2024</span>
+    <span><a href="https://polytopia.io/">Polytopia</a>: Turn-based civilization strategy</span>
+  </li>
   <li>
     <span class="post-date">2022</span>
     <span><a href="https://colonist.io/">Colonist.io</a>: My game lol</span>
@@ -238,7 +226,4 @@ I have played many many other games but these are the ones which deserve mention
 - [Inside Out](https://www.imdb.com/title/tt2096673)
 - [Big Hero 6](https://www.imdb.com/title/tt2245084/)
 - [Idiocracy](https://www.youtube.com/watch?v=sP2tUW0HDHA)
-
----
-
 

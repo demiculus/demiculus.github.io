@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Communication
+description: A good proposal is graspable in five seconds.
+created: 2024-05-11
+updated: 2026-04-17
 ---
 
 ## TLDR

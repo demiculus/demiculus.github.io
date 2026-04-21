@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Low Mana
+description: Minimize the mental energy others spend interacting with you.
+created: 2026-04-17
+updated: 2026-04-19
 ---
 
 TLDR: Minimize the mental energy others need to spend when interacting with you.  

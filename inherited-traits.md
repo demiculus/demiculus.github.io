@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Inherited Traits
+description: Kids inherit behavioral and nutritional traits. Ask the grandparents.
+created: 2026-03-23
+updated: 2026-04-19
 ---
 
 ## Inherited Traits

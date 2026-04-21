@@ -11,10 +11,17 @@
       {% if page.url == "/" %}
         {% include identity.html %}
       {% endif %}
+      {% if page.created or page.updated %}
+        <p class="page-dates">
+          {% if page.created %}Created {{ page.created | date: "%b %-d, %Y" }}{% endif %}
+          {% if page.created and page.updated %} · {% endif %}
+          {% if page.updated %}Updated {{ page.updated | date: "%b %-d, %Y" }}{% endif %}
+        </p>
+      {% endif %}
       {{ content }}
-      {% unless site.essay_deny_urls contains page.url or page.hide_related %}
+      {% if page.description and page.hide_related != true %}
         {% include related.html %}
-      {% endunless %}
+      {% endif %}
     </main>
 
     {% include footer.html %}

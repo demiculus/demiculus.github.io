@@ -1,6 +1,9 @@
 ---
 layout: default
 title: Remote Work
+description: Remote isn't freedom. It's a different discipline.
+created: 2026-03-03
+updated: 2026-03-18
 ---
 
 ## Remote Work
