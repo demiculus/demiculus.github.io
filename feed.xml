@@ -11,7 +11,7 @@ layout: none
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for e in site.data.writing %}
+    {% for e in site.data.essays %}
       <item>
         <title>{{ e.title | xml_escape }}</title>
         <description>{{ e.description | xml_escape }}</description>

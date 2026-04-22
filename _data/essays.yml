@@ -1,4 +1,4 @@
-# Ordering of essays on the homepage (first 6 shown under "Recent Essays").
+# Ordering of essays on the homepage (first 6 shown under "Recent Essays") and in feed.xml.
 # Slug must match the Markdown filename (without the .md).
 # Descriptions now live in each essay's front matter.
 

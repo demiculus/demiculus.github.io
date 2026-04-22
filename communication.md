@@ -41,7 +41,7 @@ Doublespeak is language that deliberately obscures, disguises, or distorts meani
 Uses mild or vague terms to soften harsh realities 
 
 ❌ "downsizing"  
-✅ "firing employees")  
+✅ "firing employees"  
 
 ### Jargon
 Uses technical or specialized language to confuse or exclude outsiders 
@@ -52,8 +52,8 @@ Uses technical or specialized language to confuse or exclude outsiders
 ### Gobbledygook (Bureaucratese)
 Overcomplicates language with excessive words or convoluted structure to obscure meaning 
 
-❌ "collateral damage"  
-✅ "civilian casualties"  
+❌ "leverage cross-functional synergies to maximize stakeholder value"  
+✅ "work together"  
 
 ### Inflated Language
 Makes simple things sound grander or more important than they are
@@ -61,7 +61,7 @@ Makes simple things sound grander or more important than they are
 ❌ "sanitation engineer"  
 ✅ "janitor"  
 
-## Specificty
+## Specificity
 
 Read [Specificity](/specificity)
 

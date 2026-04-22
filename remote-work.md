@@ -53,13 +53,13 @@ Mute non-essential channels. Reduce noise by unsubscribing from or muting chats 
 
 But on the other hand, it makes more sense to stay focused on your work and deliver it. It's even better if you don't check the other issues. Trust that your teammates will handle it and tag you if you're needed.
 
-### 7. Have a Social Life
+### 6. Have a Social Life
 
 You're a human. You need a certain amount of social connection in your life. People who need it 7/7 days are probably not a good fit for remote work. People who need it 3/7 days or fewer are a better fit for remote work. 
 
 The office environment supplies this out of the box, so you don't have to go looking for social connections. Remote work doesn't supply that. You have to figure it out for yourself. Join run-clubs, board games, meetups, meet with friends, co-work with friends, or spend time with family. Left to itself, your social life will take a hit. 
 
-### 8. How Much To Work
+### 7. How Much To Work
 
 In an office, you work as much as you can between 9 to 5. In remote async, you might over extend yourself and burn out. Different people have different solutions for this. 
 
@@ -76,7 +76,7 @@ The last one is the ideal solution. Being aware of your burn out symptoms and en
 
 The trick is finding the pattern on when you reach this stage (means you're gonna reach a few times) and put a blocker before you reach it. 
 
-### 9. Edge Cases
+### 8. Edge Cases
 
 There are going to be so many of these. It's impossible to list them all. 
 

@@ -52,7 +52,7 @@ Get enough sleep
 
 ## Nutrition Deficiency
 
-More information on [diet](/diet.md). 
+More information on [diet](/diet/). 
 
 ### Signs
 - Foggy mind

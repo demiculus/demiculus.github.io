@@ -11,14 +11,13 @@
       {% if page.url == "/" %}
         {% include identity.html %}
       {% endif %}
-      {% if page.created or page.updated %}
-        <p class="page-dates">
-          {% if page.created %}Created {{ page.created | date: "%b %-d, %Y" }}{% endif %}
-          {% if page.created and page.updated %} · {% endif %}
-          {% if page.updated %}Updated {{ page.updated | date: "%b %-d, %Y" }}{% endif %}
-        </p>
-      {% endif %}
       {{ content }}
+      {% if page.created or page.updated %}
+        <div class="page-dates">
+          {% if page.created %}<p>Created {{ page.created | date: "%b %-d, %Y" }}</p>{% endif %}
+          {% if page.updated %}<p>Updated {{ page.updated | date: "%b %-d, %Y" }}</p>{% endif %}
+        </div>
+      {% endif %}
       {% if page.description and page.hide_related != true %}
         {% include related.html %}
       {% endif %}

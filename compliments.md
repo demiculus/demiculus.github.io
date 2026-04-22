@@ -14,7 +14,7 @@ My friend’s response stuck with me:
 
 > That kid has high potential. If he gets such compliments from people like me, he’ll feel like he has made it. That feeling of achievement will lower the chance of him ever surpassing me.
 
-That moment changed how I see praises.
+That moment changed how I see praise.
 
 It’s one of the reasons I often feel that people who congratulate me are two-faced. Too often, it feels performative, like they actually want to halt my growth.
 

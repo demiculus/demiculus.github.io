@@ -12,9 +12,9 @@ updated: 2026-04-19
 
 Simpsons making fun of grad students: [https://www.instagram.com/reel/Ct8b4W9ADJc](https://www.instagram.com/reel/Ct8b4W9ADJc)
 
-Southpark making fun of colleage: [https://www.tiktok.com/@shadowmagnetic10573/video/7294684766459432238](https://www.tiktok.com/@shadowmagnetic10573/video/7294684766459432238)
+Southpark making fun of college: [https://www.tiktok.com/@shadowmagnetic10573/video/7294684766459432238](https://www.tiktok.com/@shadowmagnetic10573/video/7294684766459432238)
 
-Point of colleage degree: [https://www.youtube.com/shorts/2Kj3AswgaNQ](https://www.youtube.com/shorts/2Kj3AswgaNQ)
+Point of college degree: [https://www.youtube.com/shorts/2Kj3AswgaNQ](https://www.youtube.com/shorts/2Kj3AswgaNQ)
 
 Naval tweet storm: [https://x.com/naval/status/912220382450524160](https://x.com/naval/status/912220382450524160)
 
@@ -34,6 +34,6 @@ Charlie Munger on grad school: [https://www.youtube.com/clip/UgkxvzFF9v3J1uMi3H4
 
 Lee Kuan Yew on university: [https://www.youtube.com/clip/UgkxlyWF0KP0ED33lgn9DThFqR4sOkAcVYgX](https://www.youtube.com/clip/UgkxlyWF0KP0ED33lgn9DThFqR4sOkAcVYgX)
 
-Elon Musk on univeristy: [https://www.instagram.com/reel/C4qeIh6xAcq/](https://www.instagram.com/reel/C4qeIh6xAcq/)
+Elon Musk on university: [https://www.instagram.com/reel/C4qeIh6xAcq/](https://www.instagram.com/reel/C4qeIh6xAcq/)
 
 Can't find jobs with 2 degrees: [https://www.instagram.com/reel/DEOFFiStq4i](https://www.instagram.com/reel/DEOFFiStq4i)

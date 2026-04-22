@@ -6,8 +6,8 @@ hidden: true
 
 <section class="home-section">
 <h3 class="section-label">Recent Essays</h3>
-<ul class="writing-list">
-{% for e in site.data.writing limit: 6 %}
+<ul class="essays-list">
+{% for e in site.data.essays limit: 6 %}
   {% assign slug = e.slug | append: "" %}
   {% assign url = "/" | append: slug | append: "/" %}
   {% assign p = site.pages | where: "url", url | first %}
@@ -19,5 +19,5 @@ hidden: true
   </li>
 {% endfor %}
 </ul>
-<p class="more-link"><a href="/writing">All essays →</a></p>
+<p class="more-link"><a href="/essays">All essays →</a></p>
 </section>

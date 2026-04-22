@@ -9,7 +9,7 @@ Personal essay site for Demi Yilmaz (cofounder of Colonist.io). Jekyll-based, ho
 - **`_config.yml` changes require a server restart.** Jekyll does NOT hot-reload config. Use `preview_stop` + `preview_start` after editing it. Content/CSS changes do hot-reload.
 - **CSS is cache-busted** via `?v={{ site.time | date: '%s' }}` in `_includes/head.html`. Don't undo this.
 - Essays live as `.md` files at repo root (not `_posts/`). Pretty permalinks: a file at `foo.md` serves at `/foo/`.
-- `_data/writing.yml` is the source of truth for essay ordering on the home page (Recent Essays list). Slug must match the `.md` filename.
+- `_data/essays.yml` is the source of truth for essay ordering on the home page (Recent Essays list). Slug must match the `.md` filename.
 
 ## Essay lifecycle
 
@@ -24,13 +24,13 @@ Personal essay site for Demi Yilmaz (cofounder of Colonist.io). Jekyll-based, ho
    updated: YYYY-MM-DD
    ---
    ```
-2. Add entry to `_data/writing.yml` (slug + title, for home-page ordering).
-3. Home page auto-limits to the first 6 entries in `_data/writing.yml` — reorder that file to feature different essays.
+2. Add entry to `_data/essays.yml` (slug + title, for home-page ordering).
+3. Home page auto-limits to the first 6 entries in `_data/essays.yml` — reorder that file to feature different essays.
 
 ### Removing an essay
 Two touch points, both required:
 1. `rm <slug>.md`
-2. Remove the `- slug: <slug>` block from `_data/writing.yml`
+2. Remove the `- slug: <slug>` block from `_data/essays.yml`
 
 Verify with `curl -I http://localhost:4000/<slug>/` → 404.
 
@@ -42,10 +42,10 @@ git log --follow --format='%ai' -- <slug>.md | head -1  # updated
 ```
 Dates render via `_layouts/default.html` when front matter has `created:` and/or `updated:`.
 
-## Writing-page plumbing
+## Essays-page plumbing
 
-- `/writing/` (writing.md) iterates `site.pages` and filters by `p.description` — any page with a description in its front matter is an essay.
-- Home (index.md) iterates `_data/writing.yml` with `limit: 6`.
+- `/essays/` (essays.md) iterates `site.pages` and filters by `p.description` — any page with a description in its front matter is an essay. `essays.md` sets `redirect_from: /writing/` so old links still resolve.
+- Home (index.md) iterates `_data/essays.yml` with `limit: 6`.
 - Read More (`_includes/related.html`) shows 3 random related essays under each essay.
 - All three views share the same description field — change it in one place and verify all three.
 
@@ -84,8 +84,8 @@ Remember: if computed styles don't match the CSS file, it's browser caching. For
 
 ## Essay metadata conventions (post-migration)
 
-- `description`, `created`, `updated` live in each essay's front matter — not in `_data/writing.yml`.
-- `_data/writing.yml` holds only slug+title, solely for home-page ordering (first 6 shown).
+- `description`, `created`, `updated` live in each essay's front matter — not in `_data/essays.yml`.
+- `_data/essays.yml` holds only slug+title, for home-page ordering (first 6 shown) and feed.xml.
 - `_layouts/default.html` renders `Created ... · Updated ...` automatically when the fields are present.
-- Filter `where_exp: "p", "p.description"` is the "is this an essay?" predicate. Pages without a description are not essays and don't appear on `/writing/`, the home list, or "Read more."
+- Filter `where_exp: "p", "p.description"` is the "is this an essay?" predicate. Pages without a description are not essays and don't appear on `/essays/`, the home list, or "Read more."
 - If you add a non-essay page, do NOT give it a `description:` in front matter (or it'll show up in essay lists).

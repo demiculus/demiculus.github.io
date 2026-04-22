@@ -9,7 +9,6 @@
   --muted: #6b6b6b;
   --border: #e8e6e1;
   --accent: #0b6cff;
-  --hover-bg: #f1efea;
   --code-bg: #f3f1ec;
 }
 
@@ -20,7 +19,6 @@
     --muted: #9b9b9b;
     --border: #232325;
     --accent: #7ab8ff;
-    --hover-bg: #17171a;
     --code-bg: #17171a;
   }
 }
@@ -230,46 +228,40 @@ figcaption, .caption {
 
 .home-section { margin-bottom: 56px; }
 
-/* ---------- writing-list (row list) ---------- */
-.writing-list {
+/* ---------- essays-list (row list) ---------- */
+.essays-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
-.writing-list li { margin: 0; }
-.writing-list a {
+.essays-list li { margin: 0; }
+.essays-list a {
   display: grid;
   grid-template-columns: minmax(130px, 180px) 1fr;
   gap: 16px;
-  padding: 10px 8px;
-  border-radius: 6px;
+  padding: 8px 0;
   text-decoration: none;
-  transition: background 80ms ease;
   color: var(--text);
 }
-.writing-list a:hover {
-  background: var(--hover-bg);
-  text-decoration: none;
-}
-.writing-list a strong {
+.essays-list a strong {
   font-weight: 600;
   color: var(--text);
 }
-.writing-list a:hover strong {
+.essays-list a:hover strong {
   text-decoration: underline;
   text-decoration-color: var(--text);
   text-underline-offset: 3px;
 }
-.writing-list a span {
+.essays-list a span {
   color: var(--muted);
 }
-.writing-list a.title-only {
+.essays-list a.title-only {
   display: block;
   padding: 10px 8px;
 }
 
 @media (max-width: 520px) {
-  .writing-list a {
+  .essays-list a {
     grid-template-columns: 1fr;
     gap: 2px;
     padding: 10px 6px;
@@ -277,7 +269,7 @@ figcaption, .caption {
 }
 
 .more-link {
-  margin: 14px 8px 0;
+  margin: 14px 0 0;
   font-size: 14px;
 }
 .more-link a {
@@ -308,7 +300,11 @@ figcaption, .caption {
 .page-dates {
   color: var(--muted);
   font-size: 13px;
-  margin: 0 0 24px;
+  margin: 48px 0 0;
+}
+.page-dates p {
+  margin: 0;
+  line-height: 1.5;
 }
 .post-content {
   font-size: 17px;

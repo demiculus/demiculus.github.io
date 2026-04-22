@@ -10,7 +10,7 @@ updated: 2026-04-19
 
 Some people tend to answer the question indirectly while others tend to answer something completely different. It is a good skill for politicians. But for people who want to get things done & create stuff it is better to be surrounded by people who answer the question. 
 
-There are  different ways people skipping answering the question, sometimes its staying at [high level](/specifity), [double speaking](/communication) or something else.
+There are  different ways people skipping answering the question, sometimes its staying at [high level](/specificity), [double speaking](/communication) or something else.
 
 Either way, it is hard to collaborate with these people. You need multiple rounds of back and forth in order to get the info you need. So always opt in for direct communication and direct communicators.
 
