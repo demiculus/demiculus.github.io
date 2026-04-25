@@ -10,6 +10,11 @@
   --border: #e8e6e1;
   --accent: #0b6cff;
   --code-bg: #f3f1ec;
+  --gutter: 24px;
+}
+
+@media (max-width: 520px) {
+  :root { --gutter: 20px; }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -133,17 +138,17 @@ figcaption, .caption {
 .page {
   max-width: 640px;
   margin: 0 auto;
-  padding: 48px 24px 24px;
+  padding: 48px var(--gutter) 24px;
 }
 @media (max-width: 520px) {
-  .page { padding: 32px 20px 16px; }
+  .page { padding-block: 32px 16px; }
 }
 
 /* ---------- topbar (all pages) ---------- */
 .topbar {
   max-width: 640px;
   margin: 0 auto;
-  padding: 16px 24px;
+  padding: 16px var(--gutter);
   border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
@@ -267,17 +272,20 @@ figcaption, .caption {
 .home-section { margin-bottom: 56px; }
 
 /* ---------- essays-list (row list) ---------- */
+/* Full-bleed within .page: list margins out to page edge, each row
+   re-pads with var(--gutter) so text aligns with section labels and
+   body content. */
 .essays-list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 calc(var(--gutter) * -1);
 }
 .essays-list li { margin: 0; }
 .essays-list a {
   display: grid;
   grid-template-columns: minmax(130px, 180px) 1fr;
   gap: 16px;
-  padding: 8px 0;
+  padding: 8px var(--gutter);
   text-decoration: none;
   color: var(--text);
 }
@@ -295,14 +303,14 @@ figcaption, .caption {
 }
 .essays-list a.title-only {
   display: block;
-  padding: 10px 8px;
+  padding: 10px var(--gutter);
 }
 
 @media (max-width: 520px) {
   .essays-list a {
     grid-template-columns: 1fr;
     gap: 2px;
-    padding: 10px 6px;
+    padding: 10px var(--gutter);
   }
 }
 
@@ -363,7 +371,7 @@ figcaption, .caption {
 .site-footer {
   max-width: 640px;
   margin: 32px auto 24px;
-  padding: 20px 24px 0;
+  padding: 20px var(--gutter) 0;
   border-top: 1px solid var(--border);
   font-size: 13px;
   color: var(--muted);
