@@ -1,0 +1,26 @@
+---
+sitemap: false
+---
+# Demi Yilmaz
+
+> Personal essay site of Demi Yilmaz, cofounder of Colonist.io (https://colonist.io). Short essays on mental models, work, communication, health, and family. Lean and contrarian — every sentence pays its rent.
+
+The site at https://demiculus.com is a Jekyll-based blog. Essays are intentionally short — most under 500 words. The voice is direct: no hedging, no "I think", no filler. Topics range across thinking tools, remote work, writing, parenting, ADHD, diet, and growing up.
+
+Demi has also open-sourced a mental model practice list at https://mmpractices.com.
+
+## Essays
+
+{% for essay in site.data.essays %}{% assign target_url = "/" | append: essay.slug | append: "/" %}{% assign p = site.pages | where: "url", target_url | first %}- [{{ essay.title }}]({{ site.url }}{{ target_url }}){% if p.description %}: {{ p.description }}{% endif %}
+{% endfor %}
+## Pages
+
+- [Home]({{ site.url }}/): Recent essays and short bio.
+- [About]({{ site.url }}/about/): Background, games played, books read.
+- [All essays]({{ site.url }}/essays/): Full essay index.
+- [Resume]({{ site.url }}/resume/): Work history.
+
+## Optional
+
+- [RSS feed]({{ site.url }}/feed.xml): Subscribe to new essays.
+- [Sitemap]({{ site.url }}/sitemap.xml): Full URL list.

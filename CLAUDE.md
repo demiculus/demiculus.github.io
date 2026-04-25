@@ -26,13 +26,28 @@ Personal essay site for Demi Yilmaz (cofounder of Colonist.io). Jekyll-based, ho
    ```
 2. Add entry to `_data/essays.yml` (slug + title, for home-page ordering).
 3. Home page auto-limits to the first 6 entries in `_data/essays.yml` — reorder that file to feature different essays.
+4. **Verify sync** (see below).
 
 ### Removing an essay
 Two touch points, both required:
 1. `rm <slug>.md`
 2. Remove the `- slug: <slug>` block from `_data/essays.yml`
+3. **Verify sync** (see below).
 
-Verify with `curl -I http://localhost:4000/<slug>/` → 404.
+Verify removal with `curl -I http://localhost:4000/<slug>/` → 404.
+
+### Sync invariant: essay `.md` files ⇄ `_data/essays.yml`
+
+Every essay `.md` at the repo root must have a matching `slug` entry in `_data/essays.yml`, and vice versa. Drift causes silent breakage:
+- Essay in YAML but no `.md` → home page links to a 404.
+- Essay `.md` but not in YAML → essay missing from home list and `feed.xml`.
+
+**Always run this check after adding or removing an essay:**
+```sh
+diff <(ls *.md | grep -vE '^(CLAUDE|index|about|essays|resume)\.md$' | sed 's/\.md$//' | sort) \
+     <(grep '^- slug:' _data/essays.yml | sed -E 's/.*slug: *"?([^"]*)"?.*/\1/' | sort)
+```
+Empty output = in sync. Any output = fix the drift before continuing.
 
 ### Dates
 Pull `created` / `updated` from git:

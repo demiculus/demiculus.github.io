@@ -57,6 +57,50 @@
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
 
+  <!-- JSON-LD structured data -->
+  {% if page.created %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": {{ page.title | jsonify }},
+    "description": {{ page_description | jsonify }},
+    "datePublished": "{{ page.created }}",
+    "dateModified": "{{ page.updated | default: page.created }}",
+    "author": {
+      "@type": "Person",
+      "name": "Demi Yilmaz",
+      "url": "{{ site.url }}"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ page_url }}"
+    }
+  }
+  </script>
+  {% elsif page.url == "/" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": {{ site.title | jsonify }},
+    "url": "{{ site.url }}",
+    "author": {
+      "@type": "Person",
+      "name": "Demi Yilmaz",
+      "url": "{{ site.url }}",
+      "sameAs": [
+        "https://x.com/demiculus",
+        "https://instagram.com/demiculus",
+        "https://github.com/demiculus",
+        "https://linkedin.com/in/demiculus",
+        "https://www.goodreads.com/user/show/44266195-demi-yilmaz"
+      ]
+    }
+  }
+  </script>
+  {% endif %}
+
   {% if page.math %}
   <!-- MathJax (opt-in per essay via `math: true` in front matter) -->
   <script type="text/x-mathjax-config">
