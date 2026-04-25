@@ -13,7 +13,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #0f0f10;
     --text: #f4f4f5;
     --muted: #9b9b9b;
@@ -21,6 +21,15 @@
     --accent: #7ab8ff;
     --code-bg: #17171a;
   }
+}
+
+:root[data-theme="dark"] {
+  --bg: #0f0f10;
+  --text: #f4f4f5;
+  --muted: #9b9b9b;
+  --border: #232325;
+  --accent: #7ab8ff;
+  --code-bg: #17171a;
 }
 
 /* ---------- reset ---------- */
@@ -213,6 +222,35 @@ figcaption, .caption {
   text-decoration-color: var(--muted);
   text-underline-offset: 3px;
 }
+
+/* ---------- theme toggle (topbar) ---------- */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 999px;
+  color: var(--muted);
+  cursor: pointer;
+  transition: color 80ms ease, background-color 80ms ease;
+}
+.theme-toggle:hover {
+  color: var(--text);
+  background: var(--code-bg);
+}
+.theme-toggle svg { display: block; }
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: block; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .theme-toggle .icon-sun { display: block; }
+  :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: none; }
+}
+:root[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+:root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
 /* ---------- section labels ---------- */
 .section-label {
