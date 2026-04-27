@@ -15,7 +15,7 @@ Most of the time,
 - in-office work, you'll be working from 9–5 and then you're free the rest of the day and weekends.  
 - with remote work, you're on call 16 hours a day, 7 days a week. You'll receive notifications from whoever is making progress.  
 
-First-time remote workers at Colonist don't understand this difference. They continue the same behaviors as in-office work, which makes them feel stressed. They think they should reply to everything right away. They take no time off. They feel like they're on call 24/7. They wake up with notifications. Throughout the day, they get notifications. Just as they're about to go to sleep, they get notifications. Then they wait for more notifications and delay sleep. 
+First-time remote workers at Colonist don't understand this difference. They continue the same behaviors as in-office work, which makes them feel stressed. They think they should reply to everything right away. They take no time off. They feel like they're on call 24/7. They wake up and go to sleep with notifications. Then they wait for more notifications and delay sleep. 
 
 But those who learn how to be efficient remote workers don't have that trouble. 
 
