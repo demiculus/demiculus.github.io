@@ -390,6 +390,12 @@ figcaption, .caption {
   text-underline-offset: 3px;
 }
 
+/* ---------- embeds ---------- */
+.embed--instagram {
+  margin: 1.5em 0;
+  max-width: 540px;
+}
+
 /* ---------- print ---------- */
 @media print {
   :root {
