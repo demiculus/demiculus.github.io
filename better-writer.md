@@ -26,6 +26,8 @@ That’s it. You just learned 80% of the rules of good writing. You’re welcome
 
 [By Scott Adams](https://web.archive.org/web/20250407151823/https://dilbertblog.typepad.com/the_dilbert_blog/2007/06/the_day_you_bec.html)
 
+[How to write like the great entrepreneurs](https://venturehacks.com/writing)
+
 
 
 
