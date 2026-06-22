@@ -12,8 +12,6 @@ A [midwit](/midwit/) is someone who overestimates their own intellect, lacks sel
 
 Here are some reasons for the cleanse.
 
-## Memes
-
 <div class="meme-grid">
 
 <img src="/img/midwit-cleanse-prioritization.png" alt="Midwit meme about prioritizing work over family">
