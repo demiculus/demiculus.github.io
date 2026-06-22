@@ -396,6 +396,22 @@ figcaption, .caption {
   max-width: 540px;
 }
 
+.meme-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 1.2em 0;
+}
+.meme-grid p {
+  margin: 0;
+  flex: 1 1 180px;
+  max-width: 400px;
+}
+.meme-grid img {
+  width: 100%;
+  height: auto;
+}
+
 /* ---------- print ---------- */
 @media print {
   :root {
