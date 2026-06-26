@@ -20,7 +20,7 @@ Here are some reasons for the cleanse.
 
 <img src="/img/midwit-cleanse-affordability.png" alt="Midwit meme about affording kids">
 
-<img src="/img/midwit-cleanse-lifestyle.png" alt="Midwit meme about lifestyle expectations">
+<img src="/img/midwit-cleanse-lifestyle.png" alt="Midwit meme about marriage">
 
 </div>
 
