@@ -2,3 +2,6 @@ _site/
 .bundle/
 Gemfile.lock
 .claude/
+.agents/
+.cursor/
+skills-lock.json
