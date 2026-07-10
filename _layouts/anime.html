@@ -24,17 +24,13 @@
           <form id="anime-add-form" class="anime-add-form">
             <div class="anime-field">
               <label class="anime-field-label" for="anime-title">Title</label>
-              <input type="text" id="anime-title" placeholder="Show title" required>
-            </div>
-            <div class="anime-field">
-              <label class="anime-field-label" for="anime-url">IMDb URL</label>
-              <input type="url" id="anime-url" placeholder="https://www.imdb.com/title/tt0880778/" required>
+              <input type="text" id="anime-title" placeholder="Show title" required autocomplete="off">
             </div>
             <div class="anime-add-form-actions">
               <div class="anime-field">
                 <label class="anime-field-label" for="anime-tier">Your tier</label>
                 <select id="anime-tier">
-                  <option value="">Pick tier</option>
+                  <option value="">Unrated</option>
                   <option value="1">Tier 1 — Masterpiece</option>
                   <option value="2">Tier 2 — Awesome</option>
                   <option value="3">Tier 3 — Suggestable</option>
@@ -45,6 +41,11 @@
               <div class="anime-field anime-field-action">
                 <button type="submit" class="anime-btn is-solid" id="anime-add-btn" disabled>Add anime</button>
               </div>
+            </div>
+            <div class="anime-pick" id="anime-pick" hidden>
+              <p class="anime-pick-label">Multiple matches. Pick one:</p>
+              <div class="anime-pick-list" id="anime-pick-list" role="listbox" aria-label="IMDb matches"></div>
+              <button type="button" class="anime-btn" id="anime-pick-cancel">Cancel</button>
             </div>
           </form>
         </div>

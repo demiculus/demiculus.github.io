@@ -18,7 +18,7 @@
     var root = document.querySelector('.anime-page');
     if (root) {
       root.innerHTML =
-        '<p class="anime-error">Missing config. Copy <code>anime-config.example.js</code> to <code>anime-config.js</code>, then add your Supabase anon key.</p>';
+        '<p class="anime-error">Missing config. <code>anime-config.js</code> must define <code>supabaseUrl</code> and <code>supabaseAnonKey</code>.</p>';
     }
     return;
   }
@@ -29,17 +29,54 @@
     profiles: [],
     animes: [],
     ratings: [],
+    tags: [],
     activeIds: new Set(),
     session: null,
     profile: null,
     loginOpen: false,
     loading: true,
+    tagEditAnimeId: null,
   };
 
   var els = {};
+  var pendingTier = null;
+  var adding = false;
 
   function $(id) {
     return document.getElementById(id);
+  }
+
+  function profileInitial(displayName) {
+    return String(displayName).charAt(0).toUpperCase();
+  }
+
+  function tagsForAnime(animeId) {
+    return state.tags
+      .filter(function (t) {
+        return t.anime_id === animeId;
+      })
+      .map(function (t) {
+        var profile = state.profiles.find(function (p) {
+          return p.id === t.user_id;
+        });
+        return {
+          anime_id: t.anime_id,
+          user_id: t.user_id,
+          tag: t.tag,
+          initial: profile ? profileInitial(profile.display_name) : '?',
+          display_name: profile ? profile.display_name : '',
+        };
+      })
+      .sort(function (a, b) {
+        return PROFILE_ORDER.indexOf(a.display_name) - PROFILE_ORDER.indexOf(b.display_name);
+      });
+  }
+
+  function myTag(animeId) {
+    if (!state.profile) return null;
+    return state.tags.find(function (t) {
+      return t.anime_id === animeId && t.user_id === state.profile.id;
+    });
   }
 
   function aggregateTier(animeId) {
@@ -159,11 +196,13 @@
   function renderBoard() {
     var board = els.board;
     var openSections = new Set();
+    var editingTagAnimeId = state.tagEditAnimeId;
     board.querySelectorAll('.anime-tier[open]').forEach(function (el) {
       openSections.add(el.dataset.tier);
     });
 
     board.innerHTML = '';
+    state.tagEditAnimeId = editingTagAnimeId;
 
     var buckets = { 1: [], 2: [], 3: [], 4: [], 5: [] };
     var unrated = [];
@@ -245,19 +284,90 @@
     return section;
   }
 
+  function renderTagEditor(anime, container) {
+    var mine = myTag(anime.id);
+    var form = document.createElement('form');
+    form.className = 'anime-tag-form';
+    form.innerHTML =
+      '<input type="text" class="anime-tag-input" maxlength="32" placeholder="Short tag" value="' +
+      escapeAttr(mine ? mine.tag : '') +
+      '" aria-label="Tag for ' +
+      escapeAttr(anime.title) +
+      '">' +
+      '<button type="submit" class="anime-btn anime-tag-save">Save</button>' +
+      (mine
+        ? '<button type="button" class="anime-btn anime-tag-remove">Remove</button>'
+        : '') +
+      '<button type="button" class="anime-btn anime-tag-cancel">Cancel</button>';
+
+    var input = form.querySelector('.anime-tag-input');
+    form.querySelector('.anime-tag-cancel').addEventListener('click', function () {
+      state.tagEditAnimeId = null;
+      renderBoard();
+    });
+    var removeBtn = form.querySelector('.anime-tag-remove');
+    if (removeBtn) {
+      removeBtn.addEventListener('click', function () {
+        deleteTag(anime.id);
+      });
+    }
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      saveTag(anime.id, input.value);
+    });
+    container.appendChild(form);
+    input.focus();
+    input.select();
+  }
+
+  function renderRowTags(anime, container) {
+    var tags = tagsForAnime(anime.id);
+    var editing = state.profile && state.tagEditAnimeId === anime.id;
+    var mine = myTag(anime.id);
+
+    tags.forEach(function (tag) {
+      if (editing && state.profile && tag.user_id === state.profile.id) return;
+
+      var chip = document.createElement('span');
+      chip.className = 'anime-tag';
+      if (state.profile && tag.user_id === state.profile.id) {
+        chip.className += ' is-mine';
+        chip.title = 'Edit your tag';
+        chip.addEventListener('click', function () {
+          state.tagEditAnimeId = anime.id;
+          renderBoard();
+        });
+      }
+      chip.textContent = tag.initial + ': ' + tag.tag;
+      container.appendChild(chip);
+    });
+
+    if (editing) {
+      renderTagEditor(anime, container);
+      return;
+    }
+
+    if (state.profile && !mine) {
+      var addBtn = document.createElement('button');
+      addBtn.type = 'button';
+      addBtn.className = 'anime-tag-add';
+      addBtn.setAttribute('aria-label', 'Add tag for ' + anime.title);
+      addBtn.textContent = '+';
+      addBtn.addEventListener('click', function () {
+        state.tagEditAnimeId = anime.id;
+        renderBoard();
+      });
+      container.appendChild(addBtn);
+    }
+
+    if (!container.children.length) {
+      container.hidden = true;
+    }
+  }
+
   function renderRow(anime) {
     var li = document.createElement('li');
-    li.className = 'anime-row';
-
-    var titleHtml = escapeHtml(anime.title);
-    if (anime.url) {
-      titleHtml =
-        '<a href="' +
-        escapeAttr(anime.url) +
-        '" target="_blank" rel="noopener noreferrer">' +
-        titleHtml +
-        '</a>';
-    }
+    li.className = 'anime-row' + (anime.url ? ' anime-row--linked' : '');
 
     var mine = myRating(anime.id);
     var editHtml = '';
@@ -289,10 +399,22 @@
     }
 
     li.innerHTML =
+      (anime.url
+        ? '<a class="anime-row-link" href="' +
+          escapeAttr(anime.url) +
+          '" target="_blank" rel="noopener noreferrer" aria-label="' +
+          escapeAttr(anime.title + ' on IMDb') +
+          '"></a>'
+        : '') +
+      '<div class="anime-row-main">' +
       '<div class="anime-row-title">' +
-      titleHtml +
+      escapeHtml(anime.title) +
+      '</div>' +
+      '<div class="anime-row-tags"></div>' +
       '</div>' +
       (editHtml ? '<div class="anime-row-meta">' + editHtml + '</div>' : '');
+
+    renderRowTags(anime, li.querySelector('.anime-row-tags'));
 
     var select = li.querySelector('select');
     if (select) {
@@ -329,6 +451,7 @@
       supabase.from('profiles').select('id, display_name').order('display_name'),
       supabase.from('animes').select('id, title, url, created_by').order('title'),
       supabase.from('ratings').select('anime_id, user_id, tier'),
+      supabase.from('anime_tags').select('anime_id, user_id, tag'),
     ]);
 
     var err = results.find(function (r) {
@@ -343,6 +466,7 @@
     state.profiles = results[0].data || [];
     state.animes = results[1].data || [];
     state.ratings = results[2].data || [];
+    state.tags = results[3].data || [];
 
     if (!state.activeIds.size) {
       state.profiles.forEach(function (p) {
@@ -468,6 +592,79 @@
     renderBoard();
   }
 
+  async function saveTag(animeId, rawTag) {
+    if (!state.profile) return;
+
+    var tag = rawTag.trim();
+    if (!tag) {
+      await deleteTag(animeId);
+      return;
+    }
+
+    if (tag.length > 32) {
+      renderStatus('Tag must be 32 characters or fewer.', true);
+      return;
+    }
+
+    renderStatus('Saving tag…');
+
+    var upsert = await supabase.from('anime_tags').upsert(
+      {
+        anime_id: animeId,
+        user_id: state.profile.id,
+        tag: tag,
+        updated_at: new Date().toISOString(),
+      },
+      { onConflict: 'anime_id,user_id' }
+    );
+
+    if (upsert.error) {
+      renderStatus(upsert.error.message, true);
+      return;
+    }
+
+    var found = false;
+    state.tags = state.tags.map(function (t) {
+      if (t.anime_id === animeId && t.user_id === state.profile.id) {
+        found = true;
+        return { anime_id: animeId, user_id: state.profile.id, tag: tag };
+      }
+      return t;
+    });
+    if (!found) {
+      state.tags.push({ anime_id: animeId, user_id: state.profile.id, tag: tag });
+    }
+
+    state.tagEditAnimeId = null;
+    renderStatus('Tag saved.');
+    renderBoard();
+  }
+
+  async function deleteTag(animeId) {
+    if (!state.profile) return;
+
+    renderStatus('Removing tag…');
+
+    var del = await supabase
+      .from('anime_tags')
+      .delete()
+      .eq('anime_id', animeId)
+      .eq('user_id', state.profile.id);
+
+    if (del.error) {
+      renderStatus(del.error.message, true);
+      return;
+    }
+
+    state.tags = state.tags.filter(function (t) {
+      return !(t.anime_id === animeId && t.user_id === state.profile.id);
+    });
+
+    state.tagEditAnimeId = null;
+    renderStatus('Tag removed.');
+    renderBoard();
+  }
+
   function imdbIdFromUrl(url) {
     var match = String(url).match(/imdb\.com\/title\/(tt\d{7,8})/i);
     return match ? match[1] : null;
@@ -487,120 +684,266 @@
     return !!(config.omdbApiKey && config.omdbApiKey !== 'YOUR_OMDB_KEY_HERE');
   }
 
-  async function maybePrefillTitle() {
-    if (!hasOmdbKey()) return;
-    var urlInput = $('anime-url');
-    var titleInput = $('anime-title');
-    if (!urlInput || !titleInput) return;
-
-    var url = urlInput.value.trim();
-    if (!url || titleInput.value.trim()) return;
-
-    try {
-      var show = await fetchImdbShow(url);
-      titleInput.value = show.title;
-      updateAddFormState();
-    } catch (_) {
-      /* leave title blank for manual entry */
-    }
-  }
-
-  async function resolveShow(imdbUrl, manualTitle) {
-    var imdbId = imdbIdFromUrl(imdbUrl);
-    if (!imdbId) {
-      throw new Error('Paste a valid IMDb URL (imdb.com/title/tt...).');
-    }
-
-    if (hasOmdbKey()) {
-      try {
-        return await fetchImdbShow(imdbUrl);
-      } catch (err) {
-        var fallbackTitle = (manualTitle || '').trim();
-        if (!fallbackTitle) throw err;
-        return {
-          title: fallbackTitle,
-          url: normalizeImdbUrl(imdbId),
-          imdbId: imdbId,
-        };
-      }
-    }
-
-    var title = (manualTitle || '').trim();
-    if (!title) {
-      throw new Error('Enter the show title.');
-    }
-
+  function showFromOmdbPayload(payload) {
     return {
-      title: title,
-      url: normalizeImdbUrl(imdbId),
-      imdbId: imdbId,
+      title: payload.Title,
+      year: payload.Year,
+      url: normalizeImdbUrl(payload.imdbID),
+      imdbId: payload.imdbID,
+      type: payload.Type,
     };
   }
 
-  async function fetchImdbShow(imdbUrl) {
-    var imdbId = imdbIdFromUrl(imdbUrl);
-    if (!imdbId) {
-      throw new Error('Paste a valid IMDb URL (imdb.com/title/tt...).');
-    }
+  function showFromOmdbSearchItem(item) {
+    return {
+      title: item.Title,
+      year: item.Year,
+      url: normalizeImdbUrl(item.imdbID),
+      imdbId: item.imdbID,
+      type: item.Type,
+      posterUrl: item.Poster && item.Poster !== 'N/A' ? item.Poster : '',
+    };
+  }
 
-    if (!hasOmdbKey()) {
-      throw new Error('Enter the show title.');
-    }
+  async function omdbRequest(params) {
+    var query = Object.keys(params)
+      .map(function (key) {
+        return encodeURIComponent(key) + '=' + encodeURIComponent(params[key]);
+      })
+      .join('&');
 
     var response = await fetch(
-      'https://www.omdbapi.com/?i=' +
-        encodeURIComponent(imdbId) +
-        '&apikey=' +
-        encodeURIComponent(config.omdbApiKey)
+      'https://www.omdbapi.com/?' + query + '&apikey=' + encodeURIComponent(config.omdbApiKey)
     );
 
     if (!response.ok) {
-      throw new Error('Could not reach OMDB to look up that IMDb title.');
+      throw new Error('Could not reach OMDB to look up that title.');
     }
 
-    var payload = await response.json();
-    if (!payload || payload.Response === 'False') {
-      throw new Error((payload && payload.Error) || 'IMDb title not found.');
-    }
+    return response.json();
+  }
 
+  function uniqueShows(shows) {
+    var seen = new Set();
+    return shows.filter(function (show) {
+      if (seen.has(show.imdbId)) return false;
+      seen.add(show.imdbId);
+      return true;
+    });
+  }
+
+  function imdbJsonpCallbackName(query) {
+    var words = query
+      .trim()
+      .toLowerCase()
+      .split(/\s+/)
+      .filter(Boolean);
+    if (!words.length) return 'imdb$';
+    if (words.length <= 2) {
+      return 'imdb$' + words.join('_');
+    }
+    return 'imdb$' + words.slice(0, 2).join('_') + '%20' + words.slice(2).join('%20');
+  }
+
+  function imdbPosterUrl(item) {
+    if (!item.i) return '';
+    if (typeof item.i === 'object' && item.i.imageUrl) return item.i.imageUrl;
+    if (Array.isArray(item.i) && item.i[0]) return item.i[0];
+    return '';
+  }
+
+  function showFromImdbItem(item) {
+    var type = item.qid === 'movie' ? 'movie' : 'series';
     return {
-      title: payload.Title,
-      url: normalizeImdbUrl(imdbId),
-      imdbId: imdbId,
+      title: item.l,
+      year: item.y ? String(item.y) : item.yr || '',
+      url: normalizeImdbUrl(item.id),
+      imdbId: item.id,
+      type: type,
+      posterUrl: imdbPosterUrl(item),
     };
   }
 
-  async function addAnime(event) {
-    event.preventDefault();
-    if (!state.profile) return;
+  function parseImdbSuggestResults(data) {
+    if (!data || !data.d) return [];
 
-    var imdbUrl = $('anime-url').value.trim();
-    var titleInput = $('anime-title').value.trim();
-    var tierValue = $('anime-tier').value;
-    var tier = tierValue ? Number(tierValue) : null;
+    return uniqueShows(
+      data.d
+        .filter(function (item) {
+          return item.id && /^tt\d+$/.test(item.id);
+        })
+        .filter(function (item) {
+          return item.qid === 'tvSeries' || item.qid === 'tvMiniSeries' || item.qid === 'movie';
+        })
+        .map(showFromImdbItem)
+        .slice(0, 8)
+    );
+  }
 
-    if (!titleInput || !imdbUrl) {
-      renderStatus('Title and IMDb URL are required.', true);
-      return;
-    }
+  function imdbSuggestJsonp(title) {
+    return new Promise(function (resolve, reject) {
+      var cbName = imdbJsonpCallbackName(title);
+      var script = document.createElement('script');
+      var timeout = setTimeout(function () {
+        cleanup();
+        reject(new Error('IMDb search timed out.'));
+      }, 12000);
 
-    renderStatus(hasOmdbKey() ? 'Fetching title from IMDb…' : 'Adding…');
+      function cleanup() {
+        clearTimeout(timeout);
+        try {
+          delete window[cbName];
+        } catch (_) {
+          window[cbName] = undefined;
+        }
+        if (script.parentNode) script.parentNode.removeChild(script);
+      }
 
-    var show;
+      window[cbName] = function (data) {
+        cleanup();
+        resolve(data);
+      };
+
+      script.src =
+        'https://sg.media-imdb.com/suggests/a/' +
+        encodeURIComponent(title.trim().toLowerCase()) +
+        '.json';
+      script.onerror = function () {
+        cleanup();
+        reject(new Error('Could not reach IMDb search.'));
+      };
+      document.head.appendChild(script);
+    });
+  }
+
+  async function fetchImdbSuggest(title) {
+    var query = title.trim();
+    var url = 'https://v3.sg.media-imdb.com/suggestion/a/' + encodeURIComponent(query) + '.json';
+
     try {
-      show = await resolveShow(imdbUrl, titleInput);
-    } catch (err) {
-      renderStatus(err.message, true);
-      return;
+      var response = await fetch(url);
+      if (!response.ok) {
+        throw new Error('IMDb search failed.');
+      }
+      return response.json();
+    } catch (_) {
+      return imdbSuggestJsonp(query);
     }
+  }
+
+  async function searchOmdbByTitle(title) {
+    var exact = await omdbRequest({ t: title, type: 'series' });
+    if (exact && exact.Response === 'True' && exact.imdbID) {
+      return [showFromOmdbPayload(exact)];
+    }
+
+    var search = await omdbRequest({ s: title, type: 'series' });
+    var items = search && search.Search ? search.Search : [];
+
+    if (!items.length) {
+      var broad = await omdbRequest({ s: title });
+      items = broad && broad.Search ? broad.Search : [];
+    }
+
+    return uniqueShows(
+      items
+        .filter(function (item) {
+          return item.Type === 'series' || item.Type === 'movie';
+        })
+        .map(showFromOmdbSearchItem)
+        .slice(0, 8)
+    );
+  }
+
+  async function searchShowsByTitle(title) {
+    var shows = [];
+
+    try {
+      var imdbData = await fetchImdbSuggest(title);
+      shows = parseImdbSuggestResults(imdbData);
+    } catch (err) {
+      if (!hasOmdbKey()) {
+        throw err;
+      }
+    }
+
+    if (!shows.length && hasOmdbKey()) {
+      shows = await searchOmdbByTitle(title);
+    }
+
+    return shows;
+  }
+
+  function resetAddForm() {
+    $('anime-add-form').reset();
+    hidePickList();
+    updateAddFormState();
+  }
+
+  function hidePickList() {
+    if (!els.pick) return;
+    els.pick.hidden = true;
+    $('anime-pick-list').innerHTML = '';
+    pendingTier = null;
+  }
+
+  function showPickList(shows, tier) {
+    pendingTier = tier;
+    els.pick.hidden = false;
+    renderStatus('');
+
+    var list = $('anime-pick-list');
+    list.innerHTML = '';
+
+    shows.forEach(function (show) {
+      var btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'anime-pick-item';
+      btn.setAttribute('role', 'option');
+
+      var poster = document.createElement('img');
+      poster.className = 'anime-pick-item-poster';
+      poster.alt = '';
+      poster.loading = 'lazy';
+      if (show.posterUrl) {
+        poster.src = show.posterUrl;
+      } else {
+        poster.classList.add('is-placeholder');
+      }
+
+      var body = document.createElement('span');
+      body.className = 'anime-pick-item-body';
+
+      var label = document.createElement('span');
+      label.className = 'anime-pick-item-title';
+      label.textContent = show.title;
+
+      var meta = document.createElement('span');
+      meta.className = 'anime-pick-item-meta';
+      meta.textContent = [show.year, show.type].filter(Boolean).join(' · ');
+
+      body.appendChild(label);
+      body.appendChild(meta);
+      btn.appendChild(poster);
+      btn.appendChild(body);
+      btn.addEventListener('click', function () {
+        finalizeAdd(show, tier);
+      });
+      list.appendChild(btn);
+    });
+  }
+
+  async function finalizeAdd(show, tier) {
+    if (!state.profile) return;
 
     var existing = existingAnimeByImdbId(show.imdbId);
     if (existing) {
+      hidePickList();
       renderStatus('That show is already in the list. Set your tier on the card below.', true);
       return;
     }
 
-    renderStatus('Adding ' + show.title + '…');
+    hidePickList();
 
     var insert = await supabase
       .from('animes')
@@ -638,18 +981,61 @@
       });
     }
 
-    $('anime-add-form').reset();
-    updateAddFormState();
-    renderStatus('Added.');
+    resetAddForm();
+    renderStatus('Anime added.');
     renderToggles();
     renderBoard();
+  }
+
+  async function addAnime(event) {
+    event.preventDefault();
+    if (!state.profile || adding) return;
+
+    var titleInput = $('anime-title').value.trim();
+    var tierValue = $('anime-tier').value;
+    var tier = tierValue ? Number(tierValue) : null;
+
+    if (!titleInput) {
+      renderStatus('Enter a show title.', true);
+      return;
+    }
+
+    hidePickList();
+    adding = true;
+    updateAddFormState();
+    renderStatus('Searching IMDb…');
+
+    var shows;
+    try {
+      shows = await searchShowsByTitle(titleInput);
+    } catch (err) {
+      adding = false;
+      hidePickList();
+      updateAddFormState();
+      renderStatus(err.message, true);
+      return;
+    }
+
+    adding = false;
+    updateAddFormState();
+
+    if (!shows.length) {
+      renderStatus('No IMDb match for that title. Try a different spelling or the English title.', true);
+      return;
+    }
+
+    if (shows.length === 1) {
+      await finalizeAdd(shows[0], tier);
+      return;
+    }
+
+    showPickList(shows, tier);
   }
 
   function updateAddFormState() {
     if (!els.addBtn) return;
     var title = $('anime-title').value.trim();
-    var url = $('anime-url').value.trim();
-    els.addBtn.disabled = !title || !url;
+    els.addBtn.disabled = !title || adding;
   }
 
   function bindElements() {
@@ -658,11 +1044,18 @@
     els.board = $('anime-board');
     els.status = $('anime-status');
     els.editor = $('anime-editor');
+    els.pick = $('anime-pick');
     els.addBtn = $('anime-add-btn');
     $('anime-add-form').addEventListener('submit', addAnime);
-    $('anime-url').addEventListener('blur', maybePrefillTitle);
-    $('anime-title').addEventListener('input', updateAddFormState);
-    $('anime-url').addEventListener('input', updateAddFormState);
+    $('anime-title').addEventListener('input', function () {
+      hidePickList();
+      updateAddFormState();
+    });
+    $('anime-pick-cancel').addEventListener('click', function () {
+      hidePickList();
+      renderStatus('');
+      $('anime-title').focus();
+    });
     updateAddFormState();
   }
 
