@@ -62,7 +62,7 @@ Worked on various projects in the cryptocurrency space. These include:
   </li>
   <li>
     <span class="post-date">2022</span>
-    <span><a href="https://docs.google.com/spreadsheets/d/1GN5pIOwE0pv6nAoKmS6MymbVmc8sZCcM3WkiaQVz2CM/edit#gid=1239741220">Anime Tiers</a>: List of animes me & my brothers rated.</span>
+    <span><a href="/anime/">Anime Tiers</a>: List of animes me & my brothers rated.</span>
   </li>
   <li>
     <span class="post-date">2019</span>
