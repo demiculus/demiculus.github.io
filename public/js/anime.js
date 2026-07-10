@@ -11,7 +11,7 @@
 
   var UNRATED_SECTION = 'unrated';
 
-  var PROFILE_ORDER = ['Goku', 'Kan', 'Demi', 'Orhan'];
+  var PROFILE_ORDER = ['Kan', 'Demi', 'Goku', 'Orhan'];
 
   var config = window.ANIME_CONFIG;
   if (!config || !config.supabaseUrl || !config.supabaseAnonKey) {
@@ -36,6 +36,7 @@
     loginOpen: false,
     loading: true,
     tagEditAnimeId: null,
+    searchQuery: '',
   };
 
   var els = {};
@@ -207,6 +208,7 @@
     var buckets = { 1: [], 2: [], 3: [], 4: [], 5: [] };
     var unrated = [];
     state.animes.forEach(function (anime) {
+      if (!animeMatchesSearch(anime)) return;
       var tier = aggregateTier(anime.id);
       if (tier) buckets[tier].push(anime);
       else unrated.push(anime);
@@ -398,6 +400,17 @@
         '</label>';
     }
 
+    var posterHtml =
+      '<div class="anime-row-poster' +
+      (anime.poster_url ? '' : ' is-placeholder') +
+      '">' +
+      (anime.poster_url
+        ? '<img src="' +
+          escapeAttr(anime.poster_url) +
+          '" alt="" loading="lazy" decoding="async">'
+        : '') +
+      '</div>';
+
     li.innerHTML =
       (anime.url
         ? '<a class="anime-row-link" href="' +
@@ -406,6 +419,7 @@
           escapeAttr(anime.title + ' on IMDb') +
           '"></a>'
         : '') +
+      posterHtml +
       '<div class="anime-row-main">' +
       '<div class="anime-row-title">' +
       escapeHtml(anime.title) +
@@ -449,7 +463,7 @@
 
     var results = await Promise.all([
       supabase.from('profiles').select('id, display_name').order('display_name'),
-      supabase.from('animes').select('id, title, url, created_by').order('title'),
+      supabase.from('animes').select('id, title, url, poster_url, created_by').order('title'),
       supabase.from('ratings').select('anime_id, user_id, tier'),
       supabase.from('anime_tags').select('anime_id, user_id, tag'),
     ]);
@@ -674,10 +688,34 @@
     return 'https://www.imdb.com/title/' + imdbId + '/';
   }
 
+  function normalizeTitle(title) {
+    return String(title)
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, ' ')
+      .trim();
+  }
+
   function existingAnimeByImdbId(imdbId) {
     return state.animes.find(function (anime) {
       return anime.url && imdbIdFromUrl(anime.url) === imdbId;
     });
+  }
+
+  function existingAnimeByTitle(title) {
+    var normalized = normalizeTitle(title);
+    if (!normalized) return null;
+    return state.animes.find(function (anime) {
+      return normalizeTitle(anime.title) === normalized;
+    });
+  }
+
+  function existingAnimeConflict(show) {
+    return existingAnimeByImdbId(show.imdbId) || existingAnimeByTitle(show.title);
+  }
+
+  function animeMatchesSearch(anime) {
+    if (!state.searchQuery) return true;
+    return normalizeTitle(anime.title).indexOf(normalizeTitle(state.searchQuery)) !== -1;
   }
 
   function hasOmdbKey() {
@@ -936,10 +974,13 @@
   async function finalizeAdd(show, tier) {
     if (!state.profile) return;
 
-    var existing = existingAnimeByImdbId(show.imdbId);
+    var existing = existingAnimeConflict(show);
     if (existing) {
       hidePickList();
-      renderStatus('That show is already in the list. Set your tier on the card below.', true);
+      renderStatus(
+        '“' + existing.title + '” is already in the list. Set your tier on the card below.',
+        true
+      );
       return;
     }
 
@@ -950,9 +991,10 @@
       .insert({
         title: show.title,
         url: show.url,
+        poster_url: show.posterUrl || null,
         created_by: state.profile.id,
       })
-      .select('id, title, url, created_by')
+      .select('id, title, url, poster_url, created_by')
       .single();
 
     if (insert.error) {
@@ -997,6 +1039,15 @@
 
     if (!titleInput) {
       renderStatus('Enter a show title.', true);
+      return;
+    }
+
+    var titleConflict = existingAnimeByTitle(titleInput);
+    if (titleConflict) {
+      renderStatus(
+        '“' + titleConflict.title + '” is already in the list. Set your tier on the card below.',
+        true
+      );
       return;
     }
 
@@ -1046,10 +1097,15 @@
     els.editor = $('anime-editor');
     els.pick = $('anime-pick');
     els.addBtn = $('anime-add-btn');
+    els.search = $('anime-search');
     $('anime-add-form').addEventListener('submit', addAnime);
     $('anime-title').addEventListener('input', function () {
       hidePickList();
       updateAddFormState();
+    });
+    els.search.addEventListener('input', function () {
+      state.searchQuery = els.search.value.trim();
+      renderBoard();
     });
     $('anime-pick-cancel').addEventListener('click', function () {
       hidePickList();

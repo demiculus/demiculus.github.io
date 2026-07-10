@@ -41,6 +41,11 @@
 }
 
 .anime-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   margin: 0 0 20px;
 }
 
@@ -48,6 +53,44 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+}
+
+.anime-search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 0 1 220px;
+  min-width: 160px;
+}
+
+.anime-search-icon {
+  position: absolute;
+  left: 12px;
+  color: var(--muted);
+  pointer-events: none;
+}
+
+.anime-search input {
+  width: 100%;
+  height: 36px;
+  padding: 0 12px 0 36px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--anime-surface);
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+  transition: border-color 140ms ease, box-shadow 140ms ease;
+}
+
+.anime-search input::placeholder {
+  color: var(--muted);
+}
+
+.anime-search input:focus {
+  outline: none;
+  border-color: color-mix(in srgb, var(--text) 35%, var(--border));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--text) 10%, transparent);
 }
 
 .anime-categories .anime-btn {
@@ -479,11 +522,34 @@
 .anime-row {
   position: relative;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
-  gap: 16px;
+  gap: 14px;
   padding: 11px 18px;
   transition: background 140ms ease;
+}
+
+.anime-row-poster {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  width: 40px;
+  height: 60px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--text) 8%, var(--bg));
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--text) 8%, transparent);
+}
+
+.anime-row-poster img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.anime-row-poster.is-placeholder {
+  background: color-mix(in srgb, var(--text) 10%, var(--bg));
 }
 
 .anime-row--linked {
@@ -684,6 +750,11 @@
     width: 100%;
   }
 
+  .anime-search {
+    flex: 1 1 100%;
+    min-width: 0;
+  }
+
   .anime-categories .anime-btn {
     flex: 1 1 calc(50% - 4px);
   }
@@ -692,6 +763,11 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+  }
+
+  .anime-row-poster {
+    width: 36px;
+    height: 54px;
   }
 
   .anime-row-meta {

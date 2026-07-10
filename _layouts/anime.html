@@ -16,6 +16,14 @@
 
         <div class="anime-toolbar">
           <div class="anime-categories" id="anime-toggles" role="group" aria-label="Included ratings"></div>
+          <label class="anime-search" for="anime-search">
+            <span class="anime-sr">Filter shows</span>
+            <svg class="anime-search-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path d="M7 1.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Zm0 1.25a4.25 4.25 0 1 0 0 8.5 4.25 4.25 0 0 0 0-8.5Z" fill="currentColor"/>
+              <path d="M11.03 10.22a.75.75 0 0 1 1.06 1.06l2.47 2.47a.75.75 0 1 1-1.06 1.06l-2.47-2.47a.75.75 0 0 1 0-1.06Z" fill="currentColor"/>
+            </svg>
+            <input type="search" id="anime-search" placeholder="Filter shows" autocomplete="off" enterkeyhint="search">
+          </label>
         </div>
 
         <div id="anime-status" class="anime-status"></div>
