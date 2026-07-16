@@ -10,25 +10,40 @@
     <main class="page page--anime">
       <section class="anime-page">
         <header class="anime-header">
-          <h1>Anime Tiers</h1>
-          <p class="anime-lede">Aggregate tier list. Pick Average or one person.</p>
+          <div class="anime-header-main">
+            <div class="anime-header-copy">
+              <h1>Anime Tiers</h1>
+            </div>
+            <div class="anime-auth-panel" id="anime-auth-panel">
+              <div class="anime-auth" id="anime-auth"></div>
+            </div>
+          </div>
         </header>
 
-        <div class="anime-toolbar">
-          <div class="anime-categories" id="anime-toggles" role="radiogroup" aria-label="Rating view"></div>
-          <label class="anime-search" for="anime-search">
-            <span class="anime-sr">Filter shows</span>
-            <svg class="anime-search-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
-              <path d="M7 1.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Zm0 1.25a4.25 4.25 0 1 0 0 8.5 4.25 4.25 0 0 0 0-8.5Z" fill="currentColor"/>
-              <path d="M11.03 10.22a.75.75 0 0 1 1.06 1.06l2.47 2.47a.75.75 0 1 1-1.06 1.06l-2.47-2.47a.75.75 0 0 1 0-1.06Z" fill="currentColor"/>
-            </svg>
-            <input type="search" id="anime-search" placeholder="Filter shows" autocomplete="off" enterkeyhint="search">
-          </label>
-        </div>
+        <section class="anime-up-next" id="anime-up-next" hidden></section>
 
         <div id="anime-status" class="anime-status"></div>
 
-        <div id="anime-editor" class="anime-editor" hidden>
+        <div class="anime-toolbar" id="anime-toolbar" hidden>
+          <div class="anime-categories" id="anime-toggles" role="radiogroup" aria-label="Rating view"></div>
+          <div class="anime-toolbar-end">
+            <label class="anime-search" for="anime-search">
+              <span class="anime-sr">Filter shows</span>
+              <svg class="anime-search-icon" width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+                <path d="M7 1.5a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11Zm0 1.25a4.25 4.25 0 1 0 0 8.5 4.25 4.25 0 0 0 0-8.5Z" fill="currentColor"/>
+                <path d="M11.03 10.22a.75.75 0 0 1 1.06 1.06l2.47 2.47a.75.75 0 1 1-1.06 1.06l-2.47-2.47a.75.75 0 0 1 0-1.06Z" fill="currentColor"/>
+              </svg>
+              <input type="search" id="anime-search" placeholder="Filter shows" autocomplete="off" enterkeyhint="search">
+            </label>
+            <div id="anime-editor" class="anime-editor" hidden>
+              <button type="button" class="anime-btn anime-add-toggle" id="anime-add-toggle" aria-expanded="false" aria-controls="anime-add-panel">
+                Add anime
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="anime-add-panel" id="anime-add-panel" hidden>
           <form id="anime-add-form" class="anime-add-form">
             <div class="anime-field">
               <label class="anime-field-label" for="anime-title">Title</label>
@@ -47,7 +62,7 @@
                 </select>
               </div>
               <div class="anime-field anime-field-action">
-                <button type="submit" class="anime-btn is-solid" id="anime-add-btn" disabled>Add anime</button>
+                <button type="submit" class="anime-btn is-solid" id="anime-add-btn" disabled>Add</button>
               </div>
             </div>
             <div class="anime-pick" id="anime-pick" hidden>
@@ -59,10 +74,6 @@
         </div>
 
         <div class="anime-board" id="anime-board"></div>
-
-        <footer class="anime-auth-panel" id="anime-auth-panel">
-          <div class="anime-auth" id="anime-auth"></div>
-        </footer>
       </section>
 
       <link rel="stylesheet" href="/public/css/anime.css?v={{ site.time | date: '%s' }}">

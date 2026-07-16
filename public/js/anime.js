@@ -1,6 +1,8 @@
 (function () {
   'use strict';
 
+  var PROFILE_ORDER = ['Kan', 'Demi', 'Goku', 'Orhan'];
+
   var TIER_LABELS = {
     1: 'Masterpiece',
     2: 'Awesome',
@@ -8,10 +10,6 @@
     4: 'Ok',
     5: 'Waste of Time',
   };
-
-  var UNRATED_SECTION = 'unrated';
-
-  var PROFILE_ORDER = ['Kan', 'Demi', 'Goku', 'Orhan'];
 
   var config = window.ANIME_CONFIG;
   if (!config || !config.supabaseUrl || !config.supabaseAnonKey) {
@@ -26,6 +24,7 @@
   var supabase = window.supabase.createClient(config.supabaseUrl, config.supabaseAnonKey);
 
   var AVERAGE_FILTER = 'average';
+  var BOARD_PAGE_SIZE = 25;
 
   var state = {
     profiles: [],
@@ -39,11 +38,14 @@
     loading: true,
     tagEditAnimeId: null,
     searchQuery: '',
+    addOpen: false,
+    boardVisibleCount: BOARD_PAGE_SIZE,
   };
 
   var els = {};
   var pendingTier = null;
   var adding = false;
+  var boardObserver = null;
 
   function $(id) {
     return document.getElementById(id);
@@ -82,17 +84,38 @@
     });
   }
 
-  function aggregateTier(animeId) {
-    var relevant = state.ratings.filter(function (r) {
-      if (r.anime_id !== animeId) return false;
-      if (state.activeFilter === AVERAGE_FILTER) return true;
-      return r.user_id === state.activeFilter;
+  function tagTooltip(tag) {
+    var name = tag.display_name || tag.initial;
+    var value = String(tag.tag || '').trim();
+    if (/^\d+x$/i.test(value)) {
+      return name + ' watched it ' + value.toLowerCase();
+    }
+    if (/^unique$/i.test(value)) {
+      return name + ' finds this unique';
+    }
+    return name + ': ' + value;
+  }
+
+  /** Score shown in the left rail: family avg, or the selected person's tier. */
+  function boardScore(animeId) {
+    if (state.activeFilter === AVERAGE_FILTER) return familyAverage(animeId);
+    var row = state.ratings.find(function (r) {
+      return r.anime_id === animeId && r.user_id === state.activeFilter;
     });
-    if (!relevant.length) return null;
-    var sum = relevant.reduce(function (acc, r) {
-      return acc + r.tier;
-    }, 0);
-    return Math.ceil(sum / relevant.length);
+    return row ? row.tier : null;
+  }
+
+  function formatBoardScore(score) {
+    if (score == null) return '—';
+    return score % 1 === 0 ? String(score) : score.toFixed(1);
+  }
+
+  function boardScoreLabel() {
+    if (state.activeFilter === AVERAGE_FILTER) return 'Avg';
+    var profile = state.profiles.find(function (p) {
+      return p.id === state.activeFilter;
+    });
+    return profile ? profileInitial(profile.display_name) : 'Tier';
   }
 
   function myRating(animeId) {
@@ -103,10 +126,61 @@
     return row ? row.tier : null;
   }
 
+  /** Family average across all raters (raw mean). Null if nobody rated it. */
+  function familyAverage(animeId) {
+    var relevant = state.ratings.filter(function (r) {
+      return r.anime_id === animeId;
+    });
+    if (!relevant.length) return null;
+    var sum = relevant.reduce(function (acc, r) {
+      return acc + r.tier;
+    }, 0);
+    return sum / relevant.length;
+  }
+
+  /** Top 3 high-average shows the signed-in viewer has not rated. */
+  function upNextShows() {
+    if (!state.profile) return [];
+    return state.animes
+      .filter(function (anime) {
+        if (myRating(anime.id) != null) return false;
+        return familyAverage(anime.id) != null;
+      })
+      .map(function (anime) {
+        return { anime: anime, avg: familyAverage(anime.id) };
+      })
+      .sort(function (a, b) {
+        if (a.avg !== b.avg) return a.avg - b.avg;
+        return a.anime.title.localeCompare(b.anime.title);
+      })
+      .slice(0, 3)
+      .map(function (row) {
+        return row.anime;
+      });
+  }
+
   function sortedProfiles() {
     return state.profiles.slice().sort(function (a, b) {
       return PROFILE_ORDER.indexOf(a.display_name) - PROFILE_ORDER.indexOf(b.display_name);
     });
+  }
+
+  function setAddOpen(open) {
+    var next = !!open;
+    var wasOpen = state.addOpen;
+    state.addOpen = next;
+    if (!els.addPanel || !els.addToggle) return;
+    els.addPanel.hidden = !next;
+    els.addToggle.setAttribute('aria-expanded', next ? 'true' : 'false');
+    els.addToggle.textContent = next ? 'Cancel' : 'Add anime';
+    if (next && !wasOpen) {
+      var title = $('anime-title');
+      if (title) title.focus();
+    }
+    if (!next && wasOpen) {
+      hidePickList();
+      resetAddForm();
+    }
   }
 
   function renderAuth() {
@@ -114,12 +188,15 @@
     if (state.session && state.profile) {
       state.loginOpen = false;
       box.innerHTML =
-        '<p class="anime-auth-status">Signed in as <strong>' +
+        '<div class="anime-auth-status">' +
+        '<span>Signed in as <strong>' +
         escapeHtml(state.profile.display_name) +
-        '</strong></p>' +
-        '<button type="button" class="anime-btn" id="anime-sign-out">Sign out</button>';
+        '</strong></span>' +
+        '<button type="button" class="anime-btn" id="anime-sign-out">Sign out</button>' +
+        '</div>';
       $('anime-sign-out').addEventListener('click', signOut);
       els.editor.hidden = false;
+      setAddOpen(state.addOpen);
       return;
     }
 
@@ -127,6 +204,7 @@
       box.innerHTML =
         '<p class="anime-error">Signed in, but no profile linked. Ask Demi to add your profile row in Supabase.</p>';
       els.editor.hidden = true;
+      setAddOpen(false);
       return;
     }
 
@@ -155,6 +233,7 @@
     });
     $('anime-login-form').addEventListener('submit', signInWithPassword);
     els.editor.hidden = true;
+    setAddOpen(false);
   }
 
   function ratingCountForUser(userId) {
@@ -166,6 +245,7 @@
   function setActiveFilter(filter) {
     if (state.activeFilter === filter) return;
     state.activeFilter = filter;
+    resetBoardPagination();
     renderToggles();
     renderBoard();
   }
@@ -208,96 +288,192 @@
     });
   }
 
-  function renderBoard() {
-    var board = els.board;
-    var openSections = new Set();
-    var editingTagAnimeId = state.tagEditAnimeId;
-    board.querySelectorAll('.anime-tier[open]').forEach(function (el) {
-      openSections.add(el.dataset.tier);
-    });
+  function renderUpNext() {
+    var root = els.upNext;
+    if (!root) return;
 
-    board.innerHTML = '';
-    state.tagEditAnimeId = editingTagAnimeId;
+    if (!state.profile) {
+      root.hidden = true;
+      root.innerHTML = '';
+      return;
+    }
 
-    var buckets = { 1: [], 2: [], 3: [], 4: [], 5: [] };
-    var unrated = [];
-    state.animes.forEach(function (anime) {
-      if (!animeMatchesSearch(anime)) return;
-      var tier = aggregateTier(anime.id);
-      if (tier) buckets[tier].push(anime);
-      else unrated.push(anime);
-    });
+    var shows = upNextShows();
+    root.hidden = false;
 
-    Object.keys(TIER_LABELS).forEach(function (tierKey) {
-      board.appendChild(
-        renderBoardSection({
-          key: tierKey,
-          numLabel: 'Tier ' + tierKey,
-          label: TIER_LABELS[tierKey],
-          items: buckets[Number(tierKey)],
-          openSections: openSections,
-          emptyText: 'No shows in this tier yet.',
+    if (!shows.length) {
+      root.innerHTML =
+        '<p class="anime-up-next-label">Up next</p>' +
+        '<p class="anime-muted">Nothing left in the queue — you\'ve rated every scored show.</p>';
+      return;
+    }
+
+    var list = document.createElement('ul');
+    list.className = 'anime-rows';
+    shows.forEach(function (anime) {
+      list.appendChild(
+        renderRow(anime, {
+          score: familyAverage(anime.id),
+          scoreLabel: 'Avg',
         })
       );
     });
 
-    board.appendChild(
-      renderBoardSection({
-        key: UNRATED_SECTION,
-        label: 'Unrated',
-        items: unrated,
-        openSections: openSections,
-        emptyText: 'No unrated shows.',
-        isUnrated: true,
+    root.innerHTML = '<p class="anime-up-next-label">Up next</p>';
+    root.appendChild(list);
+  }
+
+  function ratingsBreakdown(animeId) {
+    return state.ratings
+      .filter(function (r) {
+        return r.anime_id === animeId;
       })
+      .map(function (r) {
+        var profile = state.profiles.find(function (p) {
+          return p.id === r.user_id;
+        });
+        return {
+          initial: profile ? profileInitial(profile.display_name) : '?',
+          display_name: profile ? profile.display_name : '',
+          tier: r.tier,
+        };
+      })
+      .sort(function (a, b) {
+        return PROFILE_ORDER.indexOf(a.display_name) - PROFILE_ORDER.indexOf(b.display_name);
+      });
+  }
+
+  function tierShortLabel(tier) {
+    return 'T' + tier;
+  }
+
+  function tierFullLabel(tier) {
+    return 'Tier ' + tier + ' - ' + TIER_LABELS[tier];
+  }
+
+  function setTierSelectOptionLabels(select, expanded) {
+    Array.prototype.forEach.call(select.options, function (opt) {
+      if (!opt.value) return;
+      var tier = Number(opt.value);
+      opt.textContent = expanded ? tierFullLabel(tier) : tierShortLabel(tier);
+    });
+  }
+
+  function tierSelectHtml(anime) {
+    var mine = myRating(anime.id);
+    return (
+      '<label class="anime-rate">' +
+      '<span class="anime-sr">Your tier</span>' +
+      '<select data-anime-id="' +
+      escapeAttr(anime.id) +
+      '" aria-label="Your tier for ' +
+      escapeAttr(anime.title) +
+      '">' +
+      '<option value="">Rate</option>' +
+      [1, 2, 3, 4, 5]
+        .map(function (t) {
+          return (
+            '<option value="' +
+            t +
+            '"' +
+            (mine === t ? ' selected' : '') +
+            '>' +
+            tierShortLabel(t) +
+            '</option>'
+          );
+        })
+        .join('') +
+      '</select>' +
+      '</label>'
     );
   }
 
-  function renderBoardSection(options) {
-    var items = options.items.slice().sort(function (a, b) {
+  function bindTierSelect(root, anime) {
+    var select = root.querySelector('.anime-rate select');
+    if (!select) return;
+
+    select.addEventListener('mousedown', function () {
+      setTierSelectOptionLabels(select, true);
+    });
+    select.addEventListener('focus', function () {
+      setTierSelectOptionLabels(select, true);
+    });
+    select.addEventListener('blur', function () {
+      setTierSelectOptionLabels(select, false);
+    });
+    select.addEventListener('change', function () {
+      setTierSelectOptionLabels(select, false);
+      saveRating(anime.id, select.value ? Number(select.value) : null);
+    });
+  }
+
+  function resetBoardPagination() {
+    state.boardVisibleCount = BOARD_PAGE_SIZE;
+    if (boardObserver) {
+      boardObserver.disconnect();
+      boardObserver = null;
+    }
+  }
+
+  function sortedBoardItems() {
+    return state.animes.filter(animeMatchesSearch).slice().sort(function (a, b) {
+      var aScore = boardScore(a.id);
+      var bScore = boardScore(b.id);
+      var aRated = aScore != null;
+      var bRated = bScore != null;
+      if (aRated !== bRated) return aRated ? -1 : 1;
+      if (aScore !== bScore) return aScore - bScore;
       return a.title.localeCompare(b.title);
     });
+  }
 
-    var section = document.createElement('details');
-    section.className = 'anime-tier' + (options.isUnrated ? ' anime-tier--unrated' : '');
-    section.dataset.tier = options.key;
-    section.open =
-      options.openSections.has(options.key) ||
-      (options.openSections.size === 0 && options.key === '1');
+  function observeBoardSentinel(sentinel) {
+    if (boardObserver) boardObserver.disconnect();
+    boardObserver = new IntersectionObserver(
+      function (entries) {
+        if (!entries.some(function (entry) { return entry.isIntersecting; })) return;
+        boardObserver.disconnect();
+        boardObserver = null;
+        state.boardVisibleCount += BOARD_PAGE_SIZE;
+        renderBoard();
+      },
+      { root: null, rootMargin: '240px 0px', threshold: 0 }
+    );
+    boardObserver.observe(sentinel);
+  }
 
-    var summaryMain = options.numLabel
-      ? '<span class="anime-tier-num">' +
-        escapeHtml(options.numLabel) +
-        '</span>' +
-        '<span class="anime-tier-label">' +
-        escapeHtml(options.label) +
-        '</span>'
-      : '<span class="anime-tier-label">' + escapeHtml(options.label) + '</span>';
+  function renderBoard() {
+    var board = els.board;
+    var editingTagAnimeId = state.tagEditAnimeId;
+    board.innerHTML = '';
+    state.tagEditAnimeId = editingTagAnimeId;
 
-    section.innerHTML =
-      '<summary class="anime-tier-summary">' +
-      '<span class="anime-tier-summary-main">' +
-      summaryMain +
-      '</span>' +
-      '<span class="anime-tier-count">' +
-      items.length +
-      '</span>' +
-      '</summary>' +
-      '<div class="anime-tier-body"></div>';
+    var items = sortedBoardItems();
 
-    var body = section.querySelector('.anime-tier-body');
     if (!items.length) {
-      body.innerHTML = '<p class="anime-tier-empty">' + escapeHtml(options.emptyText) + '</p>';
-    } else {
-      var list = document.createElement('ul');
-      list.className = 'anime-rows';
-      items.forEach(function (anime) {
-        list.appendChild(renderRow(anime));
-      });
-      body.appendChild(list);
+      resetBoardPagination();
+      board.innerHTML = '<p class="anime-board-empty">No shows match.</p>';
+      return;
     }
 
-    return section;
+    var visible = items.slice(0, state.boardVisibleCount);
+    var list = document.createElement('ul');
+    list.className = 'anime-rows';
+    visible.forEach(function (anime) {
+      list.appendChild(renderRow(anime));
+    });
+    board.appendChild(list);
+
+    if (visible.length < items.length) {
+      var sentinel = document.createElement('div');
+      sentinel.className = 'anime-board-sentinel';
+      sentinel.setAttribute('aria-hidden', 'true');
+      board.appendChild(sentinel);
+      observeBoardSentinel(sentinel);
+    } else if (boardObserver) {
+      boardObserver.disconnect();
+      boardObserver = null;
+    }
   }
 
   function renderTagEditor(anime, container) {
@@ -319,6 +495,7 @@
     var input = form.querySelector('.anime-tag-input');
     form.querySelector('.anime-tag-cancel').addEventListener('click', function () {
       state.tagEditAnimeId = null;
+      renderUpNext();
       renderBoard();
     });
     var removeBtn = form.querySelector('.anime-tag-remove');
@@ -345,12 +522,13 @@
       if (editing && state.profile && tag.user_id === state.profile.id) return;
 
       var chip = document.createElement('span');
-      chip.className = 'anime-tag';
+      chip.className = 'anime-tag anime-tip';
+      chip.dataset.tip = tagTooltip(tag);
       if (state.profile && tag.user_id === state.profile.id) {
         chip.className += ' is-mine';
-        chip.title = 'Edit your tag';
         chip.addEventListener('click', function () {
           state.tagEditAnimeId = anime.id;
+          renderUpNext();
           renderBoard();
         });
       }
@@ -371,6 +549,7 @@
       addBtn.textContent = '+';
       addBtn.addEventListener('click', function () {
         state.tagEditAnimeId = anime.id;
+        renderUpNext();
         renderBoard();
       });
       container.appendChild(addBtn);
@@ -381,39 +560,40 @@
     }
   }
 
-  function renderRow(anime) {
+  function renderWhoRated(animeId) {
+    var raters = ratingsBreakdown(animeId);
+    if (!raters.length) {
+      return '<div class="anime-row-who"><span class="anime-who-chip is-empty">No ratings</span></div>';
+    }
+    return (
+      '<div class="anime-row-who">' +
+      raters
+        .map(function (r) {
+          var name = r.display_name || r.initial;
+          return (
+            '<span class="anime-who-chip anime-tip" data-tip="' +
+            escapeAttr(name + ' rated it ' + tierFullLabel(r.tier)) +
+            '">' +
+            escapeHtml(r.initial) +
+            '<b>' +
+            r.tier +
+            '</b></span>'
+          );
+        })
+        .join('') +
+      '</div>'
+    );
+  }
+
+  function renderRow(anime, options) {
+    options = options || {};
     var li = document.createElement('li');
     li.className = 'anime-row' + (anime.url ? ' anime-row--linked' : '');
 
-    var mine = myRating(anime.id);
-    var editHtml = '';
-    if (state.profile) {
-      editHtml =
-        '<label class="anime-rate">' +
-        '<span class="anime-sr">Your tier</span>' +
-        '<select data-anime-id="' +
-        escapeAttr(anime.id) +
-        '" aria-label="Your tier for ' +
-        escapeAttr(anime.title) +
-        '">' +
-        '<option value="">Rate</option>' +
-        [1, 2, 3, 4, 5]
-          .map(function (t) {
-            return (
-              '<option value="' +
-              t +
-              '"' +
-              (mine === t ? ' selected' : '') +
-              '>T' +
-              t +
-              '</option>'
-            );
-          })
-          .join('') +
-        '</select>' +
-        '</label>';
-    }
-
+    var score = Object.prototype.hasOwnProperty.call(options, 'score')
+      ? options.score
+      : boardScore(anime.id);
+    var scoreLabel = options.scoreLabel || boardScoreLabel();
     var posterHtml =
       '<div class="anime-row-poster' +
       (anime.poster_url ? '' : ' is-placeholder') +
@@ -433,23 +613,28 @@
           escapeAttr(anime.title + ' on IMDb') +
           '"></a>'
         : '') +
+      '<div class="anime-row-score' +
+      (score == null ? ' is-none' : '') +
+      '">' +
+      '<span class="anime-row-score-n">' +
+      escapeHtml(formatBoardScore(score)) +
+      '</span>' +
+      '<span class="anime-row-score-l">' +
+      escapeHtml(scoreLabel) +
+      '</span>' +
+      '</div>' +
       posterHtml +
       '<div class="anime-row-main">' +
       '<div class="anime-row-title">' +
       escapeHtml(anime.title) +
       '</div>' +
+      renderWhoRated(anime.id) +
       '<div class="anime-row-tags"></div>' +
       '</div>' +
-      (editHtml ? '<div class="anime-row-meta">' + editHtml + '</div>' : '');
+      (state.profile ? '<div class="anime-row-meta">' + tierSelectHtml(anime) + '</div>' : '');
 
     renderRowTags(anime, li.querySelector('.anime-row-tags'));
-
-    var select = li.querySelector('select');
-    if (select) {
-      select.addEventListener('change', function () {
-        saveRating(anime.id, select.value ? Number(select.value) : null);
-      });
-    }
+    bindTierSelect(li, anime);
 
     return li;
   }
@@ -473,6 +658,7 @@
 
   async function loadData() {
     state.loading = true;
+    if (els.toolbar) els.toolbar.hidden = true;
     renderStatus('Loading…');
 
     var results = await Promise.all([
@@ -488,6 +674,7 @@
     if (err) {
       renderStatus(err.error.message, true);
       state.loading = false;
+      if (els.toolbar) els.toolbar.hidden = true;
       return;
     }
 
@@ -507,8 +694,10 @@
 
     state.loading = false;
     renderStatus('');
+    if (els.toolbar) els.toolbar.hidden = false;
     renderAuth();
     renderToggles();
+    renderUpNext();
     renderBoard();
   }
 
@@ -538,6 +727,7 @@
     }
 
     renderAuth();
+    renderUpNext();
     renderBoard();
   }
 
@@ -571,6 +761,7 @@
     state.profile = null;
     state.loginOpen = false;
     renderAuth();
+    renderUpNext();
     renderBoard();
   }
 
@@ -620,6 +811,7 @@
 
     renderStatus('Saved.');
     renderToggles();
+    renderUpNext();
     renderBoard();
   }
 
@@ -1097,9 +1289,10 @@
       });
     }
 
-    resetAddForm();
+    setAddOpen(false);
     renderStatus('Anime added.');
     renderToggles();
+    renderUpNext();
     renderBoard();
   }
 
@@ -1166,12 +1359,22 @@
   function bindElements() {
     els.auth = $('anime-auth');
     els.toggles = $('anime-toggles');
+    els.upNext = $('anime-up-next');
     els.board = $('anime-board');
     els.status = $('anime-status');
     els.editor = $('anime-editor');
+    els.toolbar = $('anime-toolbar');
+    els.addPanel = $('anime-add-panel');
+    els.addToggle = $('anime-add-toggle');
     els.pick = $('anime-pick');
     els.addBtn = $('anime-add-btn');
     els.search = $('anime-search');
+    if (els.toolbar) els.toolbar.hidden = true;
+    if (els.addToggle) {
+      els.addToggle.addEventListener('click', function () {
+        setAddOpen(!state.addOpen);
+      });
+    }
     $('anime-add-form').addEventListener('submit', addAnime);
     $('anime-title').addEventListener('input', function () {
       hidePickList();
@@ -1179,6 +1382,7 @@
     });
     els.search.addEventListener('input', function () {
       state.searchQuery = els.search.value.trim();
+      resetBoardPagination();
       renderBoard();
     });
     $('anime-pick-cancel').addEventListener('click', function () {
