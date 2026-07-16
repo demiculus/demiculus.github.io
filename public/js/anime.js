@@ -25,12 +25,14 @@
 
   var supabase = window.supabase.createClient(config.supabaseUrl, config.supabaseAnonKey);
 
+  var AVERAGE_FILTER = 'average';
+
   var state = {
     profiles: [],
     animes: [],
     ratings: [],
     tags: [],
-    activeIds: new Set(),
+    activeFilter: AVERAGE_FILTER,
     session: null,
     profile: null,
     loginOpen: false,
@@ -82,7 +84,9 @@
 
   function aggregateTier(animeId) {
     var relevant = state.ratings.filter(function (r) {
-      return r.anime_id === animeId && state.activeIds.has(r.user_id);
+      if (r.anime_id !== animeId) return false;
+      if (state.activeFilter === AVERAGE_FILTER) return true;
+      return r.user_id === state.activeFilter;
     });
     if (!relevant.length) return null;
     var sum = relevant.reduce(function (acc, r) {
@@ -159,39 +163,49 @@
     }).length;
   }
 
+  function setActiveFilter(filter) {
+    if (state.activeFilter === filter) return;
+    state.activeFilter = filter;
+    renderToggles();
+    renderBoard();
+  }
+
+  function makeFilterButton(label, filter, count) {
+    var isOn = state.activeFilter === filter;
+    var btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'anime-btn' + (isOn ? ' is-on' : '');
+    btn.setAttribute('role', 'radio');
+    btn.setAttribute('aria-checked', isOn ? 'true' : 'false');
+    btn.innerHTML =
+      '<span class="anime-category-name">' +
+      escapeHtml(label) +
+      '</span>' +
+      (count == null
+        ? ''
+        : '<span class="anime-category-count">' + count + '</span>');
+    btn.addEventListener('click', function () {
+      setActiveFilter(filter);
+    });
+    return btn;
+  }
+
   function renderToggles() {
     var container = els.toggles;
     container.innerHTML = '';
 
-    sortedProfiles().forEach(function (profile) {
-      var count = ratingCountForUser(profile.id);
-      var btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'anime-btn' + (state.activeIds.has(profile.id) ? ' is-on' : '');
-      btn.dataset.id = profile.id;
-      btn.setAttribute('aria-pressed', state.activeIds.has(profile.id) ? 'true' : 'false');
-      btn.innerHTML =
-        '<span class="anime-category-name">' +
-        escapeHtml(profile.display_name) +
-        '</span>' +
-        '<span class="anime-category-count">' +
-        count +
-        '</span>';
-      btn.addEventListener('click', function () {
-        if (state.activeIds.has(profile.id)) {
-          state.activeIds.delete(profile.id);
-        } else {
-          state.activeIds.add(profile.id);
-        }
-        renderToggles();
-        renderBoard();
-      });
-      container.appendChild(btn);
-    });
-
     if (!state.profiles.length) {
       container.innerHTML = '<p class="anime-muted">No profiles yet.</p>';
+      return;
     }
+
+    container.appendChild(makeFilterButton('Average', AVERAGE_FILTER, null));
+
+    sortedProfiles().forEach(function (profile) {
+      container.appendChild(
+        makeFilterButton(profile.display_name, profile.id, ratingCountForUser(profile.id))
+      );
+    });
   }
 
   function renderBoard() {
@@ -482,10 +496,13 @@
     state.ratings = results[2].data || [];
     state.tags = results[3].data || [];
 
-    if (!state.activeIds.size) {
-      state.profiles.forEach(function (p) {
-        state.activeIds.add(p.id);
-      });
+    if (
+      state.activeFilter !== AVERAGE_FILTER &&
+      !state.profiles.some(function (p) {
+        return p.id === state.activeFilter;
+      })
+    ) {
+      state.activeFilter = AVERAGE_FILTER;
     }
 
     state.loading = false;
@@ -777,10 +794,52 @@
       .split(/\s+/)
       .filter(Boolean);
     if (!words.length) return 'imdb$';
-    if (words.length <= 2) {
-      return 'imdb$' + words.join('_');
+    return 'imdb$' + words.join('_');
+  }
+
+  function imdbJsonpSearchQueries(title) {
+    var words = title
+      .trim()
+      .toLowerCase()
+      .split(/\s+/)
+      .filter(Boolean);
+
+    while (words.length && (words[0] === 'the' || words[0] === 'a' || words[0] === 'an')) {
+      words.shift();
     }
-    return 'imdb$' + words.slice(0, 2).join('_') + '%20' + words.slice(2).join('%20');
+
+    if (!words.length) return [title.trim().toLowerCase()];
+    if (words.length <= 2) return [words.join(' ')];
+
+    var queries = [words.slice(0, 2).join(' ')];
+    var tail = words.slice(-2).join(' ');
+    if (queries.indexOf(tail) === -1) {
+      queries.push(tail);
+    }
+    return queries;
+  }
+
+  function rankShowsByTitle(shows, title) {
+    var normalized = normalizeTitle(title);
+    if (!normalized) return shows;
+
+    return shows.slice().sort(function (a, b) {
+      return titleMatchScore(b.title, normalized) - titleMatchScore(a.title, normalized);
+    });
+  }
+
+  function titleMatchScore(showTitle, normalizedQuery) {
+    var normalizedTitle = normalizeTitle(showTitle);
+    if (!normalizedTitle) return 0;
+    if (normalizedTitle === normalizedQuery) return 1000;
+    if (normalizedTitle.indexOf(normalizedQuery) !== -1) return 500 + normalizedQuery.length;
+    if (normalizedQuery.indexOf(normalizedTitle) !== -1) return 400 + normalizedTitle.length;
+
+    var queryWords = normalizedQuery.split(' ').filter(Boolean);
+    var matched = queryWords.filter(function (word) {
+      return normalizedTitle.indexOf(word) !== -1;
+    }).length;
+    return matched * 10;
   }
 
   function imdbPosterUrl(item) {
@@ -818,14 +877,14 @@
     );
   }
 
-  function imdbSuggestJsonp(title) {
+  function imdbSuggestJsonp(query) {
     return new Promise(function (resolve, reject) {
-      var cbName = imdbJsonpCallbackName(title);
+      var cbName = imdbJsonpCallbackName(query);
       var script = document.createElement('script');
       var timeout = setTimeout(function () {
         cleanup();
         reject(new Error('IMDb search timed out.'));
-      }, 12000);
+      }, 8000);
 
       function cleanup() {
         clearTimeout(timeout);
@@ -844,7 +903,7 @@
 
       script.src =
         'https://sg.media-imdb.com/suggests/a/' +
-        encodeURIComponent(title.trim().toLowerCase()) +
+        encodeURIComponent(query.trim().toLowerCase()) +
         '.json';
       script.onerror = function () {
         cleanup();
@@ -854,18 +913,33 @@
     });
   }
 
+  async function imdbSuggestJsonpForTitle(title) {
+    var queries = imdbJsonpSearchQueries(title);
+    var lastError = null;
+
+    for (var i = 0; i < queries.length; i++) {
+      try {
+        return await imdbSuggestJsonp(queries[i]);
+      } catch (err) {
+        lastError = err;
+      }
+    }
+
+    throw lastError || new Error('IMDb search timed out.');
+  }
+
   async function fetchImdbSuggest(title) {
     var query = title.trim();
     var url = 'https://v3.sg.media-imdb.com/suggestion/a/' + encodeURIComponent(query) + '.json';
 
     try {
-      var response = await fetch(url);
+      var response = await fetch(url, { signal: AbortSignal.timeout(4000) });
       if (!response.ok) {
         throw new Error('IMDb search failed.');
       }
       return response.json();
     } catch (_) {
-      return imdbSuggestJsonp(query);
+      return imdbSuggestJsonpForTitle(query);
     }
   }
 
@@ -898,7 +972,7 @@
 
     try {
       var imdbData = await fetchImdbSuggest(title);
-      shows = parseImdbSuggestResults(imdbData);
+      shows = rankShowsByTitle(parseImdbSuggestResults(imdbData), title);
     } catch (err) {
       if (!hasOmdbKey()) {
         throw err;
