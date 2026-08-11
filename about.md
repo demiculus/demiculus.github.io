@@ -61,6 +61,18 @@ Worked on various projects in the cryptocurrency space. These include:
     <span><a href="https://luma.com/level-5">Level 5</a></span>
   </li>
   <li>
+    <span class="post-date">2026</span>
+    <span><a href="https://casepop.ph/">Casepop.ph</a>: Phone case printing machines</span>
+  </li>
+  <li>
+    <span class="post-date">2025</span>
+    <span><a href="https://www.instagram.com/lan.demir">Lan.Demir</a>: Influencer account lol</span>
+  </li>
+  <li>
+    <span class="post-date">2025</span>
+    <span><a href="https://11xburs.com/">11x Burs</a>: Entrepreneurship scholorship</span>
+  </li>
+  <li>
     <span class="post-date">2022</span>
     <span><a href="/anime/">Anime Tiers</a>: List of animes me & my brothers rated.</span>
   </li>

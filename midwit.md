@@ -3,7 +3,7 @@ layout: default
 title: Midwit
 description: Smart enough to overcomplicate. Not smart enough to simplify.
 created: 2026-06-21
-updated: 2026-06-21
+updated: 2026-07-31
 ---
 
 ## Midwit
@@ -13,6 +13,8 @@ A midwit is someone who overestimates their own intellect, lacks self-awareness,
 ## Memes
 
 <div class="meme-grid">
+
+<img src="/img/midwit-im.jpg" alt="Midwit meme about who people think they are">
 
 <img src="/img/midwit-instincts.jpg" alt="Midwit meme about trusting instincts">
 
