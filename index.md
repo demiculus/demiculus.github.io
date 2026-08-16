@@ -4,7 +4,7 @@ title: Home
 hidden: true
 ---
 
-<section class="home-section">
+<section class="home-section" data-track-region="home">
 <h3 class="section-label">Recent Essays</h3>
 <ul class="essays-list">
 {% for e in site.data.essays limit: 6 %}

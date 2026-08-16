@@ -7,7 +7,7 @@
 {% endfor %}
 {% assign picks = valid | sample: 4 %}
 {% if picks.size > 0 %}
-<aside class="related-posts">
+<aside class="related-posts" data-track-region="related">
   <h3 class="section-label">Read more</h3>
   <ul class="essays-list">
     {% for p in picks %}

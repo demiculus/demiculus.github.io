@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body{% include analytics-attrs.html %}
 
     {% include topbar.html %}
 
@@ -28,6 +28,8 @@
     {% if page.instagram %}
     <script async src="https://www.instagram.com/embed.js"></script>
     {% endif %}
+
+    {% include analytics-script.html %}
 
   </body>
 </html>

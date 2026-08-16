@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body{% include analytics-attrs.html %}
 
     {% include topbar.html %}
 
@@ -77,6 +77,7 @@
       </section>
 
       <link rel="stylesheet" href="/public/css/anime.css?v={{ site.time | date: '%s' }}">
+      {% include analytics-script.html %}
       <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
       <script src="/public/js/anime-config.js?v={{ site.time | date: '%s' }}"></script>
       <script src="/public/js/anime.js?v={{ site.time | date: '%s' }}"></script>

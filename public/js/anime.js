@@ -51,6 +51,23 @@
     return document.getElementById(id);
   }
 
+  function track(event, props) {
+    if (typeof window.track === 'function') window.track(event, props);
+  }
+
+  function animeById(id) {
+    return (
+      state.animes.find(function (a) {
+        return a.id === id;
+      }) || null
+    );
+  }
+
+  function identifyProfile() {
+    if (!window.posthog || !state.profile) return;
+    window.posthog.identify(state.profile.id, { name: state.profile.display_name });
+  }
+
   function profileInitial(displayName) {
     return String(displayName).charAt(0).toUpperCase();
   }
@@ -248,6 +265,7 @@
     resetBoardPagination();
     renderToggles();
     renderBoard();
+    track('anime_filter', { filter: filter });
   }
 
   function makeFilterButton(label, filter, count) {
@@ -609,7 +627,9 @@
       (anime.url
         ? '<a class="anime-row-link" href="' +
           escapeAttr(anime.url) +
-          '" target="_blank" rel="noopener noreferrer" aria-label="' +
+          '" target="_blank" rel="noopener noreferrer" data-title="' +
+          escapeAttr(anime.title) +
+          '" aria-label="' +
           escapeAttr(anime.title + ' on IMDb') +
           '"></a>'
         : '') +
@@ -729,6 +749,7 @@
     renderAuth();
     renderUpNext();
     renderBoard();
+    identifyProfile();
   }
 
   async function signInWithPassword(event) {
@@ -747,12 +768,14 @@
     if (result.error) {
       hint.textContent = result.error.message;
       hint.className = 'anime-login-hint is-error';
+      track('anime_sign_in', { success: false });
       return;
     }
 
     hint.textContent = '';
     await refreshSession();
     renderToggles();
+    track('anime_sign_in', { success: true });
   }
 
   async function signOut() {
@@ -763,10 +786,19 @@
     renderAuth();
     renderUpNext();
     renderBoard();
+    track('anime_sign_out', { success: true });
+    if (window.posthog && typeof window.posthog.reset === 'function') {
+      window.posthog.reset();
+    }
   }
 
   async function saveRating(animeId, tier) {
     if (!state.profile) return;
+    var anime = animeById(animeId);
+    var previous = state.ratings.find(function (r) {
+      return r.anime_id === animeId && r.user_id === state.profile.id;
+    });
+    var previousTier = previous ? previous.tier : null;
     renderStatus('Saving…');
 
     if (tier === null) {
@@ -813,6 +845,11 @@
     renderToggles();
     renderUpNext();
     renderBoard();
+    track('anime_rate', {
+      title: anime ? anime.title : '',
+      tier: tier,
+      previous_tier: previousTier,
+    });
   }
 
   async function saveTag(animeId, rawTag) {
@@ -861,6 +898,8 @@
     state.tagEditAnimeId = null;
     renderStatus('Tag saved.');
     renderBoard();
+    var saved = animeById(animeId);
+    track('anime_tag', { action: 'save', title: saved ? saved.title : '' });
   }
 
   async function deleteTag(animeId) {
@@ -886,6 +925,8 @@
     state.tagEditAnimeId = null;
     renderStatus('Tag removed.');
     renderBoard();
+    var removed = animeById(animeId);
+    track('anime_tag', { action: 'remove', title: removed ? removed.title : '' });
   }
 
   function imdbIdFromUrl(url) {
@@ -1231,13 +1272,13 @@
       btn.appendChild(poster);
       btn.appendChild(body);
       btn.addEventListener('click', function () {
-        finalizeAdd(show, tier);
+        finalizeAdd(show, tier, true);
       });
       list.appendChild(btn);
     });
   }
 
-  async function finalizeAdd(show, tier) {
+  async function finalizeAdd(show, tier, pickedImdb) {
     if (!state.profile) return;
 
     var existing = existingAnimeConflict(show);
@@ -1294,6 +1335,11 @@
     renderToggles();
     renderUpNext();
     renderBoard();
+    track('anime_add', {
+      title: show.title,
+      tier: tier,
+      picked_imdb: !!pickedImdb,
+    });
   }
 
   async function addAnime(event) {
@@ -1343,7 +1389,7 @@
     }
 
     if (shows.length === 1) {
-      await finalizeAdd(shows[0], tier);
+      await finalizeAdd(shows[0], tier, false);
       return;
     }
 
@@ -1373,6 +1419,7 @@
     if (els.addToggle) {
       els.addToggle.addEventListener('click', function () {
         setAddOpen(!state.addOpen);
+        track('anime_add_toggle', { open: state.addOpen });
       });
     }
     $('anime-add-form').addEventListener('submit', addAnime);
@@ -1380,10 +1427,17 @@
       hidePickList();
       updateAddFormState();
     });
+    var searchTimer = null;
     els.search.addEventListener('input', function () {
       state.searchQuery = els.search.value.trim();
       resetBoardPagination();
       renderBoard();
+      window.clearTimeout(searchTimer);
+      searchTimer = window.setTimeout(function () {
+        if (state.searchQuery) {
+          track('anime_search', { query_length: state.searchQuery.length });
+        }
+      }, 500);
     });
     $('anime-pick-cancel').addEventListener('click', function () {
       hidePickList();
