@@ -5,3 +5,5 @@ Gemfile.lock
 .agents/
 .cursor/
 skills-lock.json
+.env
+
