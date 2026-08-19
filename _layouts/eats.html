@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+  <body{% include analytics-attrs.html %}
+
+    {% include topbar.html %}
+
+    <main class="page page--eats">
+      <section class="eats-page">
+        <header class="eats-header">
+          <h1>Eats</h1>
+          <p class="eats-lede">Daily nutrition.</p>
+        </header>
+
+        <div id="eats-status" class="eats-status"></div>
+
+        <section class="eats-section">
+          <h2 class="section-label">Daily totals</h2>
+          <div id="eats-days"></div>
+        </section>
+
+        <section class="eats-section">
+          <h2 class="section-label">Foods</h2>
+          <div id="eats-items"></div>
+        </section>
+      </section>
+
+      <link rel="stylesheet" href="/public/css/eats.css?v={{ site.time | date: '%s' }}">
+      {% include analytics-script.html %}
+      <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+      <script src="/public/js/eats-config.js?v={{ site.time | date: '%s' }}"></script>
+      <script src="/public/js/eats.js?v={{ site.time | date: '%s' }}"></script>
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+</html>

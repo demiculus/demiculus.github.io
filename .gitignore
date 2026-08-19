@@ -6,4 +6,6 @@ Gemfile.lock
 .cursor/
 skills-lock.json
 .env
+.mcp.json
+supabase/
 

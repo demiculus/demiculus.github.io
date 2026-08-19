@@ -5,6 +5,7 @@
     essays: true,
     about: true,
     anime: true,
+    eats: true,
     resume: true,
     'feed.xml': true,
     '404.html': true,
@@ -74,7 +75,7 @@
 
   function isSitePath(pathname) {
     var slug = slugFromPath(pathname);
-    return slug === '' || slug === 'essays' || slug === 'about' || slug === 'anime' || slug === 'resume';
+    return slug === '' || slug === 'essays' || slug === 'about' || slug === 'anime' || slug === 'eats' || slug === 'resume';
   }
 
   function essaySource(region, pageType) {
@@ -89,7 +90,7 @@
     if (anchor.classList.contains('home')) return 'home';
     var slug = slugFromPath(pathname);
     if (!slug) return 'home';
-    if (slug === 'essays' || slug === 'about' || slug === 'anime' || slug === 'resume') return slug;
+    if (slug === 'essays' || slug === 'about' || slug === 'anime' || slug === 'eats' || slug === 'resume') return slug;
     var label = (anchor.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase();
     return label || slug;
   }
