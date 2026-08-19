@@ -67,6 +67,11 @@
   text-align: right;
 }
 
+.eats-table th:last-child {
+  white-space: normal;
+  max-width: 7.5em;
+}
+
 .eats-table tr.is-today td {
   font-weight: 600;
 }

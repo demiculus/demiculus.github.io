@@ -55,6 +55,13 @@
     });
   }
 
+  function calPerProtein(item) {
+    var protein = Number(item.protein_g);
+    var calories = Number(item.calories);
+    if (!protein || isNaN(protein) || protein <= 0 || isNaN(calories)) return Infinity;
+    return calories / protein;
+  }
+
   function sumByDay(items) {
     var totals = {};
     items.forEach(function (item) {
@@ -152,7 +159,12 @@
     itemsEl.innerHTML = groups
       .map(function (day) {
         var rows = totals[day].items
+          .slice()
+          .sort(function (a, b) {
+            return calPerProtein(a) - calPerProtein(b);
+          })
           .map(function (item) {
+            var ratio = calPerProtein(item);
             return (
               '<tr>' +
               '<td>' +
@@ -167,6 +179,9 @@
               '<td>' +
               escapeHtml(formatNumber(item.protein_g, 1)) +
               '</td>' +
+              '<td>' +
+              escapeHtml(ratio === Infinity ? '-' : formatNumber(ratio, 1)) +
+              '</td>' +
               '</tr>'
             );
           })
@@ -179,7 +194,7 @@
           escapeHtml(formatDay(day)) +
           '</summary>' +
           '<table class="eats-table">' +
-          '<thead><tr><th>Food</th><th>Amount</th><th>Calories</th><th>Protein</th></tr></thead>' +
+          '<thead><tr><th>Food</th><th>Amount</th><th>Calories</th><th>Protein</th><th>Calories per protein</th></tr></thead>' +
           '<tbody>' +
           rows +
           '</tbody></table>' +
