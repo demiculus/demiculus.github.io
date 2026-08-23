@@ -60,48 +60,68 @@
 .eats-table th,
 .eats-table td {
   font-variant-numeric: tabular-nums;
+  vertical-align: top;
 }
 
-.eats-table th:nth-child(n + 3),
-.eats-table td:nth-child(n + 3) {
+.eats-days-table {
+  table-layout: fixed;
+}
+
+.eats-days-table th:nth-child(1),
+.eats-days-table > tbody > tr.eats-day > td:nth-child(1) {
+  width: 36%;
+}
+
+.eats-days-table th:nth-child(2),
+.eats-days-table > tbody > tr.eats-day > td:nth-child(2) {
+  width: 20%;
+}
+
+.eats-days-table th:nth-child(3),
+.eats-days-table > tbody > tr.eats-day > td:nth-child(3),
+.eats-days-table th:nth-child(4),
+.eats-days-table > tbody > tr.eats-day > td:nth-child(4) {
+  width: 22%;
+}
+
+.eats-days-table th:nth-child(n + 2),
+.eats-days-table td:nth-child(n + 2) {
   text-align: right;
 }
 
-.eats-table th:last-child {
-  white-space: normal;
-  max-width: 7.5em;
+.eats-days-table > thead > tr > th:first-child {
+  padding-left: 26px;
 }
 
-.eats-table tr.is-today td {
+.eats-table tr.is-today td,
+.eats-table tr.is-today .eats-day-toggle {
   font-weight: 600;
 }
 
-.eats-group {
-  margin: 0 0 10px;
+.eats-day {
+  cursor: pointer;
 }
 
-.eats-group:last-child {
-  margin-bottom: 0;
+.eats-day:hover td {
+  background: color-mix(in srgb, var(--text) 5%, transparent);
 }
 
-.eats-group-title {
-  display: flex;
+.eats-day-toggle {
+  display: inline-flex;
   align-items: center;
   gap: 8px;
   margin: 0;
-  padding: 10px 0;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
   cursor: pointer;
-  list-style: none;
+  text-align: left;
 }
 
-.eats-group-title::-webkit-details-marker {
-  display: none;
-}
-
-.eats-group-title::before {
+.eats-day-toggle::before {
   content: '';
   width: 6px;
   height: 6px;
@@ -109,14 +129,37 @@
   border-bottom: 1.5px solid currentColor;
   transform: rotate(-45deg);
   opacity: 0.55;
+  flex-shrink: 0;
 }
 
-.eats-group[open] .eats-group-title {
-  margin-bottom: 8px;
-}
-
-.eats-group[open] .eats-group-title::before {
+.eats-day.is-open .eats-day-toggle::before {
   transform: rotate(45deg);
+}
+
+.eats-day.is-open td {
+  border-bottom-color: transparent;
+}
+
+.eats-food td {
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 400;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  border-bottom-color: transparent;
+}
+
+.eats-food td:first-child {
+  padding-left: 26px;
+}
+
+.eats-food.is-last td,
+.eats-food-empty td {
+  border-bottom-color: var(--border);
+}
+
+.eats-food-empty td {
+  color: var(--muted);
 }
 
 @media (max-width: 520px) {
@@ -127,5 +170,13 @@
   .eats-table th,
   .eats-table td {
     padding: 8px 8px;
+  }
+
+  .eats-days-table > thead > tr > th:first-child {
+    padding-left: 22px;
+  }
+
+  .eats-food td:first-child {
+    padding-left: 22px;
   }
 }

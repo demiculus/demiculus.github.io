@@ -4,7 +4,6 @@
   var config = window.EATS_CONFIG;
   var statusEl = document.getElementById('eats-status');
   var daysEl = document.getElementById('eats-days');
-  var itemsEl = document.getElementById('eats-items');
 
   function setStatus(text, isError) {
     if (!statusEl) return;
@@ -55,13 +54,6 @@
     });
   }
 
-  function calPerProtein(item) {
-    var protein = Number(item.protein_g);
-    var calories = Number(item.calories);
-    if (!protein || isNaN(protein) || protein <= 0 || isNaN(calories)) return Infinity;
-    return calories / protein;
-  }
-
   function sumByDay(items) {
     var totals = {};
     items.forEach(function (item) {
@@ -106,6 +98,67 @@
     return weights;
   }
 
+  function foodsRowsHtml(items, foodsId) {
+    if (!items || !items.length) {
+      return (
+        '<tr class="eats-food eats-food-empty" hidden>' +
+        '<td colspan="4">No foods logged.</td>' +
+        '</tr>'
+      );
+    }
+
+    return items
+      .map(function (item, index) {
+        var last = index === items.length - 1 ? ' is-last' : '';
+        var idAttr = index === 0 ? ' id="' + foodsId + '"' : '';
+        return (
+          '<tr class="eats-food' +
+          last +
+          '"' +
+          idAttr +
+          ' hidden>' +
+          '<td>' +
+          escapeHtml(item.food) +
+          '</td>' +
+          '<td>' +
+          escapeHtml(item.amount || '') +
+          '</td>' +
+          '<td>' +
+          escapeHtml(formatNumber(item.calories, 0)) +
+          '</td>' +
+          '<td>' +
+          escapeHtml(formatNumber(item.protein_g, 1)) +
+          (item.protein_g ? ' g' : '') +
+          '</td>' +
+          '</tr>'
+        );
+      })
+      .join('');
+  }
+
+  function toggleDay(row) {
+    var button = row.querySelector('.eats-day-toggle');
+    var open = !row.classList.contains('is-open');
+    row.classList.toggle('is-open', open);
+    if (button) button.setAttribute('aria-expanded', String(open));
+
+    var el = row.nextElementSibling;
+    while (el && el.classList.contains('eats-food')) {
+      el.hidden = !open;
+      el = el.nextElementSibling;
+    }
+  }
+
+  function bindDayToggles() {
+    if (!daysEl || daysEl.dataset.bound === '1') return;
+    daysEl.dataset.bound = '1';
+    daysEl.addEventListener('click', function (event) {
+      var row = event.target.closest('tr.eats-day');
+      if (!row || !daysEl.contains(row)) return;
+      toggleDay(row);
+    });
+  }
+
   function renderDays(dayKeys, weights, totals) {
     if (!daysEl) return;
     if (!dayKeys.length) {
@@ -114,19 +167,25 @@
     }
 
     daysEl.innerHTML =
-      '<table class="eats-table">' +
+      '<table class="eats-table eats-days-table">' +
       '<thead><tr><th>Date</th><th>Weight</th><th>Calories</th><th>Protein</th></tr></thead>' +
       '<tbody>' +
       dayKeys
         .map(function (day) {
-          var total = totals[day] || { calories: 0, protein_g: 0 };
-          var todayClass = day === todayKey() ? ' class="is-today"' : '';
+          var total = totals[day] || { calories: 0, protein_g: 0, items: [] };
+          var foodsId = 'eats-foods-' + day;
+          var classes = ['eats-day'];
+          if (day === todayKey()) classes.push('is-today');
           return (
-            '<tr' +
-            todayClass +
-            '>' +
+            '<tr class="' +
+            classes.join(' ') +
+            '">' +
             '<td>' +
+            '<button type="button" class="eats-day-toggle" aria-expanded="false" aria-controls="' +
+            foodsId +
+            '">' +
             escapeHtml(formatDay(day)) +
+            '</button>' +
             '</td>' +
             '<td>' +
             escapeHtml(formatNumber(weights[day], 1)) +
@@ -139,69 +198,14 @@
             escapeHtml(formatNumber(total.protein_g, 1)) +
             (total.protein_g ? ' g' : '') +
             '</td>' +
-            '</tr>'
+            '</tr>' +
+            foodsRowsHtml(total.items, foodsId)
           );
         })
         .join('') +
       '</tbody></table>';
-  }
 
-  function renderItems(dayKeys, totals) {
-    if (!itemsEl) return;
-    var groups = dayKeys.filter(function (day) {
-      return totals[day] && totals[day].items.length;
-    });
-    if (!groups.length) {
-      itemsEl.innerHTML = '<p class="eats-empty">No foods logged yet.</p>';
-      return;
-    }
-
-    itemsEl.innerHTML = groups
-      .map(function (day) {
-        var rows = totals[day].items
-          .slice()
-          .sort(function (a, b) {
-            return calPerProtein(a) - calPerProtein(b);
-          })
-          .map(function (item) {
-            var ratio = calPerProtein(item);
-            return (
-              '<tr>' +
-              '<td>' +
-              escapeHtml(item.food) +
-              '</td>' +
-              '<td>' +
-              escapeHtml(item.amount || '') +
-              '</td>' +
-              '<td>' +
-              escapeHtml(formatNumber(item.calories, 0)) +
-              '</td>' +
-              '<td>' +
-              escapeHtml(formatNumber(item.protein_g, 1)) +
-              '</td>' +
-              '<td>' +
-              escapeHtml(ratio === Infinity ? '-' : formatNumber(ratio, 1)) +
-              '</td>' +
-              '</tr>'
-            );
-          })
-          .join('');
-        return (
-          '<details class="eats-group' +
-          (day === todayKey() ? ' is-today' : '') +
-          '">' +
-          '<summary class="eats-group-title">' +
-          escapeHtml(formatDay(day)) +
-          '</summary>' +
-          '<table class="eats-table">' +
-          '<thead><tr><th>Food</th><th>Amount</th><th>Calories</th><th>Protein</th><th>Calories per protein</th></tr></thead>' +
-          '<tbody>' +
-          rows +
-          '</tbody></table>' +
-          '</details>'
-        );
-      })
-      .join('');
+    bindDayToggles();
   }
 
   if (!config || !config.supabaseUrl || !config.supabaseAnonKey) {
@@ -242,7 +246,6 @@
       var dayKeys = allDays(days, totals);
       setStatus('');
       renderDays(dayKeys, weightByDay(days), totals);
-      renderItems(dayKeys, totals);
     })
     .catch(function () {
       setStatus('Could not load eats.', true);

@@ -88,6 +88,10 @@ Dates render via `_layouts/default.html` when front matter has `created:` and/or
 - **Don't commit emojis** to any markdown, HTML, or CSS file.
 - **Games section in about.md is sorted newest-first.** Add new entries at the top, not the bottom.
 
+## Eats logging
+
+When asked to add food to the eats database (e.g. "Add 100gr of honey to eats database"), follow `_docs/eats.md`.
+
 ## Verification
 
 After any UI change, verify via `preview_*` tools (not manual browser). Specifically:

@@ -6,6 +6,7 @@ Gemfile.lock
 .cursor/
 skills-lock.json
 .env
+_docs/eats.md
 .mcp.json
 supabase/
 
