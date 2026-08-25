@@ -8,12 +8,12 @@ updated: 2026-03-18
 
 ## Remote Work
 
-Remote async work is not all fun and games. Your assumption is that you're going to be free. That's not the case. 
+Async remote work is not all fun and games. Your assumption is that you're going to be free. That is only the case if you're intentional about it. 
 
 Most of the time,
 
-- in-office work, you'll be working from 9–5 and then you're free the rest of the day and weekends.  
-- with remote work, you're on call 16 hours a day, 7 days a week. You'll receive notifications from whoever is making progress.  
+- in-office work, you'll be working from 9–5 (8hr job + 2hour prep & travel) = 10 hrs and then you're free the rest of the day and weekends.  
+- with remote work, you're on call 16 hours a day, 7 days a week. You'll receive notifications from whoever is making progress.
 
 First-time remote workers at Colonist don't understand this difference. They continue the same behaviors as in-office work, which makes them feel stressed. They think they should reply to everything right away. They take no time off. They feel like they're on call 24/7. They wake up and go to sleep with notifications. Then they wait for more notifications and delay sleep. 
 
@@ -36,12 +36,21 @@ You have unlimited flexibility. You're not expected to work at any particular ho
 You're not confined to 9–5. Once you master this, it'll feel like a super power.
 
 Office workers  
-- need to go to the cinema in the evenings. You can go to the 11 a.m. discounted sessions.  
-- need to visit museums on the weekends. You can visit during the day avoiding crowds and finish work on weekends.  
-- have weekend trips; you can work and travel at the same time.  
-- need to take days off for hospital or dentist appointments. You can go any time, and you can even get work done while waiting.  
-- need to wake up at 7 a.m. You can wake up whenever your body is ready.  
-- can't travel far from office since they need to be back Monday, you can fly to another continent with 0 lost productivity.  
+
+- Need to go to the cinema in the evenings.
+  - You can go to the 11 a.m. discounted sessions.  
+- Need to visit museums on the weekends.
+  - You can visit during the day avoiding crowds and finish work on weekends.  
+- Have weekend trips.
+  - You can work and travel at the same time.  
+- Need to take days off for hospital or dentist appointments.
+  - You can go any time, and you can even get work done while waiting.  
+- Need to wake up at 7 a.m.
+  - You can wake up whenever your body is ready.  
+- Can't travel far from office since they need to be back Monday.
+  - You can fly to another continent.
+- Need to spend 2 hours of day idle, prepping & traveling to work.
+  - You save 10hrs per week not doing those.
 
 ### 4. Discipline
 
@@ -66,13 +75,13 @@ In an office, you work as much as you can between 9 to 5. In remote async, you m
 - Some select 2 days and don't open their computers  
 - Some use a timer to track their time spent   
 - Some use their internal clock & satisfaction feeling  
-- Some have good understanding of their burn out symptoms  
+- Some have good understanding of their burn out symptoms
 
 The last one is the ideal solution. Being aware of your burn out symptoms and ensuring you never get there. Some common burn out symptoms are 
 
 - Procrastinating, taking longer to get things done  
 - Using food, drugs, or alcohol to cope  
-- Difficulty concentrating and forgetfulness  
+- Difficulty concentrating and forgetfulness
 
 The trick is finding the pattern on when you reach this stage (means you're gonna reach a few times) and put a blocker before you reach it. 
 
@@ -83,7 +92,6 @@ There are going to be so many of these. It's impossible to list them all.
 For me, one edge case was my mom. She didn't understand how I could be in my room and work, so she continued disturbing me whenever she wanted. To this day, whenever I'm back at my mom's place, she sees me as available to help her out with chores 24/7. Each time I go back, I need to reprogram her.
 
 > Mom, I work during these hours, so I prefer not to be disturbed. If you bring me snacks, please leave them "here" without disturbing me. I'll grab them when I need them. I am free during "these" times, so we can hang out then. 
-
 
 ### In Short
 
