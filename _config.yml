@@ -8,6 +8,10 @@ github_username: demiculus
 markdown: kramdown
 permalink: pretty
 
+exclude:
+  - CLAUDE.md
+  - AGENTS.md
+
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
