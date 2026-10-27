@@ -239,3 +239,9 @@ I've played longer than I should have.
 - [Big Hero 6](https://www.imdb.com/title/tt2245084/)
 - [Idiocracy](https://www.youtube.com/watch?v=sP2tUW0HDHA)
 
+### Advisory
+
+- [Ascentiz](https://ascentiz.com.tr)
+- [Alpha Robotics](https://www.alpharobotics.com.tr)
+- [Toyron](https://www.toyron.com.tr)
+
