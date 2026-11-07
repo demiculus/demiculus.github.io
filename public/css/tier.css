@@ -20,10 +20,6 @@ body.has-tier .site-footer {
 }
 
 .tier-page-header {
-  align-items: end;
-  display: flex;
-  gap: 2rem;
-  justify-content: space-between;
   margin-bottom: 1.5rem;
 }
 
@@ -44,56 +40,6 @@ body.has-tier .site-footer {
   margin: 0;
   max-width: 11em;
   text-wrap: balance;
-}
-
-.tier-filters {
-  display: grid;
-  flex: 0 0 min(470px, 44vw);
-  gap: 0.75rem;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.tier-filter {
-  color: var(--muted);
-  display: grid;
-  font-size: 0.75rem;
-  font-weight: 700;
-  gap: 0.35rem;
-  letter-spacing: 0.04em;
-  min-width: 0;
-  text-transform: uppercase;
-}
-
-.tier-filter-control {
-  background-color: var(--bg);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  box-sizing: border-box;
-  color: var(--text);
-  font: inherit;
-  font-size: 0.92rem;
-  font-weight: 400;
-  height: 44px;
-  letter-spacing: 0;
-  min-width: 0;
-  padding: 0.65rem 0.8rem;
-  text-transform: none;
-  width: 100%;
-}
-
-.tier-filter-control--choice {
-  appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23555' d='M6 9 1 4h10z'/%3E%3C/svg%3E");
-  background-position: right 0.75rem center;
-  background-repeat: no-repeat;
-  cursor: pointer;
-  padding-right: 2.25rem;
-}
-
-.tier-filter-control:focus {
-  border-color: var(--accent);
-  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 24%, transparent);
-  outline: none;
 }
 
 .tier-board {
@@ -323,17 +269,6 @@ a.tier-card:hover {
 }
 
 @media (max-width: 720px) {
-  .tier-page-header {
-    align-items: stretch;
-    flex-direction: column;
-    gap: 1.25rem;
-  }
-
-  .tier-filters {
-    flex-basis: auto;
-    width: 100%;
-  }
-
   .tier-board-row {
     grid-template-columns: 58px minmax(0, 1fr);
     min-height: 215px;
@@ -352,16 +287,6 @@ a.tier-card:hover {
     flex-basis: 104px;
     grid-template-rows: 148px auto;
   }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) .tier-filter-control--choice {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23aaa' d='M6 9 1 4h10z'/%3E%3C/svg%3E");
-  }
-}
-
-:root[data-theme="dark"] .tier-filter-control--choice {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23aaa' d='M6 9 1 4h10z'/%3E%3C/svg%3E");
 }
 
 @media (prefers-reduced-motion: reduce) {

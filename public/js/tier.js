@@ -3,18 +3,10 @@
 
   var board = document.getElementById('tier-board');
   var tooltip = document.getElementById('tier-tooltip');
-  var countryFilter = document.getElementById('country-filter');
-  var brandFilter = document.getElementById('brand-filter');
   if (!board || !tooltip) return;
 
-  var noun = board.dataset.noun || 'title';
-  var plural = board.dataset.plural || noun + 's';
   var active = null;
   var hideTimer = null;
-
-  function countLabel(n) {
-    return n + ' ' + (n === 1 ? noun : plural);
-  }
 
   function addText(parent, className, text) {
     var el = document.createElement('div');
@@ -113,32 +105,6 @@
     rail.addEventListener('blur', hideSoon);
   });
 
-  function applyFilters() {
-    hideTooltip();
-    var country = countryFilter ? countryFilter.value : '';
-    var brand = brandFilter ? brandFilter.value : '';
-    var filtering = Boolean(country || brand);
-    board.querySelectorAll('.tier-board-row').forEach(function (row) {
-      var visible = 0;
-      row.querySelectorAll('.tier-card').forEach(function (card) {
-        var matchesCountry = !country || card.dataset.country === country;
-        var matchesBrand = !brand || card.dataset.brand === brand;
-        var match = matchesCountry && matchesBrand;
-        card.hidden = !match;
-        if (match) visible += 1;
-      });
-      var empty = row.querySelector('.tier-board-empty');
-      if (empty) {
-        empty.hidden = visible > 0;
-        empty.textContent = filtering ? 'No matches in this tier.' : (empty.dataset.empty || '');
-      }
-      var count = row.querySelector('.tier-board-count');
-      if (count) count.textContent = countLabel(visible);
-    });
-  }
-
-  if (countryFilter) countryFilter.addEventListener('change', applyFilters);
-  if (brandFilter) brandFilter.addEventListener('change', applyFilters);
   window.addEventListener('scroll', hideTooltip, true);
   window.addEventListener('resize', hideTooltip);
 })();

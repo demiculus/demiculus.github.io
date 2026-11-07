@@ -12,45 +12,15 @@
     {% assign collection = site.data[page.collection] %}
     {% assign items = collection.items %}
     {% assign tiers = "s:S:Best of the best|a:A:Amazing|b:B:Great|c:C:Edible|d:D:Meh" | split: "|" %}
-    {% assign brands = items | map: "brand" | uniq | sort %}
-    {% assign countries = items | map: "country" | uniq | sort %}
 
     <main class="page page--tier" aria-labelledby="tier-title">
       <div class="tier-page">
         <header class="tier-page-header">
-          <div>
-            <p class="tier-page-kicker">{{ kicker }}</p>
-            <h1 id="tier-title" class="tier-page-title">{{ page.title }}</h1>
-          </div>
-
-          <div class="tier-filters" aria-label="Filter {{ noun }}s">
-            <label class="tier-filter" for="country-filter">
-              <span>Country</span>
-              <select id="country-filter" class="tier-filter-control tier-filter-control--choice">
-                <option value="">All countries</option>
-                {% for country in countries %}
-                  {% if country != blank %}
-                  <option value="{{ country | escape }}">{{ country }}</option>
-                  {% endif %}
-                {% endfor %}
-              </select>
-            </label>
-
-            <label class="tier-filter" for="brand-filter">
-              <span>Brand</span>
-              <select id="brand-filter" class="tier-filter-control tier-filter-control--choice">
-                <option value="">All brands</option>
-                {% for brand in brands %}
-                  {% if brand != blank %}
-                  <option value="{{ brand | escape }}">{{ brand }}</option>
-                  {% endif %}
-                {% endfor %}
-              </select>
-            </label>
-          </div>
+          <p class="tier-page-kicker">{{ kicker }}</p>
+          <h1 id="tier-title" class="tier-page-title">{{ page.title }}</h1>
         </header>
 
-        <div id="tier-board" class="tier-board" data-noun="{{ noun }}" data-plural="{{ noun }}s">
+        <div id="tier-board" class="tier-board">
           {% for tier in tiers %}
             {% assign parts = tier | split: ":" %}
             {% assign key = parts[0] %}
@@ -64,7 +34,7 @@
                 <div class="tier-board-count">{{ n }} {{ noun }}{% unless n == 1 %}s{% endunless %}</div>
               </div>
               <div class="tier-board-items">
-                <div class="tier-board-empty" data-empty="No {{ noun }}s in this tier."{% if n > 0 %} hidden{% endif %}>No {{ noun }}s in this tier.</div>
+                <div class="tier-board-empty"{% if n > 0 %} hidden{% endif %}>No {{ noun }}s in this tier.</div>
                 {% for item in tier_items %}
                   {% assign card_label = item.name %}
                   {% if item.brand %}{% assign card_label = card_label | append: ". Brand: " | append: item.brand %}{% endif %}
