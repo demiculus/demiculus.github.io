@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Dropout
+kind: collection
 description: School's not a place for smart people.
 created: 2024-11-25
 updated: 2026-04-19

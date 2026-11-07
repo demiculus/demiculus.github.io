@@ -18,7 +18,7 @@
           {% if page.updated %}<p>Updated {{ page.updated | date: "%b %-d, %Y" }}</p>{% endif %}
         </div>
       {% endif %}
-      {% if page.description and page.hide_related != true %}
+      {% if page.description and page.hide_related != true and page.kind != "collection" %}
         {% include related.html %}
       {% endif %}
     </main>

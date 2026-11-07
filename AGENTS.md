@@ -42,9 +42,11 @@ Every essay `.md` at the repo root must have a matching `slug` entry in `_data/e
 - Essay in YAML but no `.md` → home page links to a 404.
 - Essay `.md` but not in YAML → essay missing from home list and `feed.xml`.
 
+Collection pages (`kind: collection`, listed in `_data/collections.yml`) are not essays. Exclude them from this check.
+
 **Always run this check after adding or removing an essay:**
 ```sh
-diff <(ls *.md | grep -vE '^(CLAUDE|AGENTS|index|about|essays|resume)\.md$' | sed 's/\.md$//' | sort) \
+diff <(ls *.md | grep -vE '^(CLAUDE|AGENTS|index|about|essays|collections|resume|404|anime|eats)\.md$' | sed 's/\.md$//' | grep -vxF -f <(grep '^- slug:' _data/collections.yml | sed -E 's/.*slug: *"?([^"]*)"?.*/\1/') | sort) \
      <(grep '^- slug:' _data/essays.yml | sed -E 's/.*slug: *"?([^"]*)"?.*/\1/' | sort)
 ```
 Empty output = in sync. Any output = fix the drift before continuing.
@@ -104,5 +106,5 @@ Remember: if computed styles don't match the CSS file, it's browser caching. For
 - `description`, `created`, `updated` live in each essay's front matter — not in `_data/essays.yml`.
 - `_data/essays.yml` holds only slug+title, for home-page ordering (first 6 shown) and feed.xml.
 - `_layouts/default.html` renders `Created ... · Updated ...` automatically when the fields are present.
-- Filter `where_exp: "p", "p.description"` is the "is this an essay?" predicate. Pages without a description are not essays and don't appear on `/essays/`, the home list, or "Read more."
-- If you add a non-essay page, do NOT give it a `description:` in front matter (or it'll show up in essay lists).
+- Filter `where_exp: "p", "p.description and p.kind != 'collection'"` is the "is this an essay?" predicate. Pages without a description are not essays. Pages with `kind: collection` are collections: they appear on `/collections/` and not on `/essays/`, the home list, or "Read more."
+- If you add a non-essay page, do NOT give it a `description:` in front matter (or it'll show up in essay lists) unless it is a collection.

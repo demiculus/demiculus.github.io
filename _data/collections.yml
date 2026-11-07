@@ -1,0 +1,20 @@
+# Ordering of the /collections/ list.
+# Slug must match the Markdown filename (without the .md).
+
+- slug: singapore-yogurt
+  title: Singapore Yogurt
+
+- slug: mmo
+  title: MMO
+
+- slug: "30"
+  title: 30 Years Old
+
+- slug: dropout
+  title: Dropout
+
+- slug: child
+  title: Child
+
+- slug: anime
+  title: Anime Tiers
