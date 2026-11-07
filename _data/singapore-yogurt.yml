@@ -9,6 +9,11 @@ items:
     country: Singapore
     tier: b
     image: /img/yogurt/kalo-authentic-greek.jpg
+  - name: Chobani Natural
+    brand: Chobani
+    country: Singapore
+    tier: b
+    image: /img/yogurt/chobani-natural.png
   - name: Farmers Union Greek Style
     brand: Farmers Union
     country: Singapore
