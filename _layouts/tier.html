@@ -41,9 +41,9 @@
                   {% if item.country %}{% assign card_label = card_label | append: ". Country: " | append: item.country %}{% endif %}
                   {% if item.note %}{% assign card_label = card_label | append: ". " | append: item.note %}{% endif %}
                   {% if item.url %}
-                  <a class="tier-card tier-card--product" href="{{ item.url }}" target="_blank" rel="noopener noreferrer"
+                  <a class="tier-card{% if item.image %} tier-card--product{% else %} tier-card--text{% endif %}" href="{{ item.url }}" target="_blank" rel="noopener noreferrer"
                   {% else %}
-                  <div class="tier-card tier-card--product"
+                  <div class="tier-card{% if item.image %} tier-card--product{% else %} tier-card--text{% endif %}"
                   {% endif %}
                     tabindex="0"
                     aria-label="{{ card_label | escape }}"
@@ -51,6 +51,7 @@
                     data-brand="{{ item.brand | escape }}"
                     data-country="{{ item.country | escape }}"
                     data-note="{{ item.note | escape }}">
+                    {% if item.image or item.note %}
                     <div class="tier-card-cover">
                       {% if item.image %}
                       <img class="tier-card-image" src="{{ item.image }}" alt="{{ item.name | escape }} package" loading="lazy" decoding="async">
@@ -59,6 +60,7 @@
                       <div class="tier-card-note">{{ item.note }}</div>
                       {% endif %}
                     </div>
+                    {% endif %}
                     <div class="tier-card-title">{{ item.name }}</div>
                   {% if item.url %}
                   </a>

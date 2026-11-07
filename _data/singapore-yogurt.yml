@@ -14,3 +14,5 @@ items:
     country: Singapore
     tier: d
     image: /img/yogurt/farmers-union-greek.png
+  - name: 'Any Greek yogurt with the word "Style"'
+    tier: d

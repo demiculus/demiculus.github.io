@@ -196,9 +196,22 @@ a.tier-card:hover {
   white-space: nowrap;
 }
 
+.tier-card--text {
+  align-self: center;
+  flex-basis: 168px;
+  grid-template-rows: auto;
+}
+
+.tier-card--text .tier-card-title {
+  -webkit-line-clamp: unset;
+  display: block;
+  min-height: 0;
+  overflow: visible;
+}
+
 .tier-card-title {
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 4;
   color: var(--text);
   display: -webkit-box;
   font-size: 0.76rem;
