@@ -1,4 +1,9 @@
 items:
+  - name: Sahara Greek Krema
+    brand: Sahara
+    country: Singapore
+    tier: a
+    image: /img/yogurt/sahara-greek-krema.png
   - name: Kalo Authentic Greek
     brand: Meadow Fresh
     country: Singapore
