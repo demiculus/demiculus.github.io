@@ -9,7 +9,7 @@ redirect_from:
 <h1 class="page-title">Essays</h1>
 
 <ul class="essays-list" data-track-region="essays">
-  {% assign pool = site.pages | where_exp: "p", "p.description and p.kind != 'collection'" | sort: "title" %}
+  {% assign pool = site.pages | where_exp: "p", "p.description" | where_exp: "p", "p.kind != 'collection'" | sort: "title" %}
   {% for p in pool %}
     <li>
       <a href="{{ p.url }}">

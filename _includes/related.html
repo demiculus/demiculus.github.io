@@ -1,4 +1,4 @@
-{% assign pool = site.pages | where_exp: "p", "p.description and p.kind != 'collection'" %}
+{% assign pool = site.pages | where_exp: "p", "p.description" | where_exp: "p", "p.kind != 'collection'" %}
 {% assign valid = '' | split: '' %}
 {% for p in pool %}
   {% unless p.url == page.url %}

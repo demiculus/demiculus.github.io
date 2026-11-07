@@ -61,7 +61,7 @@ Dates render via `_layouts/default.html` when front matter has `created:` and/or
 
 ## Essays-page plumbing
 
-- `/essays/` (essays.md) iterates `site.pages` and filters by `p.description` — any page with a description in its front matter is an essay. `essays.md` sets `redirect_from: /writing/` so old links still resolve.
+- `/essays/` (essays.md) iterates `site.pages` and keeps pages with a description that are not `kind: collection`. `essays.md` sets `redirect_from: /writing/` so old links still resolve.
 - Home (index.md) iterates `_data/essays.yml` with `limit: 6`.
 - Read More (`_includes/related.html`) shows 3 random related essays under each essay.
 - All three views share the same description field — change it in one place and verify all three.
@@ -106,5 +106,5 @@ Remember: if computed styles don't match the CSS file, it's browser caching. For
 - `description`, `created`, `updated` live in each essay's front matter — not in `_data/essays.yml`.
 - `_data/essays.yml` holds only slug+title, for home-page ordering (first 6 shown) and feed.xml.
 - `_layouts/default.html` renders `Created ... · Updated ...` automatically when the fields are present.
-- Filter `where_exp: "p", "p.description and p.kind != 'collection'"` is the "is this an essay?" predicate. Pages without a description are not essays. Pages with `kind: collection` are collections: they appear on `/collections/` and not on `/essays/`, the home list, or "Read more."
+- The "is this an essay?" predicate is two filters: `where_exp: "p", "p.description" | where_exp: "p", "p.kind != 'collection'"`. GitHub Pages `where_exp` accepts one comparison, so `and` inside it fails the build. Pages without a description are not essays. Pages with `kind: collection` are collections: they appear on `/collections/` and not on `/essays/`, the home list, or "Read more."
 - If you add a non-essay page, do NOT give it a `description:` in front matter (or it'll show up in essay lists) unless it is a collection.
