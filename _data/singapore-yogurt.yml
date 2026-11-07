@@ -1,0 +1,11 @@
+items:
+  - name: Kalo Authentic Greek
+    brand: Meadow Fresh
+    country: Singapore
+    tier: b
+    image: /img/yogurt/kalo-authentic-greek.jpg
+  - name: Farmers Union Greek Style
+    brand: Farmers Union
+    country: Singapore
+    tier: d
+    image: /img/yogurt/farmers-union-greek.png

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+  <body class="has-tier"{% include analytics-attrs.html %}
+
+    {% include topbar.html %}
+
+    {% assign kicker = page.kicker | default: "The tasting ranking" %}
+    {% assign noun = page.noun | default: "title" %}
+    {% assign collection = site.data[page.collection] %}
+    {% assign items = collection.items %}
+    {% assign tiers = "s:S:Best of the best|a:A:Amazing|b:B:Great|c:C:Edible|d:D:Meh" | split: "|" %}
+    {% assign brands = items | map: "brand" | uniq | sort %}
+    {% assign countries = items | map: "country" | uniq | sort %}
+
+    <main class="page page--tier" aria-labelledby="tier-title">
+      <div class="tier-page">
+        <header class="tier-page-header">
+          <div>
+            <p class="tier-page-kicker">{{ kicker }}</p>
+            <h1 id="tier-title" class="tier-page-title">{{ page.title }}</h1>
+          </div>
+
+          <div class="tier-filters" aria-label="Filter {{ noun }}s">
+            <label class="tier-filter" for="country-filter">
+              <span>Country</span>
+              <select id="country-filter" class="tier-filter-control tier-filter-control--choice">
+                <option value="">All countries</option>
+                {% for country in countries %}
+                  {% if country != blank %}
+                  <option value="{{ country | escape }}">{{ country }}</option>
+                  {% endif %}
+                {% endfor %}
+              </select>
+            </label>
+
+            <label class="tier-filter" for="brand-filter">
+              <span>Brand</span>
+              <select id="brand-filter" class="tier-filter-control tier-filter-control--choice">
+                <option value="">All brands</option>
+                {% for brand in brands %}
+                  {% if brand != blank %}
+                  <option value="{{ brand | escape }}">{{ brand }}</option>
+                  {% endif %}
+                {% endfor %}
+              </select>
+            </label>
+          </div>
+        </header>
+
+        <div id="tier-board" class="tier-board" data-noun="{{ noun }}" data-plural="{{ noun }}s">
+          {% for tier in tiers %}
+            {% assign parts = tier | split: ":" %}
+            {% assign key = parts[0] %}
+            {% assign label = parts[1] %}
+            {% assign desc = parts[2] %}
+            {% assign tier_items = items | where: "tier", key %}
+            {% assign n = tier_items | size %}
+            <section class="tier-board-row" data-tier="{{ key }}" aria-labelledby="tier-{{ key }}">
+              <div class="tier-board-rail" tabindex="0" data-tier-description="{{ desc }}" aria-label="{{ label }} tier: {{ desc }}">
+                <div class="tier-board-letter" id="tier-{{ key }}">{{ label }}</div>
+                <div class="tier-board-count">{{ n }} {{ noun }}{% unless n == 1 %}s{% endunless %}</div>
+              </div>
+              <div class="tier-board-items">
+                <div class="tier-board-empty" data-empty="No {{ noun }}s in this tier."{% if n > 0 %} hidden{% endif %}>No {{ noun }}s in this tier.</div>
+                {% for item in tier_items %}
+                  {% assign card_label = item.name %}
+                  {% if item.brand %}{% assign card_label = card_label | append: ". Brand: " | append: item.brand %}{% endif %}
+                  {% if item.country %}{% assign card_label = card_label | append: ". Country: " | append: item.country %}{% endif %}
+                  {% if item.note %}{% assign card_label = card_label | append: ". " | append: item.note %}{% endif %}
+                  {% if item.url %}
+                  <a class="tier-card tier-card--product" href="{{ item.url }}" target="_blank" rel="noopener noreferrer"
+                  {% else %}
+                  <div class="tier-card tier-card--product"
+                  {% endif %}
+                    tabindex="0"
+                    aria-label="{{ card_label | escape }}"
+                    data-name="{{ item.name | escape }}"
+                    data-brand="{{ item.brand | escape }}"
+                    data-country="{{ item.country | escape }}"
+                    data-note="{{ item.note | escape }}">
+                    <div class="tier-card-cover">
+                      {% if item.image %}
+                      <img class="tier-card-image" src="{{ item.image }}" alt="{{ item.name | escape }} package" loading="lazy" decoding="async">
+                      {% endif %}
+                      {% if item.note %}
+                      <div class="tier-card-note">{{ item.note }}</div>
+                      {% endif %}
+                    </div>
+                    <div class="tier-card-title">{{ item.name }}</div>
+                  {% if item.url %}
+                  </a>
+                  {% else %}
+                  </div>
+                  {% endif %}
+                {% endfor %}
+              </div>
+            </section>
+          {% endfor %}
+        </div>
+
+        <div id="tier-tooltip" class="tier-tooltip" role="tooltip" hidden></div>
+      </div>
+    </main>
+
+    {% include footer.html %}
+
+    <script src="/public/js/tier.js?v={{ site.time | date: '%s' }}"></script>
+    {% include analytics-script.html %}
+
+  </body>
+</html>
